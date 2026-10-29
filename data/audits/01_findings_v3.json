@@ -1,0 +1,38 @@
+{
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "source_commit": "audits/01_etl.json",
+  "raw_data_files": 37,
+  "verified_mirrors": 11,
+  "denue": {
+    "input_rows": 462732,
+    "accepted_rows": 462732,
+    "quarantine_rows": 0,
+    "ageb_key_unmatched": 1498,
+    "snapshot_year": 2026,
+    "registered_after_study_year": 9627
+  },
+  "census": {
+    "input_rows": 68941,
+    "accepted_rows": 68941,
+    "ageb_view_rows": 2433,
+    "ageb_keys_without_geometry": 3,
+    "urban_geometries_without_census": 0
+  },
+  "gtfs": {
+    "route_rejections": 1,
+    "trip_rejections": 1,
+    "frequency_rejections": 1,
+    "root_reason": "TR13 references SEMOVI, absent from agency.txt",
+    "has_2025_service": 12,
+    "outside_2025_service": 1
+  },
+  "c5": {
+    "input_rows": 2115080,
+    "accepted_2025_rows": 0,
+    "quarantine_rows": 2115080,
+    "superseded_duplicates": 12,
+    "source_date_min": "2013-12-31",
+    "source_date_max": "2024-02-29",
+    "interpretation": "No 2025 observations in this source; not evidence of zero incidents"
+  }
+}

@@ -1,0 +1,81 @@
+latitud,longitud,nombre,id
+19.385494,-99.183744,"CE-332 Calle 27-Avenida 3",22
+19.385457,-99.178272,"CE-348 Indiana-Avenida San Antonio",39
+19.385632,-99.180848,"CE-349 Augusto Rodin-Avenida San Antonio",63
+19.384146,-99.185491,"CE-352 Tintoreto-Giorgione",405
+19.382335,-99.178884,"CE-353 Carolina-Holbein",41
+19.381714,-99.176664,"CE-354 Boston-Av. Insurgentes",47
+19.382011,-99.173289,"CE-355 California-Sacramento",428
+19.380691,-99.175036,"CE-361 Porfirio Díaz-Capulín",60
+19.382123,-99.181091,"CE-362 Augusto Rodin-Alberto Balderas",26
+19.380839,-99.183932,"CE-363 Holbein-Paulo Ucello",427
+19.381123,-99.186670,"CE-365 Holbein-Avenida Revolución",27
+19.378423,-99.181891,"CE-366 Porfirio Díaz-Augusto Rodin",406
+19.379593,-99.181351,"CE-367 Boston -Augusto Rodin",43
+19.379941,-99.177224,"CE-369 Porfirio Díaz-Av. Insurgentes",419
+19.378799,-99.176821,"CE-370 Tlacoquemécatl-Av. Insurgentes",46
+19.378546,-99.174297,"CE-371 Tlacoquemécatl-Capulín",431
+19.377966,-99.170272,"CE-372 Dr. Roberto Gayol-Tlacoquemécatl",32
+19.374756,-99.173539,"CE-380 Moras-San Lorenzo",410
+19.375543,-99.178011,"CE-381 San Lorenzo-Manzanas",21
+19.375865,-99.185573,"CE-384 Empresa-Poussin",38
+19.375651,-99.185586,"CE-385 Poussin-Empresa",425
+19.374912,-99.185807,"CE-386 Poussin-Donatello",415
+19.374267,-99.180546,"CE-387 Cadiz-Empresa",42
+19.373004,-99.174764,"CE-392 Patricio Sanz-Félix Cuevas",460
+19.373307,-99.172471,"CE-393 Adolfo Prieto-Félix Cuevas",61
+19.372474,-99.171639,"CE-394 Dr. Roberto Gayol-Félix Cuevas",18
+19.373725,-99.169807,"CE-395 San Lorenzo-Martín Mendalde",407
+19.371650,-99.170150,"CE-396 Martin Mendalde-Felix Cuevas",422
+19.373136,-99.167067,"CE-397 San Lorenzo-Gabriel Mancera",40
+19.371040,-99.165653,"CE-398 Juan Sánchez Azcona-Félix Cuevas",449
+19.368107,-99.164376,"CE-412 Parroquia-Avenida Universidad",20
+19.369823,-99.172164,"CE-413 Parroquia-Avenida Coyoacán",56
+19.370214,-99.173855,"CE-414 Parroquia-José Ignacio Bartolache",51
+19.370990,-99.176135,"CE-415 San Francisco-Parroquia",11
+19.371279,-99.177623,"CE-416 Recreo-Parroquia",414
+19.373447,-99.184465,"CE-417 Goya-Augusto Rodin",12
+19.370615,-99.181606,"CE-419 Actipan-Cadiz",58
+19.369672,-99.179581,"CE-420 María Luz Bringas-Oso",412
+19.369520,-99.179421,"CE-421 María Luz Bringas-Oso",29
+19.368403,-99.177472,"CE-422 Búfalo-José María Rico (Eje 8)",426
+19.367816,-99.175269,"CE-423 Moras-José María Rico (Eje 8)",9
+19.367103,-99.170581,"CE-424 Amores-José María Rico (Eje 8)",28
+19.367040,-99.167387,"CE-425 Nicolas San Juan-Avenida Universidad",473
+19.363548,-99.170766,"CE-433 Jose María Olloqui-Lopéz Cotilla",434
+19.363699,-99.171185,"CE-434 Jose María Olloqui-Amores",33
+19.366230,-99.177904,"CE-436 Rodríguez Saro-Búfalo",423
+19.364916,-99.175985,"CE-437 Moras-Comunal",36
+19.364730,-99.174447,"CE-438 Adolfo Prieto-José María Olloqui",10
+19.362037,-99.172683,"CE-439 Amores-Avenida Coyoacán",34
+19.361792,-99.171471,"CE-440  Martin Mendalde - M. López Cotilla",683
+19.361214,-99.167721,"CE-441 Puente Xoco-Real de Mayorazgo",445
+19.359863,-99.165065,"CE-442  Real de Mayorazgo - Avenida México - Coyoacán",640
+19.356486,-99.169456,"CE-659  Madrid - Avenida Mexico",360
+19.358003,-99.170106,"CE-660 Josefa Ortiz de Dominguez - Circuito Interior",364
+19.356750,-99.171769,"CE-661 Madrid - Universidad",514
+19.362041,-99.175158,"CE-662 Manzano - Circuito Interior",553
+19.354803,-99.175419,"CE-663 Hortensia - Avenida Universidad",549
+19.355544,-99.178992,"CE-664 Hortensia - 2da cerrada de Minerva",546
+19.358903,-99.177997,"CE-665 Moras - Mango",584
+19.361489,-99.177432,"CE-666 Moras - Naranjo",557
+19.363955,-99.180789,"CE-667 Hermes - Mosqueta",362
+19.367522,-99.181727,"CE-668 Plateros - Capuchinas",325
+19.370769,-99.187361,"CE-669 Los Juarez - Sagredo",398
+19.367600,-99.184992,"CE-670 Felix Parra - Flamencos",366
+19.364577,-99.186288,"CE-671 Plateros - Jose María Velasco",634
+19.363024,-99.182889,"CE-672 José María Velasco - Damas",492
+19.363153,-99.186963,"CE-673 Miguel Noreña - José María Ibarrarán",496
+19.361846,-99.186814,"CE-674 Silvestre Revueltas - Macedonio Alcalá",631
+19.362526,-99.188958,"CE-675 Manuel Castro Padilla - Av. Revolución",686
+19.358236,-99.188106,"CE-676  Ricardo Palmerín - Abundio Martínez",684
+19.359040,-99.184498,"CE-677  Juan Pablo II - Av. de los Insurgentes Sur",695
+19.358863,-99.182930,"CE-678 Francia - Tecoyotitla",559
+19.354886,-99.184642,"CE-679 Olivo - Tecoyotitla",554
+19.366701,-99.188228,"CE-680  Diego Becerra - Av. Revolución",685
+19.355844,-99.189141,"CE-681 Guty Cárdenas - Ricardo Castro",699
+19.353534,-99.189548,"CE-682 Manuel M. Ponce - Fernando M. Villalpando",698
+19.350383,-99.187223,"CE-683 Pedro Luis Ogazón-Insurgentes Sur",669
+19.351594,-99.184772,"CE-684 Vito Alessio Robles - Tecoyotitla",579
+19.347699,-99.186901,"CE-685 Av De la Paz - Insurgentes",609
+19.352203,-99.178393,"CE-686 Vito Alessio Robles - Universidad",562

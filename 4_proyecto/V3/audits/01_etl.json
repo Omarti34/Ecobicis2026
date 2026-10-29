@@ -1,0 +1,1509 @@
+{
+  "agebs": {
+    "accepted_rows": 2452,
+    "crs_respects_per_feature_declared_epsg6365": true,
+    "input_rows": 2452,
+    "population_missing_rows": 22,
+    "quarantine_rows": 0,
+    "rural_nan_rows": 22,
+    "superseded_duplicates": 0
+  },
+  "auxiliary": {
+    "all_sources_have_disposition": true,
+    "mirrors": [
+      {
+        "archive": "data/raw/gtfs/gtfs.zip",
+        "member": "agency.txt",
+        "path": "data/raw/gtfs/gtfs/agency.txt",
+        "sha256": "eb6d6fe12d9742f6510b2816f523bb0c6abbb9696da49f1cd6ddf1d6fd03e0b8",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/gtfs/gtfs.zip",
+        "member": "calendar.txt",
+        "path": "data/raw/gtfs/gtfs/calendar.txt",
+        "sha256": "77221ae329a7e9f844134cb25a0cb81f9797b62cc8cdb8eca35362e936103e07",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/gtfs/gtfs.zip",
+        "member": "frequencies.txt",
+        "path": "data/raw/gtfs/gtfs/frequencies.txt",
+        "sha256": "b50d15c91199cf01fc906e4a537c9a06c07a7a477633d3bafb6576b2ca38a402",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/gtfs/gtfs.zip",
+        "member": "routes.txt",
+        "path": "data/raw/gtfs/gtfs/routes.txt",
+        "sha256": "cead5d1efb6ebec22224ae074f1211f0652276566f8c31483bbbe1a0440724c6",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/gtfs/gtfs.zip",
+        "member": "shapes.txt",
+        "path": "data/raw/gtfs/gtfs/shapes.txt",
+        "sha256": "a315b8e4adc737ed1a29c36fd500704fae882184329f31d3fa1cd31c9545860a",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/gtfs/gtfs.zip",
+        "member": "stop_times.txt",
+        "path": "data/raw/gtfs/gtfs/stop_times.txt",
+        "sha256": "f121a29ef7a86cedf5738bdf018b8d1d39cdf8e31b13f437d115ad5a70d69ead",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/gtfs/gtfs.zip",
+        "member": "stops.txt",
+        "path": "data/raw/gtfs/gtfs/stops.txt",
+        "sha256": "f1aa8c5b33f1b04bfd40a8d02564c174737a6e8efbadd629602a9d8c838000b6",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/gtfs/gtfs.zip",
+        "member": "trips.txt",
+        "path": "data/raw/gtfs/gtfs/trips.txt",
+        "sha256": "562f809db1cb62a9ecf44ab42999c3b1e0de362de87a289ba8365db2c167c41a",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/inegi_ageb/denue_09_csv.zip",
+        "member": "conjunto_de_datos/denue_inegi_09_.csv",
+        "path": "data/raw/inegi_ageb/denue_09_csv/conjunto_de_datos/denue_inegi_09_.csv",
+        "sha256": "e12fcc6c4d518a169c9445c7f160e9d6fc9ba02fd0a84d853659862cdf2e2f70",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/inegi_ageb/denue_09_csv.zip",
+        "member": "diccionario_de_datos/denue_diccionario_de_datos.csv",
+        "path": "data/raw/inegi_ageb/denue_09_csv/diccionario_de_datos/denue_diccionario_de_datos.csv",
+        "sha256": "53619afc3424522a2bb1587adc34b45b9660728df2d2f49326a4299362f95c0e",
+        "status": "verified_not_double_ingested"
+      },
+      {
+        "archive": "data/raw/inegi_ageb/denue_09_csv.zip",
+        "member": "metadatos/metadatos_denue.txt",
+        "path": "data/raw/inegi_ageb/denue_09_csv/metadatos/metadatos_denue.txt",
+        "sha256": "bf05c821f1562fdbebb8ae1d38e091bb8e5b72d12fb671117fb256b819cc7894",
+        "status": "verified_not_double_ingested"
+      }
+    ],
+    "registered_raw_files": 37,
+    "tables": {
+      "accidentes_viales_2025": {
+        "accepted_rows": 472,
+        "input_rows": 472,
+        "null_counts": {
+          "alcaldía": 0,
+          "calle": 0,
+          "colonia": 0,
+          "cve_mun": 0,
+          "descripcio": 0,
+          "detalles": 0,
+          "entidad": 0,
+          "fallecidos": 0,
+          "fecha": 0,
+          "fecha_parsed": 0,
+          "fenomeno": 0,
+          "fid": 0,
+          "fid_1": 0,
+          "fuente": 0,
+          "geometry": 0,
+          "hora": 0,
+          "id": 0,
+          "latitud": 0,
+          "lesionados": 0,
+          "longitud": 0,
+          "servicio": 0,
+          "unidad": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "censo_2020": {
+        "accepted_rows": 68941,
+        "ageb_view_rows": 2433,
+        "geographic_levels": {
+          "ageb": 2433,
+          "entidad": 1,
+          "localidad": 35,
+          "manzana": 66456,
+          "municipio": 16
+        },
+        "input_rows": 68941,
+        "null_counts": {
+          "AGEB": 0,
+          "ENTIDAD": 0,
+          "GRAPROES": 1672,
+          "GRAPROES_F": 1672,
+          "GRAPROES_M": 1672,
+          "HOGJEF_F": 5743,
+          "HOGJEF_M": 3442,
+          "LOC": 0,
+          "MUN": 0,
+          "MZA": 0,
+          "NOM_ENT": 0,
+          "NOM_LOC": 0,
+          "NOM_MUN": 0,
+          "OCUPVIVPAR": 1673,
+          "P12A14NOA": 14648,
+          "P12A14NOAF": 9864,
+          "P12A14NOAM": 10902,
+          "P12YM_CASA": 2054,
+          "P12YM_SEPA": 5790,
+          "P12YM_SOLT": 2250,
+          "P15A17A": 19447,
+          "P15A17A_F": 25653,
+          "P15A17A_M": 25914,
+          "P15PRI_CO": 12351,
+          "P15PRI_COF": 16862,
+          "P15PRI_COM": 18818,
+          "P15PRI_IN": 18854,
+          "P15PRI_INF": 22586,
+          "P15PRI_INM": 21730,
+          "P15SEC_CO": 6875,
+          "P15SEC_COF": 11506,
+          "P15SEC_COM": 12386,
+          "P15SEC_IN": 21590,
+          "P15SEC_INF": 23716,
+          "P15SEC_INM": 22644,
+          "P15YM_AN": 21714,
+          "P15YM_AN_F": 21904,
+          "P15YM_AN_M": 16886,
+          "P15YM_SE": 21323,
+          "P15YM_SE_F": 22587,
+          "P15YM_SE_M": 19031,
+          "P18A24A": 14571,
+          "P18A24A_F": 22907,
+          "P18A24A_M": 22908,
+          "P18YM_PB": 1959,
+          "P18YM_PB_F": 2881,
+          "P18YM_PB_M": 3080,
+          "P3A5_NOA": 23492,
+          "P3A5_NOA_F": 20191,
+          "P3A5_NOA_M": 20611,
+          "P3HLINHE": 2903,
+          "P3HLINHE_F": 2637,
+          "P3HLINHE_M": 2207,
+          "P3HLI_HE": 18473,
+          "P3HLI_HE_F": 18253,
+          "P3HLI_HE_M": 16985,
+          "P3YM_HLI": 18491,
+          "P3YM_HLI_F": 18285,
+          "P3YM_HLI_M": 17047,
+          "P5_HLI": 18504,
+          "P5_HLI_HE": 18486,
+          "P5_HLI_NHE": 2903,
+          "P6A11_NOA": 15241,
+          "P6A11_NOAF": 11106,
+          "P6A11_NOAM": 11616,
+          "P8A14AN": 10309,
+          "P8A14AN_F": 6699,
+          "P8A14AN_M": 7684,
+          "PAFIL_IPRIV": 14089,
+          "PAFIL_OTRAI": 13135,
+          "PAFIL_PDOM": 11966,
+          "PCATOLICA": 1743,
+          "PCDISC_AUD": 25129,
+          "PCDISC_LENG": 23310,
+          "PCDISC_MEN": 24530,
+          "PCDISC_MOT": 21156,
+          "PCDISC_MOT2": 24804,
+          "PCDISC_VIS": 22118,
+          "PCLIM_CSB": 17054,
+          "PCLIM_HACO": 21692,
+          "PCLIM_MOT2": 21401,
+          "PCLIM_OAUD": 20959,
+          "PCLIM_PMEN": 24877,
+          "PCLIM_RE_CO": 21212,
+          "PCLIM_VIS": 12774,
+          "PCON_DISC": 14700,
+          "PCON_LIMI": 7627,
+          "PDER_IMSS": 2501,
+          "PDER_IMSSB": 6919,
+          "PDER_ISTE": 6623,
+          "PDER_ISTEE": 7395,
+          "PDER_SEGP": 9495,
+          "PDER_SS": 1739,
+          "PDESOCUP": 24250,
+          "PDESOCUP_F": 20338,
+          "PDESOCUP_M": 23908,
+          "PEA": 1712,
+          "PEA_F": 2554,
+          "PEA_M": 2137,
+          "PE_INAC": 2490,
+          "PE_INAC_F": 3564,
+          "PE_INAC_M": 7256,
+          "PHOGJEF_F": 2396,
+          "PHOGJEF_M": 1846,
+          "PHOG_IND": 5488,
+          "PNACENT": 1690,
+          "PNACENT_F": 1909,
+          "PNACENT_M": 1965,
+          "PNACOE": 4824,
+          "PNACOE_F": 8080,
+          "PNACOE_M": 10699,
+          "POB0_14": 4797,
+          "POB15_64": 1697,
+          "POB65_MAS": 7404,
+          "POBFEM": 1718,
+          "POBHOG": 1673,
+          "POBMAS": 1758,
+          "POBTOT": 0,
+          "POB_AFRO": 15257,
+          "POB_AFRO_F": 15217,
+          "POB_AFRO_M": 16104,
+          "POCUPADA": 1727,
+          "POCUPADA_F": 2599,
+          "POCUPADA_M": 2187,
+          "POTRAS_REL": 11016,
+          "PRES2015": 1680,
+          "PRES2015_F": 1750,
+          "PRES2015_M": 1822,
+          "PRESOE15": 16064,
+          "PRESOE15_F": 19447,
+          "PRESOE15_M": 20318,
+          "PROM_HNV": 1735,
+          "PROM_OCUP": 1672,
+          "PRO_CRIEVA": 9675,
+          "PRO_OCUP_C": 1672,
+          "PSINDER": 3603,
+          "PSIND_LIM": 1695,
+          "PSIN_RELIG": 5560,
+          "P_0A2": 21392,
+          "P_0A2_F": 25431,
+          "P_0A2_M": 25372,
+          "P_12A14": 17772,
+          "P_12A14_F": 24371,
+          "P_12A14_M": 24308,
+          "P_12YMAS": 1672,
+          "P_12YMAS_F": 1740,
+          "P_12YMAS_M": 1820,
+          "P_15A17": 17216,
+          "P_15A17_F": 24302,
+          "P_15A17_M": 24130,
+          "P_15A49_F": 2535,
+          "P_15YMAS": 1672,
+          "P_15YMAS_F": 1751,
+          "P_15YMAS_M": 1842,
+          "P_18A24": 7268,
+          "P_18A24_F": 14163,
+          "P_18A24_M": 14214,
+          "P_18YMAS": 1672,
+          "P_18YMAS_F": 1761,
+          "P_18YMAS_M": 1879,
+          "P_3A5": 19314,
+          "P_3A5_F": 25218,
+          "P_3A5_M": 24872,
+          "P_3YMAS": 1672,
+          "P_3YMAS_F": 1727,
+          "P_3YMAS_M": 1772,
+          "P_5YMAS": 1672,
+          "P_5YMAS_F": 1729,
+          "P_5YMAS_M": 1780,
+          "P_60YMAS": 4802,
+          "P_60YMAS_F": 8172,
+          "P_60YMAS_M": 10480,
+          "P_6A11": 11227,
+          "P_6A11_F": 18550,
+          "P_6A11_M": 18212,
+          "P_8A14": 9443,
+          "P_8A14_F": 16325,
+          "P_8A14_M": 16109,
+          "REL_H_M": 1735,
+          "TOTHOG": 1680,
+          "TVIVHAB": 98,
+          "TVIVPAR": 1883,
+          "TVIVPARHAB": 1778,
+          "VIVPARH_CV": 1809,
+          "VIVPAR_DES": 23658,
+          "VIVPAR_HAB": 1933,
+          "VIVPAR_UT": 17980,
+          "VIVTOT": 0,
+          "VPH_1CUART": 16090,
+          "VPH_1DOR": 12156,
+          "VPH_2CUART": 15112,
+          "VPH_2YMASD": 2557,
+          "VPH_3YMASC": 2176,
+          "VPH_AEASP": 2082,
+          "VPH_AGUADV": 1837,
+          "VPH_AGUAFV": 4324,
+          "VPH_AUTOM": 5588,
+          "VPH_BICI": 15465,
+          "VPH_CEL": 1932,
+          "VPH_CISTER": 6713,
+          "VPH_CVJ": 13359,
+          "VPH_C_ELEC": 1725,
+          "VPH_C_SERV": 1849,
+          "VPH_DRENAJ": 1729,
+          "VPH_DSADMA": 1741,
+          "VPH_EXCSA": 1745,
+          "VPH_HMICRO": 3382,
+          "VPH_INTER": 2796,
+          "VPH_LAVAD": 2255,
+          "VPH_LETR": 3551,
+          "VPH_MOTO": 24250,
+          "VPH_NDACMM": 5749,
+          "VPH_NDEAED": 1853,
+          "VPH_NODREN": 3812,
+          "VPH_PC": 4224,
+          "VPH_PISODT": 1750,
+          "VPH_PISOTI": 9075,
+          "VPH_RADIO": 2313,
+          "VPH_REFRI": 1877,
+          "VPH_SINCINT": 14726,
+          "VPH_SINLTC": 21103,
+          "VPH_SINRTV": 19622,
+          "VPH_SINTIC": 8888,
+          "VPH_SNBIEN": 6751,
+          "VPH_SPMVPI": 9588,
+          "VPH_STVP": 5881,
+          "VPH_S_ELEC": 3567,
+          "VPH_TELEF": 2907,
+          "VPH_TINACO": 3295,
+          "VPH_TV": 1799,
+          "cvegeo": 0,
+          "has_suppressed_values": 0,
+          "nivel_geografico": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_capa_00": {
+        "accepted_rows": 98,
+        "input_rows": 98,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_CONEC": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 21,
+          "a_termino_year": 0,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_capa_01": {
+        "accepted_rows": 42,
+        "input_rows": 42,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_CONEC": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 21,
+          "a_termino_year": 0,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_capa_02": {
+        "accepted_rows": 100,
+        "input_rows": 100,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_CONEC": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 67,
+          "a_termino_year": 0,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_capa_03": {
+        "accepted_rows": 61,
+        "input_rows": 61,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_CONEC": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 46,
+          "a_termino_year": 0,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_capa_04": {
+        "accepted_rows": 231,
+        "input_rows": 231,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_CONEC": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 112,
+          "a_termino_year": 0,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_capa_05": {
+        "accepted_rows": 34,
+        "input_rows": 34,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_CONEC": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 34,
+          "a_termino_year": 0,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_capa_06": {
+        "accepted_rows": 651,
+        "input_rows": 651,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_CONEC": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 369,
+          "a_termino_year": 60,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_capa_07": {
+        "accepted_rows": 85,
+        "input_rows": 85,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_CONEC": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 68,
+          "a_termino_year": 60,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "ciclovias_geojson": {
+        "accepted_rows": 80,
+        "input_rows": 80,
+        "null_counts": {
+          "ALCALDIA": 0,
+          "A_INICIO": 0,
+          "A_TERMINO": 0,
+          "EJECUTOR": 0,
+          "ESTADO": 0,
+          "ID_PROY": 0,
+          "ID_TRAMO": 0,
+          "LONG_KM": 0,
+          "NOMBRE": 0,
+          "TIPO_IC": 0,
+          "TIPO_VIA": 0,
+          "VIALIDAD": 0,
+          "a_inicio_year": 64,
+          "a_termino_year": 61,
+          "geometry": 0,
+          "is_outlier_high": 0,
+          "is_reported_operational": 0,
+          "length_km": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "denue": {
+        "accepted_rows": 462732,
+        "input_rows": 462732,
+        "null_counts": {
+          "ageb": 0,
+          "ageb_key_unmatched": 0,
+          "clee": 0,
+          "cod_postal": 87,
+          "codigo_act": 0,
+          "coordinates_zero_pair": 0,
+          "correoelec": 357981,
+          "cve_ent": 0,
+          "cve_loc": 0,
+          "cve_mun": 0,
+          "cvegeo": 0,
+          "edificio": 451334,
+          "edificio_e": 360607,
+          "employment_band_unknown": 0,
+          "entidad": 0,
+          "fecha_alta": 0,
+          "fecha_alta_parsed": 36,
+          "has_valid_coordinates": 0,
+          "id": 0,
+          "latitud": 0,
+          "letra_ext": 283098,
+          "letra_int": 426271,
+          "localidad": 0,
+          "longitud": 0,
+          "manzana": 0,
+          "municipio": 0,
+          "nom_CenCom": 360071,
+          "nom_estab": 212,
+          "nom_v_e_1": 342,
+          "nom_v_e_2": 342,
+          "nom_v_e_3": 524,
+          "nom_vial": 7,
+          "nomb_asent": 6,
+          "nombre_act": 0,
+          "num_local": 360203,
+          "numero_ext": 97849,
+          "numero_int": 403679,
+          "per_ocu": 0,
+          "raz_social": 343032,
+          "registered_after_study_year": 0,
+          "registration_date_invalid": 0,
+          "snapshot_outside_study_year": 0,
+          "snapshot_year": 0,
+          "telefono": 298162,
+          "tipoCenCom": 360286,
+          "tipoUniEco": 0,
+          "tipo_asent": 15,
+          "tipo_v_e_1": 68,
+          "tipo_v_e_2": 72,
+          "tipo_v_e_3": 72,
+          "tipo_vial": 13,
+          "www": 413696
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "diccionario_censo": {
+        "accepted_rows": 230,
+        "input_rows": 230,
+        "null_counts": {
+          "Descripción": 0,
+          "Indicador": 0,
+          "Longitud": 0,
+          "Mnemónico": 0,
+          "Núm.": 0,
+          "Rangos": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "diccionario_denue": {
+        "accepted_rows": 42,
+        "input_rows": 42,
+        "null_counts": {
+          "Descripción": 0,
+          "Longitud": 0,
+          "Nombre del Atributo en DBF": 0,
+          "Nombre del Atributo en csv": 0,
+          "Tipo de dato": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "documentacion_fuentes": {
+        "not_an_observation_table": true,
+        "resource_records": 4
+      },
+      "gtfs_agency": {
+        "accepted_rows": 10,
+        "input_rows": 10,
+        "null_counts": {
+          "agency_id": 0,
+          "agency_lang": 0,
+          "agency_name": 0,
+          "agency_timezone": 0,
+          "agency_url": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "gtfs_calendar": {
+        "accepted_rows": 13,
+        "input_rows": 13,
+        "null_counts": {
+          "end_date": 0,
+          "end_date_parsed": 0,
+          "friday": 0,
+          "has_2025_service": 0,
+          "monday": 0,
+          "saturday": 0,
+          "service_id": 0,
+          "start_date": 0,
+          "start_date_parsed": 0,
+          "sunday": 0,
+          "thursday": 0,
+          "tuesday": 0,
+          "wednesday": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "gtfs_frequencies": {
+        "accepted_rows": 1583,
+        "input_rows": 1584,
+        "null_counts": {
+          "end_time": 0,
+          "end_time_seconds": 0,
+          "exact_times": 0,
+          "headway_secs": 0,
+          "start_time": 0,
+          "start_time_seconds": 0,
+          "trip_id": 0
+        },
+        "quarantine_rows": 1,
+        "reason_occurrences": {
+          "unknown_trip": 1
+        },
+        "superseded_duplicates": 0
+      },
+      "gtfs_routes": {
+        "accepted_rows": 300,
+        "input_rows": 301,
+        "null_counts": {
+          "agency_id": 0,
+          "route_color": 2,
+          "route_id": 0,
+          "route_long_name": 0,
+          "route_short_name": 0,
+          "route_text_color": 12,
+          "route_type": 0
+        },
+        "quarantine_rows": 1,
+        "reason_occurrences": {
+          "unknown_agency": 1
+        },
+        "superseded_duplicates": 0
+      },
+      "gtfs_shapes": {
+        "accepted_rows": 127135,
+        "input_rows": 127135,
+        "null_counts": {
+          "coordinates_zero_pair": 0,
+          "has_valid_coordinates": 0,
+          "shape_dist_traveled": 54427,
+          "shape_id": 0,
+          "shape_pt_lat": 0,
+          "shape_pt_lon": 0,
+          "shape_pt_sequence": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "gtfs_stop_times": {
+        "accepted_rows": 42789,
+        "input_rows": 42789,
+        "null_counts": {
+          "arrival_time": 0,
+          "arrival_time_seconds": 0,
+          "departure_time": 0,
+          "departure_time_seconds": 0,
+          "stop_id": 0,
+          "stop_sequence": 0,
+          "timepoint": 0,
+          "trip_id": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "gtfs_stops": {
+        "accepted_rows": 11362,
+        "input_rows": 11362,
+        "null_counts": {
+          "coordinates_zero_pair": 0,
+          "has_valid_coordinates": 0,
+          "location_type": 0,
+          "stop_id": 0,
+          "stop_lat": 0,
+          "stop_lon": 0,
+          "stop_name": 0,
+          "wheelchair_boarding": 0,
+          "zone_id": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      },
+      "gtfs_trips": {
+        "accepted_rows": 1204,
+        "input_rows": 1205,
+        "null_counts": {
+          "direction_id": 0,
+          "route_id": 0,
+          "service_id": 0,
+          "shape_id": 0,
+          "trip_headsign": 0,
+          "trip_id": 0,
+          "trip_short_name": 0
+        },
+        "quarantine_rows": 1,
+        "reason_occurrences": {
+          "unknown_route": 1
+        },
+        "superseded_duplicates": 0
+      },
+      "incidentes_c5_2025": {
+        "accepted_rows": 0,
+        "input_rows": 2115080,
+        "null_counts": {
+          "alcaldia_catalogo": 0,
+          "alcaldia_cierre": 0,
+          "alcaldia_inicio": 0,
+          "clas_con_f_alarma": 0,
+          "codigo_cierre": 0,
+          "colonia_catalogo": 0,
+          "coordinates_zero_pair": 0,
+          "dia_semana": 0,
+          "fecha_cierre": 0,
+          "fecha_cierre_parsed": 0,
+          "fecha_creacion": 0,
+          "fecha_creacion_parsed": 0,
+          "folio": 0,
+          "has_valid_coordinates": 0,
+          "hora_cierre": 0,
+          "hora_creacion": 0,
+          "incidente_c4": 0,
+          "invalid_closing_date": 0,
+          "latitud": 0,
+          "longitud": 0,
+          "tipo_entrada": 0,
+          "tipo_incidente_c4": 0,
+          "ts_creacion": 0,
+          "valid_creation_time": 0
+        },
+        "quarantine_rows": 2115080,
+        "reason_occurrences": {
+          "outside_study_year": 2115080,
+          "superseded_duplicate": 12
+        },
+        "superseded_duplicates": 12
+      },
+      "ssc_victimas_2025": {
+        "accepted_rows": 29706,
+        "input_rows": 29706,
+        "null_counts": {
+          "category": 0,
+          "coordinates_zero_pair": 0,
+          "has_valid_coordinates": 0,
+          "is_possible_repeat": 0,
+          "label": 0,
+          "lat": 0,
+          "lon": 0,
+          "ts_evento": 0
+        },
+        "quarantine_rows": 0,
+        "reason_occurrences": {},
+        "superseded_duplicates": 0
+      }
+    }
+  },
+  "auxiliary_disposition": "normalized_datasets_documents_and_verified_mirrors",
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "endpoint_weights": {
+    "known_arribos_weight": 20134000.0,
+    "known_retiros_weight": 20134302.0,
+    "unknown_arribos_weight": 527.0,
+    "unknown_retiros_weight": 66.0
+  },
+  "generation_directories": [
+    "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+    "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93"
+  ],
+  "integer_counts_nullable_Int64": true,
+  "iqr": {
+    "outlier_high_rows": 36,
+    "q1": 43.721917808219175,
+    "q3": 101.03698630136986,
+    "upper_fence": 187.0095890410959
+  },
+  "no_silent_deletions": true,
+  "outputs": [
+    {
+      "bytes": 173686,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/accidentes_viales_2025.parquet",
+      "sha256": "ff1f4078cf4b1f8f55a80dc9330ee434dcea97b05a35efaa47c1c766368e1b1d"
+    },
+    {
+      "bytes": 139026,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/actividad_estaciones.parquet",
+      "sha256": "c2918a5f2b935c586476d33bf41cb7a0322e43cc419e00f864165441dd3e6e17"
+    },
+    {
+      "bytes": 3370211,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/agebs.parquet",
+      "sha256": "330b35759a62175cb176e617fce2643b201e83c912bb72b0e5d29cf10c2671fc"
+    },
+    {
+      "bytes": 9231,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/auditoria_viajes.parquet",
+      "sha256": "e09eb2ff989098c736bfaf7b5a05da3cb2a2597a1fbe2a94304883e2a3d08b73"
+    },
+    {
+      "bytes": 49123734,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/censo_2020.parquet",
+      "sha256": "57b34c4f1cd009a854e74daa16e5a48abb16c9b922b8bda1eb88b0dd4c87720d"
+    },
+    {
+      "bytes": 3019354,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/censo_ageb_2020.parquet",
+      "sha256": "466080516453676ef3236fa6f9503b17b3f9624e5bb75adfd90443bbec467312"
+    },
+    {
+      "bytes": 88777,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_00.parquet",
+      "sha256": "f8e87f734689ed7f533efd4389973f3d502c288473ac22de048294704fc29a67"
+    },
+    {
+      "bytes": 47675,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_01.parquet",
+      "sha256": "3e851fd2dd1f809ffba818ebc8ee49d5bd26fcbad0fc6d8b56fdfd1d7b444784"
+    },
+    {
+      "bytes": 66103,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_02.parquet",
+      "sha256": "56dc69fd11303572b739789c588327a2662bbcdfdc3b0aba0ea0041b50816c40"
+    },
+    {
+      "bytes": 150370,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_03.parquet",
+      "sha256": "af69ca72e874271d43519563ff1309074a93a7ef34d096cb9c1412241e1a6da8"
+    },
+    {
+      "bytes": 177129,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_04.parquet",
+      "sha256": "35df0befd2bb60e0593fbcf73a42b39c48d7fdac067c20e813046b3cfbb4cced"
+    },
+    {
+      "bytes": 65372,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_05.parquet",
+      "sha256": "303de1876a219d12f1ccd1bee09c34680168ba74dfd4420115c6ab2e43dbcb12"
+    },
+    {
+      "bytes": 481504,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_06.parquet",
+      "sha256": "2847246b5fd4e63e389d2250ae23e65a5683b0d1766ced55a5e1313a9272a150"
+    },
+    {
+      "bytes": 95627,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_07.parquet",
+      "sha256": "40738c17eae149a709becdd5471f299de1f7f07747f6c9a75116e1da4ae36cf2"
+    },
+    {
+      "bytes": 4644,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capas.parquet",
+      "sha256": "dc9f79faad7aad7391a81d70bacc2bad31044e3ce0ee504fca0d8b2ff139f087"
+    },
+    {
+      "bytes": 142035,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_geojson.parquet",
+      "sha256": "c1e64d650952f81aad6c39aef335f2d2769f8cabce0c15cce7814577c5d0f0b4"
+    },
+    {
+      "bytes": 120385228,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/denue.parquet",
+      "sha256": "e24128bd510cb1c2ac20192b582328062af5cb0dcef72293466ae8634764e91e"
+    },
+    {
+      "bytes": 38268,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/diccionario_censo.parquet",
+      "sha256": "07077e4f0e062623d191ef8507973f921cc843149d8ac61d3158f86cf2e76394"
+    },
+    {
+      "bytes": 19918,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/diccionario_denue.parquet",
+      "sha256": "a261adc020c6aa5b682b7668ba9926b0c5f841464dd0921caa422f509cc08a35"
+    },
+    {
+      "bytes": 10515,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/documentacion_fuentes.parquet",
+      "sha256": "d87c747b5afcf130bc791836bc05e9d181272934cf1cf3b02ac9e54aa3397757"
+    },
+    {
+      "bytes": 123929,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/estaciones.parquet",
+      "sha256": "545db7cf6afb1675422fee0169f34009cbde2b25ab6bbf21fd9f9be9a29f8f85"
+    },
+    {
+      "bytes": 10703,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_agency.parquet",
+      "sha256": "3489189f1fe81c62e28fb53b4c88be8f48c86a15e7a13d50d5bacb02b94c906c"
+    },
+    {
+      "bytes": 14935,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_calendar.parquet",
+      "sha256": "bf5d490cdffd23dd7fa425dc466d8bd573b92df2a198cb63b2bb7d83424061ae"
+    },
+    {
+      "bytes": 99372,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_frequencies.parquet",
+      "sha256": "05223913639b8fc3347c9c56fe7a461f0161dcad381329a29d757c85c871cb38"
+    },
+    {
+      "bytes": 37938,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_routes.parquet",
+      "sha256": "b1431debaa799c5bf05e094074b084e31c8ce392e911707f0d6fe44555ca64ee"
+    },
+    {
+      "bytes": 8704089,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_shapes.parquet",
+      "sha256": "5b0b5bb68911a669edac3726037082ffc9e49e99869eeb7c8d4077dc3c7566e3"
+    },
+    {
+      "bytes": 2797733,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stop_times.parquet",
+      "sha256": "13aa124a57c7cb9ccba262ba454010b46b5de9552ba30c7b1ddb88bebfe6ece1"
+    },
+    {
+      "bytes": 1363212,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stops.parquet",
+      "sha256": "79c7d1a3e1f535b1dccbffa2c7db5c340be537a6c7da27a3e7b0f776724cfd3c"
+    },
+    {
+      "bytes": 111698,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_trips.parquet",
+      "sha256": "04af0a98b63de0236191a98fd2440ed4ad920b1352070875e7161efc57da4fa9"
+    },
+    {
+      "bytes": 67846,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/incidentes_c5_2025.parquet",
+      "sha256": "fb478b4355b941396fc1fe8a32e7a099215aef3fbf81122ba8d387f5949e4e9c"
+    },
+    {
+      "bytes": 6259,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/raw_mirrors.parquet",
+      "sha256": "34647079d0000b7675b8637d76019799fb899e5e6a51e15e5ffaddfdf4784a6c"
+    },
+    {
+      "bytes": 6464,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/source_disposition.parquet",
+      "sha256": "896763d4dcee5325a2419c475d846ead2523cb070020ed946a2939a8379af103"
+    },
+    {
+      "bytes": 3395,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ssc_capas.parquet",
+      "sha256": "6a55aba6ecaf565cc9c9a432939945d514daabfb4eede40e205e8fe57d9d7a2a"
+    },
+    {
+      "bytes": 2400610,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ssc_victimas_2025.parquet",
+      "sha256": "ee8e8563fe4b96691e746077db06a3164ec23f59e84c53f1bac28fc0438c78c9"
+    },
+    {
+      "bytes": 6101,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/station_aliases.parquet",
+      "sha256": "eeae78e926481bf003fcb67e6e4e6df374c4cd575b8da050a5f98b0dd45eaed1"
+    },
+    {
+      "bytes": 36021816,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-01.parquet",
+      "sha256": "75d43c8703bb5c3cb7b77141fc4a2da3a9bd944dda11ad062c92a44484caa320"
+    },
+    {
+      "bytes": 34604673,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-02.parquet",
+      "sha256": "d26587971b70033bd1aed2e197cd1e5f14b8d47c18ba99adf6c2874a0ec3f7cd"
+    },
+    {
+      "bytes": 36397268,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-03.parquet",
+      "sha256": "03ddfcc3ae41bf2b74e00dce2631d7e3bfca37687c5a44aad57c99188a626c2d"
+    },
+    {
+      "bytes": 34506116,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-04.parquet",
+      "sha256": "beb3574d982df7fea298a5648f2aa54bc8383944406dc831d06d8a44c64c03b7"
+    },
+    {
+      "bytes": 35557919,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-05.parquet",
+      "sha256": "e04c0b1d3ba9307196badde0c8abf9e824301ac0e7067ffc15595be1a9ab750e"
+    },
+    {
+      "bytes": 31881511,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-06.parquet",
+      "sha256": "ac2096dc97738b6f584fdf3d017c42dccbc92c83460886516a3d7bb00dbc4bc2"
+    },
+    {
+      "bytes": 33687642,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-07.parquet",
+      "sha256": "ec26b4c5051e1cf9b0b9b86c4f86aba29e95ee54b86b455922670d67a43cfa17"
+    },
+    {
+      "bytes": 32658946,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-08.parquet",
+      "sha256": "2ad54afb17535d0e99d0b0bb41371e696bc64d6675c0693f92a7030da443daed"
+    },
+    {
+      "bytes": 32029504,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-09.parquet",
+      "sha256": "27872b184e24e386bf17ad2fe2cbbbc1974aba39fdddf6a89cf4d5e9e275ccdb"
+    },
+    {
+      "bytes": 35229416,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-10.parquet",
+      "sha256": "b7f5aed22b79e19790cf07d49999060ad33e5fa7dead758ab7694b432b34fe90"
+    },
+    {
+      "bytes": 32341717,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-11.parquet",
+      "sha256": "ac85dc0cc4ffa2749d3421c9285b9ec8af17b8132c1b941105d798fbfa6a6048"
+    },
+    {
+      "bytes": 29588708,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-12.parquet",
+      "sha256": "9a28a8d59c99878e088c6e6f311a7b330950764f06c8153d441aee9e45bd38f0"
+    },
+    {
+      "bytes": 14906,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/accidentes_viales_2025.parquet",
+      "sha256": "8b6abf6d5e19a5a67d4c9786c83052a2dc9cfdbb175f7f430674a7741ef0f1be"
+    },
+    {
+      "bytes": 11171,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/agebs.parquet",
+      "sha256": "27c4f4f5dfe7f352bee833b1777c3f94c956ab087836784a841422872b9a2eb9"
+    },
+    {
+      "bytes": 145922,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/censo_2020.parquet",
+      "sha256": "76f81fedce6b92b0a21753160cd0be1984cac66b0cd6c3a976bfb6516d36c1f4"
+    },
+    {
+      "bytes": 13363,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_00.parquet",
+      "sha256": "9efbf85e9bb8434a698f3d7b821d6e6b74bc8370d297183a50cda9569515d4ff"
+    },
+    {
+      "bytes": 13363,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_01.parquet",
+      "sha256": "9efbf85e9bb8434a698f3d7b821d6e6b74bc8370d297183a50cda9569515d4ff"
+    },
+    {
+      "bytes": 13363,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_02.parquet",
+      "sha256": "9efbf85e9bb8434a698f3d7b821d6e6b74bc8370d297183a50cda9569515d4ff"
+    },
+    {
+      "bytes": 13363,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_03.parquet",
+      "sha256": "9efbf85e9bb8434a698f3d7b821d6e6b74bc8370d297183a50cda9569515d4ff"
+    },
+    {
+      "bytes": 13363,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_04.parquet",
+      "sha256": "9efbf85e9bb8434a698f3d7b821d6e6b74bc8370d297183a50cda9569515d4ff"
+    },
+    {
+      "bytes": 13363,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_05.parquet",
+      "sha256": "9efbf85e9bb8434a698f3d7b821d6e6b74bc8370d297183a50cda9569515d4ff"
+    },
+    {
+      "bytes": 13363,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_06.parquet",
+      "sha256": "9efbf85e9bb8434a698f3d7b821d6e6b74bc8370d297183a50cda9569515d4ff"
+    },
+    {
+      "bytes": 13363,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_07.parquet",
+      "sha256": "9efbf85e9bb8434a698f3d7b821d6e6b74bc8370d297183a50cda9569515d4ff"
+    },
+    {
+      "bytes": 13415,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_geojson.parquet",
+      "sha256": "e5a3b4fc02f7e42e01241dd980a82f21fd066b34c42cffa29fb1eb1811489dbd"
+    },
+    {
+      "bytes": 45035,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/denue.parquet",
+      "sha256": "bdd85e3e710479e8212d90855524c5b236b7b663ebe88abd0dc859bf37710f86"
+    },
+    {
+      "bytes": 6697,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/diccionario_censo.parquet",
+      "sha256": "4dec4a23bff14aab3d1f3e8b0a00875cbe9a18e5b0bf31179892902344067a6a"
+    },
+    {
+      "bytes": 6570,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/diccionario_denue.parquet",
+      "sha256": "fa4661212880bbe5ad0dd784fd17bfd3bbc99fab17faa192131a2da6b7fd71b6"
+    },
+    {
+      "bytes": 10592,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/estaciones.parquet",
+      "sha256": "0aacce672d080541a93f5055fb1983e2f950046acf59538aa73c13df3b9e989a"
+    },
+    {
+      "bytes": 18511,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-01.parquet",
+      "sha256": "f77566ad169d13c27c8a65f2f7a694f46160081f7b4095cbffb220c067e8b166"
+    },
+    {
+      "bytes": 15270,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-02.parquet",
+      "sha256": "f672b059a41938015461d2a4303512e246c2d53852f78a1f90ee263bf5744da3"
+    },
+    {
+      "bytes": 18533,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-03.parquet",
+      "sha256": "d30b9b9987b2e10ff741481bce226effeee40c09506a6fd57f656572857320ff"
+    },
+    {
+      "bytes": 17039,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-04.parquet",
+      "sha256": "7072e1b3bd2308eb01001316951d184fd586a51b69bb5aefb147d2081e7b37e5"
+    },
+    {
+      "bytes": 18626,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-05.parquet",
+      "sha256": "6e3f8aaebed1e4e9745e4d806852fe4a5ec7ca8b8fbb6dfef5ce2da4ac8cf5df"
+    },
+    {
+      "bytes": 17069,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-06.parquet",
+      "sha256": "e67958395997ffb58b46af7e733f181adb879f47cbc8247f36189502a15b1ccd"
+    },
+    {
+      "bytes": 17092,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-07.parquet",
+      "sha256": "ecfbc655e5aeef0ed35442dc3f289569eb6e78409dfd7c5da51a746a2c7cf3ce"
+    },
+    {
+      "bytes": 16827,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-08.parquet",
+      "sha256": "e09e117266e285cabda7fecbf623ab2c4ec54706a968dbc857b8f4755fc83341"
+    },
+    {
+      "bytes": 16787,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-09.parquet",
+      "sha256": "2d43acb0308feb964666461ea8b54d8080d4c231747a1ea358ea8d4cb59d8e10"
+    },
+    {
+      "bytes": 17454,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-10.parquet",
+      "sha256": "25547eaf7f1ba0d7d12fd983e1c259e4765a97077c618d9839917ffe640e0bee"
+    },
+    {
+      "bytes": 17336,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-11.parquet",
+      "sha256": "b1905464e2d08a906263ce67b94a7c2b5f4df01bc8a4117d11feec5e8450ec1e"
+    },
+    {
+      "bytes": 15240,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/eventos_sin_catalogo_2025-12.parquet",
+      "sha256": "09d02754c3f301c2769f14f47be65d738ed4e004d2896d416baa5b7fef988a6f"
+    },
+    {
+      "bytes": 6761,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_agency.parquet",
+      "sha256": "47cbf6ad7c0446cd209b12bcb5e0936271192051c604ec67b7ba07079723cd26"
+    },
+    {
+      "bytes": 10207,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_calendar.parquet",
+      "sha256": "a52b6ef0f69e7d41b578580a5a49c4a516ca1a965df6e0cbb14131c9bd03cca0"
+    },
+    {
+      "bytes": 10579,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_frequencies.parquet",
+      "sha256": "9a313a215396460ee8137699672708083945eeb2d6ed7fee67e9ee168cd7406f"
+    },
+    {
+      "bytes": 10749,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_routes.parquet",
+      "sha256": "7a7e307197d113c11342faf53a25eed5115112e664c8753a1663ac785b110ec0"
+    },
+    {
+      "bytes": 7838,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_shapes.parquet",
+      "sha256": "3be2357d805997d34e7ccfb7057bcfff69c232cf97e88c07acd47c3781c707e4"
+    },
+    {
+      "bytes": 8221,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stop_times.parquet",
+      "sha256": "66cf9bac308b23ea900523122531b762f4e45321039f20be776ffe6a1236e646"
+    },
+    {
+      "bytes": 8580,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stops.parquet",
+      "sha256": "3fd995c8fc1761952123f2c32414dc1d7113c6fcba684efd5d3ae581395a0b39"
+    },
+    {
+      "bytes": 10403,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_trips.parquet",
+      "sha256": "4f2968870be42fcfe85b11ec3f108d18677910600b7f4fa16761bee969b09376"
+    },
+    {
+      "bytes": 239623623,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/incidentes_c5_2025.parquet",
+      "sha256": "cf5e1996b42b0696b22950015981d59176c9ab5bbc674bc38c5ac16661c800ad"
+    },
+    {
+      "bytes": 7687,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ssc_victimas_2025.parquet",
+      "sha256": "24cadb96104c1a9e4b8449a0b36ca7281fe397bbf81d1a8d6c47bfddf392746a"
+    },
+    {
+      "bytes": 50907,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-01.parquet",
+      "sha256": "4d3ecc83d41cb0945d4f5083175cc7f7051edbb83bf123eefb8f38231391e75f"
+    },
+    {
+      "bytes": 37541,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-02.parquet",
+      "sha256": "b5870e02cfe8add45c0f6d0c4a471ff6c77837888fb9922cfbe4147e09414790"
+    },
+    {
+      "bytes": 45974,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-03.parquet",
+      "sha256": "380e9449162d5ceb27285bb96acc65378d9791bc5e14a50ca994174c3b69f4f4"
+    },
+    {
+      "bytes": 76637,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-04.parquet",
+      "sha256": "db7d0f2220c6f39ef506293c8795cd01d07c5b88ffeda30fdeb8b100290687dc"
+    },
+    {
+      "bytes": 46808,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-05.parquet",
+      "sha256": "3af5758fbe6858b5410129153065ff69a9eeccc4a1d586ed518184f12beb4217"
+    },
+    {
+      "bytes": 42965,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-06.parquet",
+      "sha256": "bba00e62a4c73226f8820f12590077f7dcbfebc0b48b6870c575b120fa369505"
+    },
+    {
+      "bytes": 42975,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-07.parquet",
+      "sha256": "dec379e89ac728c6dc79f6c4dcdfbd095d7cebddb506d4a08a01c0a9e0790f9e"
+    },
+    {
+      "bytes": 41502,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-08.parquet",
+      "sha256": "5931f1a3f99ec65cdca602868548560f8050d67e4cd1f0ee9a430a1aca05e48a"
+    },
+    {
+      "bytes": 41483,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-09.parquet",
+      "sha256": "87d12849c9684187aa4d1b1ca4daa6fb04ba5e188b62943d37b9ef0a274ffd84"
+    },
+    {
+      "bytes": 44045,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-10.parquet",
+      "sha256": "eb6e409a5ee34fcb0f977ad35e8ce3674cfe955ef3da831369fcbaa4e05ae8b8"
+    },
+    {
+      "bytes": 44088,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-11.parquet",
+      "sha256": "d03dc453a0a9176810000b59bd7cd45af28a9ff03f4decf2e991ce31ac0abdda"
+    },
+    {
+      "bytes": 38100,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-12.parquet",
+      "sha256": "92186fc1b65482b17df150bbf574e91045fd4a74b086ac533534c2eb545fef47"
+    }
+  ],
+  "policy": {
+    "activity_cohort": "each valid 2025 endpoint independently; compound IDs share unit weight",
+    "ageb_default_declared_crs": "EPSG:6365",
+    "auxiliary_sources": "all registered datasets normalized; documents catalogued; mirrors verified once",
+    "calendar_days": 365,
+    "census": "all geographic levels retained; AGEB totals are a separate non-additive view",
+    "cycling": "layers stay separate; total layer not concatenated with component layers",
+    "daily_activity": "(withdrawal_weight + arrival_weight) / (2 * 365)",
+    "dedup": "latest_valid_update_then_sha256_then_source_file_then_row",
+    "denue": "snapshot 2026 retained and flagged; registration date is not an update timestamp",
+    "gtfs": "optional nulls and times beyond24h allowed; foreign keys checked; service-year flag",
+    "ignored_os_metadata": [
+      ".DS_Store"
+    ],
+    "incidents": "2025 analytical cohort; historical/out-of-domain rows retained in quarantine",
+    "metric_crs": "EPSG:32614",
+    "missing_values": "preserve legitimate nulls and suppression; never blanket fill/drop",
+    "negative_trip_duration": "flag_only; no silent removal",
+    "outlier_iqr_multiplier": 1.5,
+    "processed_at": "UTC epoch pinned when the immutable manifest is created",
+    "ssc": "victim records retained; repeated labels flagged, not inferred to be duplicated events",
+    "station_identity": "GBFS physical record; first short_name component is primary; all components are explicit aliases",
+    "trip_chunksize": 250000,
+    "trip_cohort": "both endpoints valid 2025, known station identifiers, nullable integer age",
+    "version": "v3-etl-3",
+    "year": 2025
+  },
+  "processed_at": "2026-10-11T23:49:59+00:00",
+  "publication": "audit01_is_commit_marker; readers_must_verify_it",
+  "raw_unchanged": true,
+  "source_hashes": {
+    "data/raw/ecobici_stations/station_information.json": "8b4eaa98653beea3d51dc3d894ea8d5ee749923daee40d2e4a0256d2680bb925",
+    "data/raw/ecobici_trips/2025-01.csv": "6b23c3d000856dabb72802eeb6cc84fdbbe0e5d104601950d690d9d1f21ef315",
+    "data/raw/ecobici_trips/2025-02.csv": "f61d8be8138e1f6f922335b807626db6649d7936bc859ad22a889f2f1401bd87",
+    "data/raw/ecobici_trips/2025-03.csv": "a7cd8385505b596f895976bfb42d78dc4204c1b620255972556a709b925ac9b5",
+    "data/raw/ecobici_trips/2025-04.csv": "d4cb45a4280c486ce905bfa932b9562731356cb979112e7708d27ffac9a4fb66",
+    "data/raw/ecobici_trips/2025-05.csv": "943aa9677b9440abd1a83fce52946c5909c6699f82e2870ed4bafcf2c051cdcd",
+    "data/raw/ecobici_trips/2025-06.csv": "e1f6f5f07436aa03668811f1f7e0d00aeeff411eeafbb6cba3154c838e79841e",
+    "data/raw/ecobici_trips/2025-07.csv": "0a8bf13ce0b0bf1ba395435a07178bf7ac4381773bd63bbd324bd7d82928d419",
+    "data/raw/ecobici_trips/2025-08.csv": "9be378627a1b4244a98d357c4d9c7a74570566b5598449b2e86b1cff74d5e72d",
+    "data/raw/ecobici_trips/2025-09.csv": "ea5bafb251c93265a759fc2ce3d43b136d4fa75938af528c81b89a72ba5183c2",
+    "data/raw/ecobici_trips/2025-10.csv": "1db4f8159d7ff26389cf97a744ecf364298d6c1eae1d6d3770082a2e83440b3b",
+    "data/raw/ecobici_trips/2025-11.csv": "c3b43f4ce217e89a0d1fa5acd1e0d8ab0f9fdd6b569c27765271e406aef61d4b",
+    "data/raw/ecobici_trips/2025-12.csv": "eac7663a00bd05f7fd5b5c3d624039707d4fe25ac58bb0ab5deb8ca1c26e7162",
+    "data/raw/gtfs/gtfs.zip": "a2ecd0fbdf56e787b8eee3a6a3719043667b022a849f7f510812054677225384",
+    "data/raw/gtfs/gtfs/agency.txt": "eb6d6fe12d9742f6510b2816f523bb0c6abbb9696da49f1cd6ddf1d6fd03e0b8",
+    "data/raw/gtfs/gtfs/calendar.txt": "77221ae329a7e9f844134cb25a0cb81f9797b62cc8cdb8eca35362e936103e07",
+    "data/raw/gtfs/gtfs/frequencies.txt": "b50d15c91199cf01fc906e4a537c9a06c07a7a477633d3bafb6576b2ca38a402",
+    "data/raw/gtfs/gtfs/routes.txt": "cead5d1efb6ebec22224ae074f1211f0652276566f8c31483bbbe1a0440724c6",
+    "data/raw/gtfs/gtfs/shapes.txt": "a315b8e4adc737ed1a29c36fd500704fae882184329f31d3fa1cd31c9545860a",
+    "data/raw/gtfs/gtfs/stop_times.txt": "f121a29ef7a86cedf5738bdf018b8d1d39cdf8e31b13f437d115ad5a70d69ead",
+    "data/raw/gtfs/gtfs/stops.txt": "f1aa8c5b33f1b04bfd40a8d02564c174737a6e8efbadd629602a9d8c838000b6",
+    "data/raw/gtfs/gtfs/trips.txt": "562f809db1cb62a9ecf44ab42999c3b1e0de362de87a289ba8365db2c167c41a",
+    "data/raw/inegi_ageb/ageb_mza_urbana_09_cpv2020_csv.zip": "1f5f123b8e9a50991d1847271b5a2bf321e813e924e5bcf958cab612311c765a",
+    "data/raw/inegi_ageb/ageb_rural_cdmx.geojson": "4e903ece4cc3d02e664e2f78fcb0994c5c98ffa0693d7c88bb5d73d0fd55a4c4",
+    "data/raw/inegi_ageb/ageb_urbana_cdmx.geojson": "f7082c9990acbb4c517be0f7db872dc76829b4361924449c027c363f54a45ff8",
+    "data/raw/inegi_ageb/denue_09_csv.zip": "ae608f30118f6313e9d537ea22918b2c9e9a3d3f19c2ddf5907f55dbb1642b19",
+    "data/raw/inegi_ageb/denue_09_csv/conjunto_de_datos/denue_inegi_09_.csv": "e12fcc6c4d518a169c9445c7f160e9d6fc9ba02fd0a84d853659862cdf2e2f70",
+    "data/raw/inegi_ageb/denue_09_csv/diccionario_de_datos/denue_diccionario_de_datos.csv": "53619afc3424522a2bb1587adc34b45b9660728df2d2f49326a4299362f95c0e",
+    "data/raw/inegi_ageb/denue_09_csv/metadatos/metadatos_denue.txt": "bf05c821f1562fdbebb8ae1d38e091bb8e5b72d12fb671117fb256b819cc7894",
+    "data/raw/urban_environment/accidentes_viales_2025.geojson": "a1a1591fd3091fc733bb77189c1fc6dda03ee8151abfdfdeb83bfcb23d196feb",
+    "data/raw/urban_environment/ciclovias.geojson": "66d65948776d72107c4bfb10e8d08ff645211a6e226ce2afbd9c5bec494606a9",
+    "data/raw/urban_environment/ciclovias.zip": "afe606d143a0d3db729030a60e4527c2df2dd8d449bb3515f8639c5e8be01df3",
+    "data/raw/urban_environment/ciclovias_semovi_2025.zip": "afe606d143a0d3db729030a60e4527c2df2dd8d449bb3515f8639c5e8be01df3",
+    "data/raw/urban_environment/fuentes_diagnostico.json": "78d031983aed92f079724b6fd21d6c2744f731bdd58ba6eb31ce831cb85254d8",
+    "data/raw/urban_environment/incidentes_viales_c5.csv": "a72931033bac6af9afa526de57b2edaafa5eba6f5376093a0a89da624f31e753",
+    "data/raw/urban_environment/ssc_semovi_2025_mapa.html": "649a2b8374531bdc66f836140df7ce12d2acf6b239b77643f49f0a07f0cf2d7b",
+    "data/raw/urban_environment/ssc_semovi_2025_publicacion.html": "c231a27df5a1c3c1fcb677e8f09e573bf6613405cfb99dc2483a06d068bcb212"
+  },
+  "stations": {
+    "accepted_rows": 677,
+    "compound_physical_stations": 12,
+    "feed_last_updated": "2026-09-06T07:52:55+00:00",
+    "input_rows": 677,
+    "quarantine_rows": 0,
+    "snapshot_is_not_2025_active_station_evidence": true,
+    "superseded_duplicates": 0
+  },
+  "trip_rows": {
+    "accepted_rows": 20133540,
+    "input_rows": 20134900,
+    "quarantine_rows": 1360,
+    "valid_arribos": 20134527,
+    "valid_retiros": 20134368
+  },
+  "weighted_event_counts_Float64": true
+}

@@ -1,0 +1,17 @@
+# Datos crudos e intermedios pesados: se regeneran con el pipeline a partir
+# de las fuentes públicas (ver README, sección "Fuentes de datos").
+# Estas carpetas superan los límites prácticos de GitHub (un parquet de 229 MB).
+4_proyecto/V3/data/quarantine/
+4_proyecto/V3/data/processed/
+4_proyecto/V3/data/raw/
+
+# Caches y artefactos de ejecución
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+4_proyecto/V3/.ipython/
+4_proyecto/V3/.jupyter/
+4_proyecto/V3/.mplconfig/
+4_proyecto/V3/.runtime/
+4_proyecto/V3/.bytecode/
+.DS_Store

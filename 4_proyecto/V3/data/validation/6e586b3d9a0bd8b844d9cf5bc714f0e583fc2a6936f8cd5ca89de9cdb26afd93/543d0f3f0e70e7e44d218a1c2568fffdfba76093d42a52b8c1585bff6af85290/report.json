@@ -1,0 +1,252 @@
+{
+  "analysis_id": "543d0f3f0e70e7e44d218a1c2568fffdfba76093d42a52b8c1585bff6af85290",
+  "analysis_identity": {
+    "code_hashes": {
+      "build_notebook_04.py": "c41a6c85270397f4823eaf11d17f7c736e0288167546610975b5fca25022383a",
+      "fe03_analysis.py": "7a83190a8ef23b3d98687368c8a1fd64a64234b978e61b2d41bec69ca82da937",
+      "fe03_publication.py": "cd3222a5a5bfbee709872e04fd2b5c34520caeb63c8ccc7fc0254f62b3f7d043",
+      "fe04_analysis.py": "ee9277445eaab698b2614459c2d6832ae4010e6312357d1ad4a9eae2164d7278",
+      "fe04_content.py": "5f3b2316c49b14f2f83cc8568e81ba0d320bb8dee26a6227157c5fc52538c46b",
+      "fe04_publication.py": "0772ef7b684604f16b820bc46da5a1a1d5d8c075e5f59d0c3218d2c8be3686da"
+    },
+    "configuration": {
+      "k_grid": [
+        10,
+        20,
+        50
+      ],
+      "label_quantile": 0.85,
+      "mahalanobis_quantile": 0.9973,
+      "metric_crs": "EPSG:32614",
+      "n_folds": 5,
+      "n_spatial_blocks": 40,
+      "ranking_tasks": "expansion frontier ranking of covered-domain AGEBs",
+      "seed": 42
+    },
+    "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+    "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+    "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+    "feature_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+    "input_artifacts": {
+      "eda/station_environment": {
+        "bytes": 273429,
+        "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/station_environment.parquet",
+        "sha256": "1d0243deab8390547dbdf580efda68308474788b21c23faf1446afcc462fabda"
+      },
+      "features/entorno_ageb_features": {
+        "bytes": 3155220,
+        "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/entorno_ageb_features.parquet",
+        "sha256": "3ac6047eaeb1329dc6b1d46b3ed0515bc88157a391495a40ebf82c70aa1185ef"
+      },
+      "features/pca_espacio_compartido": {
+        "bytes": 213110,
+        "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/pca_espacio_compartido.parquet",
+        "sha256": "7b8a6d3ad538ecdbc2c9df3fd28ba3c0cd3c6e531cf8794074f8cba14bf9c991"
+      }
+    },
+    "schema_version": "v3-backtest-1",
+    "versions": {
+      "geopandas": "1.1.2",
+      "joblib": "1.5.3",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "python": "3.10.19",
+      "scipy": "1.15.2",
+      "sklearn": "1.7.2"
+    }
+  },
+  "configuration": {
+    "k_grid": [
+      10,
+      20,
+      50
+    ],
+    "label_quantile": 0.85,
+    "mahalanobis_quantile": 0.9973,
+    "metric_crs": "EPSG:32614",
+    "n_folds": 5,
+    "n_spatial_blocks": 40,
+    "ranking_tasks": "expansion frontier ranking of covered-domain AGEBs",
+    "seed": 42
+  },
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+  "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+  "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+  "evaluation_universe": {
+    "covered_aggebs_without_internal_station": 96,
+    "definition": "is_projectable AND NOT is_candidata_territorial",
+    "gain_for_ndcg": "linear actividad_observada_diaria",
+    "golden_in_universe": 61,
+    "label": "AGEB observed activity >= P85 fitted on TRAIN fold only",
+    "size": 338,
+    "zero_activity_semantics": "no internal observed station; not zero latent demand"
+  },
+  "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+  "feature_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+  "fold_local_protocol": {
+    "applied_as_transform_to_validation": [
+      "Pipeline fe03.build_pipeline() re-instanziado y ajustado en train; test solo recibe .transform()",
+      "Distancia de Mahalanobis con mu/Sigma_inv del fold"
+    ],
+    "description": "Todo estimador de preprocesamiento y referencia se ajusta exclusivamente dentro del pliegue de entrenamiento en la fase inductiva.",
+    "forbidden": [
+      "Reutilizar el PCA global del cuaderno 03 como preprocesamiento de validación",
+      "Calcular P85/centroide/covarianza con filas del pliegue de prueba",
+      "Partir estaciones de una misma AGEB entre pliegues (fold_groupkfold_ageb)",
+      "Partir AGEBs de un mismo bloque espacial entre pliegues (fold_spatial_block)"
+    ],
+    "refit_inside_each_training_fold": [
+      "SimpleImputer(strategy='median') sobre las tasas permitidas",
+      "StandardScaler",
+      "PCA (n_components=0.80, svd_solver='full')",
+      "Umbral P85 de actividad para la definición de referencia Golden",
+      "Centroide mu_golden y covarianza Sigma_g del subconjunto de entrenamiento",
+      "Umbral de dominio sqrt(chi2.ppf(0.9973, df=k_fold))"
+    ]
+  },
+  "input_artifacts": {
+    "eda/station_environment": {
+      "bytes": 273429,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/station_environment.parquet",
+      "sha256": "1d0243deab8390547dbdf580efda68308474788b21c23faf1446afcc462fabda"
+    },
+    "features/entorno_ageb_features": {
+      "bytes": 3155220,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/entorno_ageb_features.parquet",
+      "sha256": "3ac6047eaeb1329dc6b1d46b3ed0515bc88157a391495a40ebf82c70aa1185ef"
+    },
+    "features/pca_espacio_compartido": {
+      "bytes": 213110,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/pca_espacio_compartido.parquet",
+      "sha256": "7b8a6d3ad538ecdbc2c9df3fd28ba3c0cd3c6e531cf8794074f8cba14bf9c991"
+    }
+  },
+  "mahalanobis_gate": {
+    "candidates_in_domain": 769,
+    "candidates_out_of_domain": 1295,
+    "chi2_ppf": 23.574394426213484,
+    "condition_number": 14.324825455818964,
+    "covariance_rank": 8,
+    "df": 8,
+    "golden_self_in_domain": 59,
+    "in_domain_counts": {
+      "in_domain": 1057,
+      "not_projectable": 50,
+      "out_of_domain": 1345
+    },
+    "k_dims": 8,
+    "n_reference": 61,
+    "normality_assumption": "chi-square calibration assumes approximately elliptical Golden scores; it is a support heuristic, not a probability guarantee",
+    "quantile": 0.9973,
+    "reference": "empirical covariance of the 61 Golden AGEBs in the published shared PCA space",
+    "threshold": 4.855346993389194,
+    "used_pseudoinverse": false
+  },
+  "notebook": "04_Diseno_Validacion_Backtest.ipynb",
+  "outputs": [
+    {
+      "bytes": 2889627,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/543d0f3f0e70e7e44d218a1c2568fffdfba76093d42a52b8c1585bff6af85290/universo_evaluacion.parquet",
+      "sha256": "2a09111bfb106033c6ffed2377b4f1a9c30e5ea8042cad3ca6a01ba56aa0a385"
+    },
+    {
+      "bytes": 7598,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/543d0f3f0e70e7e44d218a1c2568fffdfba76093d42a52b8c1585bff6af85290/cv_folds.parquet",
+      "sha256": "8fb4047f2fe19596538c8c303f02f10f391f1d5b172dc4b8543e2df1765e7a15"
+    },
+    {
+      "bytes": 1842,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/543d0f3f0e70e7e44d218a1c2568fffdfba76093d42a52b8c1585bff6af85290/metric_selftests.csv",
+      "sha256": "90b2b423da51765eb0b88d627cc43dfc4d46feb19892b3a27d49fecd9dbaab3e"
+    },
+    {
+      "bytes": 12423,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/543d0f3f0e70e7e44d218a1c2568fffdfba76093d42a52b8c1585bff6af85290/validation_harness.joblib",
+      "sha256": "48bfb010f4d58119f19e58c95977009fd000b21d8615c9eb8a92faf117d0a8bd"
+    }
+  ],
+  "pending_validation": [
+    "Motor rankings themselves (cuadernos 05/07)",
+    "Sensitivity of in_domain to the Mahalanobis quantile",
+    "Sensitivity of metrics to the P85 label quantile",
+    "Alternative gain definitions for NDCG (binary vs linear vs log)",
+    "Buffer-zone exclusions between spatial blocks",
+    "Whether abstained candidates deserve a separate manual lane"
+  ],
+  "random_control": {
+    "fold_groupkfold_ageb": {
+      "ndcg@10": 0.21763726982418258,
+      "ndcg@20": 0.30098763318618976,
+      "ndcg@50": 0.49782984397038665,
+      "precision@10": 0.1,
+      "precision@20": 0.16,
+      "precision@50": 0.17200000000000001,
+      "recall@10": 0.08969696969696969,
+      "recall@20": 0.3412121212121212,
+      "recall@50": 0.8321212121212123
+    },
+    "fold_spatial_block": {
+      "ndcg@10": 0.2824531446112428,
+      "ndcg@20": 0.37646614141662055,
+      "ndcg@50": 0.5177290523652389,
+      "precision@10": 0.2,
+      "precision@20": 0.19,
+      "precision@50": 0.15117408906882593,
+      "recall@10": 0.2523809523809524,
+      "recall@20": 0.6984126984126984,
+      "recall@50": 0.7825396825396825
+    }
+  },
+  "ranking_metrics": {
+    "k_grid": [
+      10,
+      20,
+      50
+    ],
+    "ndcg_at_k": "linear gains, log2(position+1) discount, IDCG over the full fold universe",
+    "precision_at_k": "|top-k ∩ relevant| / min(k, |ranked|)",
+    "recall_at_k": "|top-k ∩ relevant| / |relevant ∩ universe|",
+    "selftests_all_passed": true
+  },
+  "schema_version": "v3-backtest-1",
+  "scope": {
+    "is_validation_harness_only": true,
+    "models_trained": false,
+    "produces_engine_results": false,
+    "random_control_is_a_plumbing_check": true,
+    "time_series_validation": "excluded; operational Motor 2 (stockouts) officially descoped"
+  },
+  "spatial_cv": {
+    "distinct_spatial_blocks_in_universe": 11,
+    "evaluation_universe_size": 338,
+    "fold_sizes_groupkfold_ageb": {
+      "0": 68,
+      "1": 68,
+      "2": 68,
+      "3": 67,
+      "4": 67
+    },
+    "fold_sizes_spatial_block": {
+      "0": 38,
+      "1": 79,
+      "2": 39,
+      "3": 128,
+      "4": 54
+    },
+    "groupkfold_ageb_note": "at AGEB granularity it coincides with shuffled KFold; its integrity guarantee binds sub-AGEB units (stations) to one fold",
+    "n_folds": 5,
+    "non_universe_rows_without_fold": 2114,
+    "random_state": 42,
+    "shuffle": true,
+    "spatial_block_note": "GroupKFold over contiguous centroid blocks; mitigates neighbor-polygon dependence that AGEB grouping cannot isolate"
+  },
+  "upstream": {
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+    "pca_space_fit_scope": "descriptive_transductive; not an inductive backtest",
+    "pca_space_k": 8
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "analysis_id": "24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652",
+  "analysis_identity": {
+    "code_hashes": {
+      "build_notebook_02.py": "9c24f713e021e9c413f5d0528a50c90d0b0257cfd563f18fad644c229857d639",
+      "eda02_analysis.py": "50c82cb18a286306bb8c4641efda0b590bc171b5ebc665474a76711c5112f7ae",
+      "eda02_content.py": "765e37adb8242d463e24a05737220922df843066fb670510a3b64ae40cfbfb0c",
+      "eda02_publication.py": "af2615cc8bf19219ecfe1f23d0f9c38056835bcdd9dc71f5351d87d7e075d19e"
+    },
+    "configuration": {
+      "bootstrap_ageb_replicates": 1000,
+      "bootstrap_percentiles": [
+        2.5,
+        97.5
+      ],
+      "diagnostic_access_radius_m": 400,
+      "golden_quantile": 0.85,
+      "iqr_multiplier": 1.5,
+      "metric_crs": "EPSG:32614",
+      "moran_k": 8,
+      "moran_sensitivity_k": [
+        4,
+        8,
+        12
+      ],
+      "open_employment_band_reference": 300,
+      "open_employment_band_scenarios": [
+        251,
+        300,
+        500,
+        1000
+      ],
+      "permutations": 999,
+      "seed": 42,
+      "tertiary_scian_sectors": [
+        "43",
+        "46",
+        "48",
+        "49",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "61",
+        "62",
+        "71",
+        "72",
+        "81",
+        "93"
+      ]
+    },
+    "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+    "versions": {
+      "geopandas": "1.1.2",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "python": "3.10.19",
+      "scipy": "1.15.2"
+    }
+  },
+  "configuration": {
+    "bootstrap_ageb_replicates": 1000,
+    "bootstrap_percentiles": [
+      2.5,
+      97.5
+    ],
+    "diagnostic_access_radius_m": 400,
+    "golden_quantile": 0.85,
+    "iqr_multiplier": 1.5,
+    "metric_crs": "EPSG:32614",
+    "moran_k": 8,
+    "moran_sensitivity_k": [
+      4,
+      8,
+      12
+    ],
+    "open_employment_band_reference": 300,
+    "open_employment_band_scenarios": [
+      251,
+      300,
+      500,
+      1000
+    ],
+    "permutations": 999,
+    "seed": 42,
+    "tertiary_scian_sectors": [
+      "43",
+      "46",
+      "48",
+      "49",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "61",
+      "62",
+      "71",
+      "72",
+      "81",
+      "93"
+    ]
+  },
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "correlations": [
+    {
+      "n_agebs": 243,
+      "n_stations": 677,
+      "pearson_ci_ageb_high": -0.013701583427763522,
+      "pearson_ci_ageb_low": -0.24820838355441463,
+      "pearson_p_iid_reference": 0.0003421695474942414,
+      "pearson_r": -0.1372342099418935,
+      "predictor": "densidad_pob_km2",
+      "spearman_ci_ageb_high": 0.07386968596549211,
+      "spearman_ci_ageb_low": -0.18563395073923245,
+      "spearman_p_iid_reference": 0.10466735682516923,
+      "spearman_rho": -0.06241747373806903,
+      "transform": "identity"
+    },
+    {
+      "n_agebs": 243,
+      "n_stations": 677,
+      "pearson_ci_ageb_high": -0.18271533205174592,
+      "pearson_ci_ageb_low": -0.30650644336737853,
+      "pearson_p_iid_reference": 6.168548560644491e-11,
+      "pearson_r": -0.24786279410665,
+      "predictor": "dist_gtfs_m",
+      "spearman_ci_ageb_high": -0.15999713451056355,
+      "spearman_ci_ageb_low": -0.3170244825824913,
+      "spearman_p_iid_reference": 1.9054162692513923e-10,
+      "spearman_rho": -0.2415838034215259,
+      "transform": "identity"
+    },
+    {
+      "n_agebs": 243,
+      "n_stations": 677,
+      "pearson_ci_ageb_high": 0.3802185985609918,
+      "pearson_ci_ageb_low": 0.18970924328503644,
+      "pearson_p_iid_reference": 3.915216829485378e-14,
+      "pearson_r": 0.28516924851855474,
+      "predictor": "empleo_terciario_proxy",
+      "spearman_ci_ageb_high": 0.4309089312573922,
+      "spearman_ci_ageb_low": 0.22221995408460612,
+      "spearman_p_iid_reference": 2.0900258297782377e-18,
+      "spearman_rho": 0.327655061583904,
+      "transform": "log1p"
+    }
+  ],
+  "denue_retrospective_proxy": {
+    "historical_2025_stock_reconstructed": false,
+    "input_establishments": 462732,
+    "open_band_sensitivity": [
+      {
+        "open_band_assumption": 251,
+        "pearson_log1p": 0.2846415851014711,
+        "spearman": 0.32545565721813025
+      },
+      {
+        "open_band_assumption": 300,
+        "pearson_log1p": 0.28516924851855474,
+        "spearman": 0.327655061583904
+      },
+      {
+        "open_band_assumption": 500,
+        "pearson_log1p": 0.2856176950766879,
+        "spearman": 0.3215899750210943
+      },
+      {
+        "open_band_assumption": 1000,
+        "pearson_log1p": 0.2828920406863712,
+        "spearman": 0.3076431718869161
+      }
+    ],
+    "registration_after_2025": 9627,
+    "registration_unknown": 36,
+    "snapshot_years": [
+      2026
+    ],
+    "tertiary_open_employment_band": 1612,
+    "tertiary_unmatched_ageb": 1357,
+    "tertiary_with_known_registration_through_2025": 419221
+  },
+  "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+  "feature_coverage": [
+    {
+      "cohort": "with_internal_station",
+      "density_missing": 0,
+      "n_agebs": 243,
+      "population_missing": 0,
+      "rural_missing_population": 0,
+      "zero_matched_tertiary_establishments": 0
+    },
+    {
+      "cohort": "without_internal_station",
+      "density_missing": 22,
+      "n_agebs": 2209,
+      "population_missing": 22,
+      "rural_missing_population": 22,
+      "zero_matched_tertiary_establishments": 40
+    }
+  ],
+  "golden_cluster": {
+    "ageb_ids": [
+      "0901400010026",
+      "0901400010223",
+      "0901400010469",
+      "0901400010717",
+      "0901400010793",
+      "0901500010485",
+      "090150001049A",
+      "0901500010606",
+      "0901500010678",
+      "0901500010682",
+      "0901500010697",
+      "0901500010714",
+      "0901500010729",
+      "0901500010733",
+      "0901500010748",
+      "0901500010790",
+      "0901500010803",
+      "0901500010818",
+      "0901500010822",
+      "0901500010837",
+      "0901500010841",
+      "0901500010856",
+      "0901500010860",
+      "0901500010926",
+      "0901500010930",
+      "0901500010945",
+      "090150001095A",
+      "0901500010983",
+      "0901500010998",
+      "0901500011002",
+      "0901500011017",
+      "0901500011036",
+      "0901500011089",
+      "0901500011093",
+      "0901500011106",
+      "0901500011110",
+      "0901500011178",
+      "0901500011182",
+      "0901500011197",
+      "090150001120A",
+      "0901500011214",
+      "0901500011303",
+      "0901500011318",
+      "0901500011322",
+      "0901500011341",
+      "0901500011356",
+      "090150001138A",
+      "0901500011411",
+      "0901500011534",
+      "0901600010073",
+      "0901600010213",
+      "090160001029A",
+      "0901600010444",
+      "0901600010478",
+      "0901600010482",
+      "0901600010552",
+      "0901600010660",
+      "090160001068A",
+      "0901600010779",
+      "0901600010798",
+      "0901600011226"
+    ],
+    "ageb_pca_weighting": "not decided by EDA; station and AGEB weighting differ",
+    "cannibalization_identified": false,
+    "golden_neighbor_median_m": 249.61452766507364,
+    "n_stations": 102,
+    "n_unique_agebs": 61,
+    "network_neighbor_median_m": 220.40291683629894,
+    "optimal_spacing_identified": false
+  },
+  "gtfs_proximity": {
+    "accepted_stops": 11362,
+    "calendar_link_is_not_proof_of_historical_stop_location": true,
+    "distance_universe": "all accepted GTFS stops; not Metro-only or 2025-only",
+    "nearest_agency_counts": {
+      "CBB": 1,
+      "CC": 344,
+      "MB": 100,
+      "MB|TROLE": 10,
+      "METRO": 26,
+      "RTP": 118,
+      "TROLE": 57,
+      "unlinked_in_accepted_trips": 21
+    },
+    "nearest_without_2025_calendar_link": 21,
+    "route_type_counts": {
+      "0": 1,
+      "1": 13,
+      "2": 1,
+      "3": 282,
+      "6": 3
+    },
+    "stops_linked_to_accepted_trips": 10961
+  },
+  "input_artifacts": {
+    "actividad_estaciones": {
+      "bytes": 139026,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/actividad_estaciones.parquet",
+      "sha256": "c2918a5f2b935c586476d33bf41cb7a0322e43cc419e00f864165441dd3e6e17"
+    },
+    "agebs": {
+      "bytes": 3370211,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/agebs.parquet",
+      "sha256": "330b35759a62175cb176e617fce2643b201e83c912bb72b0e5d29cf10c2671fc"
+    },
+    "denue": {
+      "bytes": 120385228,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/denue.parquet",
+      "sha256": "e24128bd510cb1c2ac20192b582328062af5cb0dcef72293466ae8634764e91e"
+    },
+    "gtfs_calendar": {
+      "bytes": 14935,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_calendar.parquet",
+      "sha256": "bf5d490cdffd23dd7fa425dc466d8bd573b92df2a198cb63b2bb7d83424061ae"
+    },
+    "gtfs_routes": {
+      "bytes": 37938,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_routes.parquet",
+      "sha256": "b1431debaa799c5bf05e094074b084e31c8ce392e911707f0d6fe44555ca64ee"
+    },
+    "gtfs_stop_times": {
+      "bytes": 2797733,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stop_times.parquet",
+      "sha256": "13aa124a57c7cb9ccba262ba454010b46b5de9552ba30c7b1ddb88bebfe6ece1"
+    },
+    "gtfs_stops": {
+      "bytes": 1363212,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stops.parquet",
+      "sha256": "79c7d1a3e1f535b1dccbffa2c7db5c340be537a6c7da27a3e7b0f776724cfd3c"
+    },
+    "gtfs_trips": {
+      "bytes": 111698,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_trips.parquet",
+      "sha256": "04af0a98b63de0236191a98fd2440ed4ad920b1352070875e7161efc57da4fa9"
+    }
+  },
+  "leakage_audit": {
+    "models_trained": false,
+    "n_undefined_turnover": 1,
+    "n_valid_capacity": 676,
+    "pagerank_empirically_measured_here": false,
+    "same_period_od_centrality_predictor_eligible": false,
+    "turnover_ratio_definition": "2 * daily_activity / catalog_capacity",
+    "turnover_ratio_predictor_eligible": false,
+    "turnover_ratio_spearman": 0.8983836898562167,
+    "undefined_turnover_reason": "catalog capacity missing or nonpositive; station retained elsewhere",
+    "undefined_turnover_station_ids": [
+      "673"
+    ]
+  },
+  "notebook": "02_EDA_y_Equidad.ipynb",
+  "outputs": [
+    {
+      "bytes": 142376,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652/golden_agebs.parquet",
+      "sha256": "f30a7bde0ae7c4ec24782d89118233cc9bd0ee098d1a8f223d257aa7a93f2779"
+    },
+    {
+      "bytes": 273429,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652/station_environment.parquet",
+      "sha256": "34e5dc710114d41ed91b4e2a121e61f2511e9512a602f7b58944dff57abd57e4"
+    },
+    {
+      "bytes": 5422689,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652/ageb_diagnostics.parquet",
+      "sha256": "0101f7755a94bfd8e3d46d289f4e29f895a3e24cee86ae2ddfcc3c5f77e75136"
+    },
+    {
+      "bytes": 11053,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652/golden_agebs.csv",
+      "sha256": "5bd77fad4a85d9ea3abf4f07487ddcff2fee10b8dd6eba14768b200702305bb2"
+    },
+    {
+      "bytes": 1209,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652/correlations.csv",
+      "sha256": "b8ad95933d252b53483a3e495fd2cba22c9d11e36be4e33a7816947615503df3"
+    },
+    {
+      "bytes": 1501,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652/moran_sensitivity.csv",
+      "sha256": "1cdfbe94d8a3be5333feb8639480e5e70c7d7c41a9cd5449f1359b6d69635004"
+    },
+    {
+      "bytes": 764,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652/employment_sensitivity.csv",
+      "sha256": "a06edb131c9607c17ec1f77461f4c1a0b5608b461e867383b5d28caf7f0efb1c"
+    },
+    {
+      "bytes": 478,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/24121ab6ef8632d6488cc096d3a3e08fa980282ebf3d63f41e5978bb2994c652/feature_coverage.csv",
+      "sha256": "7f8f30f5e7e1fbf4ac1535d3044db62ffdd7f5e39553bfc7d9ae10f616e4f4fb"
+    }
+  ],
+  "pending_validation": [
+    "Population-weighted and walking-network accessibility, social equity covariates",
+    "Monthly/hourly activity and Golden stability; withdrawals versus arrivals",
+    "Spatial blocks/buffers, temporal eligibility and fold-local PCA/centroids",
+    "Remove held-out observed flows before graph backtesting",
+    "Physical connectivity and greedy baselines before graph/genetic comparisons"
+  ],
+  "sample_accounting": {
+    "accepted_rows": 20133540,
+    "activity_is_latent_demand": false,
+    "catalog_feed_updated_at": "2026-09-06T07:52:55+00:00",
+    "endpoint_activity_trip_equivalents": 20134151.0,
+    "input_rows": 20134900,
+    "known_arrival_events": 20134000.0,
+    "known_withdrawal_events": 20134302.0,
+    "quarantine_rows": 1360,
+    "retention_percent": 99.99324555870652,
+    "valid_arribos": 20134527,
+    "valid_retiros": 20134368
+  },
+  "schema_version": "v3-eda-2",
+  "spatial_autocorrelation": {
+    "alternative": "positive_autocorrelation_upper_tail",
+    "coordinate_crs": "EPSG:32614",
+    "eighth_neighbor_distance_m_quantiles": [
+      239.90434616778666,
+      527.2958030218032,
+      782.0724767906022,
+      1208.719028328056
+    ],
+    "expected_i": -0.0014792899408284023,
+    "i": 0.42930525786792695,
+    "k": 8,
+    "local_significance_tested": false,
+    "p_value": 0.001,
+    "permutation_exceedances": 0,
+    "permutations": 999,
+    "quadrant_counts": {
+      "High-High": 188,
+      "High-Low": 76,
+      "Low-High": 84,
+      "Low-Low": 329
+    },
+    "seed": 42,
+    "sensitivity": [
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.45618841722426795,
+        "k": 4,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "raw"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.5512680907708113,
+        "k": 4,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "log1p"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.42930525786792695,
+        "k": 8,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "raw"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.5203845126412994,
+        "k": 8,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "log1p"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.4174277945645958,
+        "k": 12,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "raw"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.5121820558171015,
+        "k": 12,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "log1p"
+      }
+    ],
+    "unit": "stations",
+    "weights": "directed K-NN; row-standardized; zero diagonal"
+  },
+  "spatial_equity": {
+    "agebs_with_internal_station": 243,
+    "agebs_without_internal_station": 2209,
+    "gini_activity": 0.9448655255637436,
+    "gini_stations": 0.9296140250264457,
+    "gini_unit": "equal-weight AGEB polygons; raw counts, not per capita",
+    "population_access_equity_measured": false,
+    "total_agebs": 2452
+  },
+  "target_metrics": {
+    "calendar_denominator_days": 365,
+    "mean_daily_activity": 81.48014406831103,
+    "median_daily_activity": 66.46438356164384,
+    "n_stations": 677,
+    "p85": 127.61835616438356,
+    "q1": 43.721917808219175,
+    "q3": 101.03698630136986,
+    "upper_fence": 187.0095890410959
+  },
+  "territorial_gap": {
+    "centroids_outside_own_polygon": 51,
+    "continuous_expansion_impossibility_established": false,
+    "mean_km": 7.117685253737667,
+    "median_km": 6.435363900675209,
+    "no_internal_station_but_centroid_within_400m": 50,
+    "p75_km": 9.920399338937798,
+    "unit": "unweighted AGEB centroid to nearest current catalog station"
+  },
+  "uncertainty": {
+    "iid_p_values": "reference only; spatial/station independence is not established",
+    "intervals": "percentile bootstrap resampling AGEB groups with replacement",
+    "remaining_limitation": "between-AGEB spatial dependence is not removed by this bootstrap"
+  }
+}

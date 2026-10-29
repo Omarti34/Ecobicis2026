@@ -1,0 +1,703 @@
+latitud,longitud,nombre,id
+19.433785,-99.167987,"CE-001 Río Sena-Río Balsas",292
+19.430495,-99.171160,"CE-002 Río Guadalquivir - Río Nazas",142
+19.431630,-99.158547,"CE-003 Reforma - Insurgentes",113
+19.428491,-99.171693,"CE-004 Río Nilo - Río Panuco",465
+19.429843,-99.169370,"CE-005 Río Pánuco Río Tiber",123
+19.430963,-99.166986,"CE-006 Río Pánuco - Río Sena",137
+19.425280,-99.175106,"CE-007 Río Elba - Río Lerma",131
+19.431256,-99.158153,"CE-008 Reforma - General Prim",323
+19.428184,-99.170013,"CE-009 Río Guadalquivir - Río Lerma",218
+19.433431,-99.155142,"CE-010 Reforma - Ramírez",240
+19.431192,-99.163546,"CE-011 Río Amazonas - Río Lerma",291
+19.432223,-99.161686,"CE-012 Río Lerma - Villalongín",136
+19.424941,-99.172330,"CE-013 Reforma - Río Mississippi",294
+19.424540,-99.173247,"CE-014 Reforma - Río de Plata",267
+19.425597,-99.171409,"CE-015 Reforma - Río Mississippi",261
+19.426753,-99.168619,"CE-016 Reforma - Río Tiber",119
+19.427553,-99.167396,"CE-017 Reforma - Río Tiber",263
+19.428802,-99.164381,"CE-018 Reforma - Río Rhin",295
+19.429453,-99.162830,"CE-019 Reforma - Río Rhin",122
+19.430862,-99.160259,"CE-020 Reforma- Río Támesis",260
+19.424810,-99.171765,"CE-021 Reforma - Dublín",318
+19.424784,-99.172119,"CE-022 Reforma - Manchester",14
+19.425280,-99.171099,"CE-023 Reforma - Praga",265
+19.426614,-99.168078,"CE-024 Reforma- Florencia",352
+19.427338,-99.166720,"CE-025 Reforma - Estocolmo",120
+19.432595,-99.154995,"CE-026 Reforma - Versalles",353
+19.429160,-99.162703,"CE-027 Reforma- Havre",279
+19.423664,-99.172568,"CE-028 Toledo- Tokio",298
+19.434944,-99.150295,"CE-029 Reforma - Bucareli",106
+19.426100,-99.164937,"CE-030 Hamburgo - Amberes",184
+19.427922,-99.161246,"CE-031 Hamburgo - Insurgentes",171
+19.422686,-99.169983,"CE-032 Londres - Sevilla",173
+19.424187,-99.166497,"CE-033 Londres - Florencia",176
+19.424728,-99.163348,"CE-034 Liverpool - Génova",299
+19.424558,-99.163518,"CE-035 Liverpool - Génova",135
+19.419660,-99.175880,"CE-036 Puebla - Veracruz",257
+19.420434,-99.172578,"CE-037 Guadalajara - Puebla",180
+19.420862,-99.171450,"CE-038 Cozumel - Puebla",296
+19.421762,-99.166931,"CE-039 Puebla - Medellín",455
+19.422351,-99.164174,"CE-040 Oaxaca - Puebla",91
+19.435420,-99.150317,"CE-041 Reforma - Av. de la República",234
+19.420603,-99.168239,"CE-042 Sinaloa - Valladolid",80
+19.435136,-99.146076,"CE-043 Revillagigedo - Juárez",225
+19.418223,-99.174614,"CE-044 Durango - Veracruz",214
+19.418749,-99.171942,"CE-045 Durango - Sonora",355
+19.419178,-99.169949,"CE-046 Durango - Salamanca",93
+19.419506,-99.166365,"CE-047 Plaza Madrid-Medellín",289
+19.433705,-99.146665,"CE-048 Independencia - Azueta",228
+19.416890,-99.175620,"CE-049 Mazatlán - Juan de la Barrera",89
+19.416824,-99.173788,"CE-050 Cuernavaca - Veracruz",327
+19.418031,-99.168435,"CE-051 Colima - Oaxaca",333
+19.436208,-99.141931,"CE-052 Hidalgo - Trujano",356
+19.414823,-99.178353,"CE-053 Fernando Montes de Oca - Tula",92
+19.416163,-99.170795,"CE-054 Parque España - Sonora",376
+19.434514,-99.138068,"CE-055  5 De Mayo - Bolívar",446
+19.417102,-99.165607,"CE-056 Alvaro Obregón - Medellin",83
+19.414968,-99.174766,"CE-057 Cuernavaca - Juan Escutia",185
+19.415358,-99.171902,"CE-058 Parque España - Juan de la Barrera",186
+19.415243,-99.166756,"CE-059 Popocatépetl - Ámsterdam",71
+19.414099,-99.177158,"CE-060 Mazatlán - Fernando Montes de Oca",95
+19.413832,-99.169399,"CE-061 Avenida México - Sonora",339
+19.413316,-99.175305,"CE-062 Fernando Montes de Oca - Amatlan",338
+19.413091,-99.171620,"CE-063 Nuevo León - Laredo",258
+19.412967,-99.166925,"CE-064 Sonora - Ámsterdam",82
+19.436522,-99.139811,"CE-065 Marconi - Tacuba",111
+19.411825,-99.178456,"CE-066 Mazatlán - Francisco Márquez",90
+19.411814,-99.175957,"CE-067 Vicente Suárez - Michoacán",73
+19.411668,-99.173824,"CE-068 Tamaulipas - Michoacán",341
+19.410797,-99.168143,"CE-069 Michoacán - Ámsterdam",471
+19.411352,-99.169894,"CE-070 Parque México - Michoacán",97
+19.411361,-99.171271,"CE-071 Amsterdam - Michoacan",84
+19.409859,-99.179565,"CE-072 Mazatlán - Alfonso Reyes",72
+19.410073,-99.175542,"CE-073 Campeche - Tamaulipas",373
+19.410468,-99.172802,"CE-074 Nuevo León - Ozulama",79
+19.408741,-99.176774,"CE-075 Alfonso Reyes - Atlixco",262
+19.408718,-99.169944,"CE-076 Chilpancingo - Campeche",81
+19.406745,-99.178272,"CE-077 Choapan - Tamaulipas",372
+19.407512,-99.177361,"CE-078 Benjamín Hill - Tamaulipas",374
+19.407549,-99.174348,"CE-079 Saltillo - Alfonso Reyes",87
+19.407240,-99.172077,"CE-080 Nuevo León - Aguascalientes",264
+19.407927,-99.168734,"CE-081 Aguascalientes - Insurgentes",86
+19.433344,-99.144040,"CE-082 Independencia - Marroquí",250
+19.406550,-99.172275,"CE-083 Alfonso Reyes - Nuevo León",85
+19.406872,-99.169572,"CE-084 Chilpancingo - Tlaxcala",363
+19.434059,-99.162438,"CE-085 Rosas Moreno - Sullivan",266
+19.432452,-99.159240,"CE-086 Sullivan-Insurgentes",320
+19.432024,-99.139705,"CE-087 Gante - Venustiano Carranza",259
+19.433757,-99.135331,"CE-088 2a Cerrada de 5 de Mayo - Palma",112
+19.434962,-99.133729,"CE-089 República de Guatemala - Monte de Piedad",269
+19.431440,-99.132513,"CE-090 José María Pino Suárez - Corregidora",403
+19.437400,-99.137571,"CE-091 Republica de Cuba-Allende",109
+19.436531,-99.131497,"CE-092 San Ildefonso-República de Argentina",272
+19.436741,-99.134811,"CE-093 Palma Norte-República de Cuba",108
+19.433766,-99.130918,"CE-094 Lic. Verdad-Moneda",15
+19.430683,-99.133701,"CE-095 20 de Noviembre-Venustiano Carranza",256
+19.430625,-99.142480,"CE-096 López-Ayuntamiento",361
+19.429189,-99.132759,"CE-097 República de Salvador-Pino Suárez",102
+19.430267,-99.148610,"CE-098 Emilio Dondé-Av. Balderas",490
+19.429947,-99.145910,"CE-099 Ernesto Pugibet-Luis Moya",103
+19.428485,-99.133800,"CE-100 20 de Noviembre-Mesones",99
+19.428214,-99.139494,"CE-102 Echeveste-Bolivar",101
+19.441533,-99.165268,"CE-103 Joaquín Velázquez de León - García Icazbalceta",293
+19.427059,-99.137116,"CE-104 San Jerónimo-Isabel la Católica",253
+19.426755,-99.135014,"CE-105 San Jerónimo-5 de Febrero",100
+19.426490,-99.133537,"CE-106 San Jerónimo-José María Pino Suarez",613
+19.427305,-99.149533,"CE-107-108 Tolsa-Balderas",104
+19.425311,-99.137421,"CE-109 Nezahualcóyotl-Isabel la Católica",114
+19.425126,-99.143391,"CE-110 Dr. Valenzuela-Dr. Río de la loza",107
+19.438197,-99.165918,"CE-111 Guillermo Prieto - Joaquín Velázquez de León",126
+19.432819,-99.151734,"CE-112 Av. Morelos-Abraham González",110
+19.430369,-99.154419,"CE-113 General Prim-Versalles",115
+19.428989,-99.153618,"CE-114 Lucerna-Abraham González",215
+19.429925,-99.159652,"CE-115 Roma-Dinamarca",133
+19.428985,-99.156640,"CE-116 Londres-Roma",121
+19.427167,-99.160291,"CE-117 Londres-Nápoles",282
+19.427171,-99.158108,"CE-118 Liverpool-Dinamarca",174
+19.426852,-99.155628,"CE-119 Turín-Abraham González",238
+19.425437,-99.159458,"CE-120 Marsella-Nápoles",167
+19.424178,-99.161150,"CE-121 Niza-Chapultepec",278
+19.425502,-99.146337,"CE-122 José María Vértiz-Av. Dr. Río de la Loza",105
+19.424161,-99.153117,"CE-123 Claudio Bernard-Dr. Lavista",116
+19.422392,-99.150358,"CE-124 Claudio Bernard-Dr. Liceaga",249
+19.424197,-99.156127,"CE-125 Morelia-Circular de Morelia",98
+19.422288,-99.162138,"CE-126 Jalapa-Puebla",193
+19.423318,-99.158330,"CE-127 Puebla-Merida",194
+19.422148,-99.160645,"CE-128 Orizaba-Río de Janeiro",88
+19.420600,-99.163312,"CE-129 Tonalá-Durango",340
+19.421576,-99.158015,"CE-130 Mérida-Durango",337
+19.419579,-99.161314,"CE-131 Colima-Jalapa",183
+19.420667,-99.156450,"CE-132 Colima-Frontera",138
+19.421138,-99.154725,"CE-133 Colima-Morelia",270
+19.418286,-99.159932,"CE-134 Álvaro Obregón-Orizaba",175
+19.419251,-99.155039,"CE-135 Álvaro Obregón-Morelia",268
+19.417715,-99.162729,"CE-136 Álvaro Obregón-Tonalá",254
+19.418782,-99.157081,"CE-137 Álvaro Obregón-Mérida",143
+19.417702,-99.155313,"CE-138 Guanajuato-Frontera",447
+19.416128,-99.162097,"CE-139 Tonalá-Guanajuato",144
+19.416596,-99.156879,"CE-140 Mérida-Zacatecas",157
+19.415905,-99.159540,"CE-141 Zacatecas-Luis Cabrera",271
+19.413252,-99.164124,"CE-142 San Luis Potosí-Eje 2 Pte. Monterrey",329
+19.414303,-99.157542,"CE-143 Córdoba-San Luis Potosí",168
+19.415192,-99.154837,"CE-144 Frontera-San Luis Potosí",139
+19.412860,-99.160661,"CE-145 Yucatán-Chiapas",328
+19.410699,-99.165877,"CE-146 Coahuila-Manzanillo",467
+19.412182,-99.158443,"CE-147 Coahuila-Orizaba",140
+19.412829,-99.155116,"CE-148 Coahuila-Av. Cuauhtémoc",188
+19.411990,-99.155699,"CE-149 Mérida-Antonio M. Anza",468
+19.409848,-99.164553,"CE-150 Campeche-Medellín",169
+19.410529,-99.160873,"CE-151 Campeche-Tonalá",346
+19.409098,-99.167181,"CE-152 Tlacotalpan-Campeche",199
+19.407492,-99.165144,"CE-153 Manzanillo-Tlaxcala",371
+19.406511,-99.167897,"CE-154 Tuxpan-Tlaxcala",367
+19.408218,-99.159911,"CE-155 Jalapa-Tlaxcala",330
+19.406959,-99.163021,"CE-156 Tepic-Ario",181
+19.406236,-99.166616,"CE-157 Tepic-Tlacotalpan",205
+19.407517,-99.155373,"CE-158-159 Huatabampo-Eje 1 Pte. Av. Cuauhtémoc",152
+19.440252,-99.163455,"CE-160 Alfonso Herrera-Gabino Barreda",358
+19.405533,-99.164913,"CE-161 Quintana Roo-Manzanillo",170
+19.404907,-99.162485,"CE-162 Tehuantepec-Medellín",350
+19.405246,-99.156430,"CE-163 Toluca-Bajío",375
+19.403228,-99.165854,"CE-164 Bajío-Tlacotalpan",392
+19.404268,-99.160503,"CE-165 Bajío-Eje 2 Pte. Monterrey",177
+19.406069,-99.183549,"CE-166 Progreso-Cda. Antonio Maceo",190
+19.404609,-99.179410,"CE-167 General Salvador Alvarado-Progreso",197
+19.403997,-99.177600,"CE-168 Comercio-Progreso",365
+19.403019,-99.174934,"CE-169 Prosperidad-Progreso",377
+19.404029,-99.184342,"CE-170 Observatorio Oriente-Revolución",334
+19.402532,-99.178203,"CE-171 Comercio-Jose Martí",379
+19.403531,-99.181670,"CE-172 General Francisco Murguía-José Martí",436
+19.401682,-99.176398,"CE-173 Minería-José Martí",192
+19.441133,-99.161703,"CE-174 Joaquín Garcia Icazbalceta-Ignacio Manuel Altamirano",246
+19.400599,-99.172460,"CE-175 Mutualismo-José Martí",187
+19.442717,-99.152262,"CE-176 Av. Jesús García-Luis Donaldo Colosio",305
+19.408841,-99.181692,"CE-177 Benjamín Hill - Carlos Zetina",189
+19.406833,-99.180457,"CE-178 Tamaulipas-Francisco Murguía",450
+19.404436,-99.171381,"CE-179 Nuevo León-Quintana Roo",178
+19.404554,-99.169953,"CE-180 Quintana Roo-Villahermosa",195
+19.404825,-99.174722,"CE-181 Benjamín Franklin - Ometusco",229
+19.402028,-99.171292,"CE-182 Progreso-Astrónomos",381
+19.437665,-99.164018,"CE-183 Gabino Barreda-Guillermo Prieto",255
+19.414793,-99.185083,"CE-184 General Gómez Pedraza-Gobernador Tiburcio Montiel",370
+19.412776,-99.182805,"CE-185 General Antonio Léon-General Pedro Antonio de los Santos",146
+19.412438,-99.188493,"CE-186 Gob. Gregorio V. Gelati-Gral. Francisco Molinos del Campo",639
+19.411227,-99.185514,"CE-187 General Cano-Gobernador Gregorio V. Gelati",384
+19.411711,-99.190139,"CE-188 Gobernador Melchor Múzquiz-Gobernador Ignacio Esteva",221
+19.410046,-99.187960,"CE-189 Gobernador Rafael Rebollar-Gobernador José Ceballos",223
+19.409577,-99.183818,"CE-190 Gobernador Ignacio Esteva-Maestro José Vasconcelos",145
+19.407960,-99.187901,"CE-191 Gobernador Rafael Rebollar-Gobernador Vicente Eguía",354
+19.425907,-99.190733,"CE-192-193 Rubén Darío.Reforma",164
+19.424282,-99.180334,"CE-194 Circuito Mahatma Gandhi-Reforma",359
+19.424858,-99.185181,"CE-195 Reforma-Circuito Mahatma Gandhi",166
+19.438349,-99.192904,"CE-196 Lago Tanganica- Av. Ejército Nacional",198
+19.440925,-99.205049,"CE-197 Presa Falcón - Miguel De Cervantes Saavedra",657
+19.438174,-99.203836,"CE-198 Sócrates-Ejército Nacional",451
+19.437934,-99.197241,"CE-199 Anatole France-Av. Ejército Nacional",150
+19.437596,-99.188785,"CE-200 Emerson-Av. Ejército Nacional",200
+19.437497,-99.187212,"CE-201 Lope de Vega-Av. Ejército Nacional",314
+19.436064,-99.198898,"CE-202 Calderón de la Barca-Av. Homero",287
+19.435985,-99.194832,"CE-203 Tennyson-Av. Homero",438
+19.435882,-99.191520,"CE-204 Temístocles-Homero",149
+19.435526,-99.184747,"CE-205 Taine-Homero",421
+19.436142,-99.200996,"CE-206 Homero-Moliere",319
+19.434861,-99.183322,"CE-207 Torquato Tasso-Homero",153
+19.434182,-99.189835,"CE-208 Hesiodo-Lamartine",315
+19.435478,-99.206359,"CE-209 Solón-Horacio",399
+19.434076,-99.194091,"CE-210 Eugenio Sue-Horacio",317
+19.433850,-99.188275,"CE-211 Isaac Newton-Horacio",302
+19.433864,-99.188094,"CE-212 Hegel-Horacio",156
+19.434366,-99.206306,"CE-213 Solón-Cicerón",204
+19.434353,-99.203220,"CE-214 Platón-Horacio",161
+19.433840,-99.199680,"CE-215 Edgar Alan Poe-Horacio",286
+19.433419,-99.195746,"CE-216 Alejandro Dumas-Horacio",155
+19.432851,-99.183545,"CE-217 Euler-Horacio",284
+19.432451,-99.188033,"CE-218 Hegel-Ibarbourou",162
+19.433364,-99.207553,"CE-219 Esopo-FC de Cuernavaca",307
+19.432655,-99.205727,"CE-220 Plinio-Presidente Masaryk",148
+19.431799,-99.201565,"CE-221 Emilio Castelar-Presidente Masaryk",316
+19.431417,-99.195774,"CE-222 Alejandro Dumas-Presidente Masarik",154
+19.431242,-99.191613,"CE-223 Isaac Newton-Presidente Masaryk",324
+19.431115,-99.188082,"CE-224 Hegel-Presidente Masaryk",285
+19.431172,-99.185612,"CE-225 Petrarca-Presidente Masaryk",331
+19.431001,-99.182181,"CE-226 Wallon-Presidente Masaryk",235
+19.431783,-99.207381,"CE-227 Campos Elíseos-Periférico",301
+19.427705,-99.199120,"CE-228 Campos Elíseos-La Fontaine",147
+19.430515,-99.203331,"CE-229 Carlos Dickens-Séneca",158
+19.430098,-99.200074,"CE-230 Edgar Allan Poe - Carlos Dickens",458
+19.429712,-99.193579,"CE-231 Isaac Newton-Aristóteles",159
+19.428940,-99.185389,"CE-232 Taine - Rubén Darío",300
+19.429314,-99.196965,"CE-233 Julio Verne-Luis G. Urbina",321
+19.427862,-99.191405,"CE-234 Tres Picos-Arquímides",219
+19.429417,-99.202353,"CE-235-236 Campos Elíseos-Moliere",252
+19.426744,-99.193986,"CE-237-238 Andrés Bello-George Eliot",247
+19.430153,-99.181355,"CE-239 Rincón del Bosque-Ruben Darío",275
+19.438634,-99.206291,"CE-240 Ejército Nacional-F.C. de Cuernavaca",288
+19.438693,-99.207573,"CE-241 Ejército Nacional-Juan Vázquez de la Mella",191
+19.440027,-99.200711,"CE-242 Pról. Moliere-Miguel de Cervantes Saavedra",326
+19.441123,-99.195857,"CE-243 Lago Filt-Miguel de Cervantes Saavedra",163
+19.440508,-99.193681,"CE-244 Lago Victoria-Miguel de Cervantes Saavedra",306
+19.438347,-99.190503,"CE-245 Lago Onega-Av. Ejército Nacional",472
+19.434147,-99.179835,"CE-246 Leibnitz-Thiers",230
+19.432276,-99.180640,"CE-247 Herschel-Rousseau",151
+19.431750,-99.177399,"CE-248 Shakespeare-Lafayette",244
+19.429884,-99.177594,"CE-249 Shakespeare-Darwin",224
+19.428949,-99.179796,"CE-250 Darwin-Mariano Escobedo",283
+19.429261,-99.175380,"CE-251 Goethe-Darwin",281
+19.427575,-99.177020,"CE-252 Víctor Hugo-Shakespeare",280
+19.426448,-99.178153,"CE-253 Dante-Tolstoi",343
+19.439177,-99.159957,"CE-254 Alfonso Herrera-Miguel Shultz",132
+19.437118,-99.161862,"CE-255 José Rosas Moreno-Guillermo Prieto",129
+19.437128,-99.158363,"CE-256 Gómez Farías-Sadi Carnot",237
+19.433803,-99.166223,"CE-257 Manuel Maria Contreras-Villalongin",311
+19.416530,-99.179044,"CE-258 Circuito Interior-Juan Escutia",290
+19.437569,-99.154680,"CE-259 Tómas Alva Edison-Ponciano Arriaga",117
+19.435311,-99.147786,"CE-260 Av. Juárez-Balderas",705
+19.424910,-99.172455,"CE-261 Paseo de la Reforma-Río de la Plata",124
+19.436931,-99.133952,"CE-262 República de Cuba-República de Brasil",251
+19.436274,-99.158425,"CE-263 Sadi Carnot - Gómez Farias",125
+19.440985,-99.152935,"CE-264-275 Héroes Ferrocarrileros - Jesús Garcia",128
+19.440839,-99.152265,"CE-265 Mina - Jesús García",127
+19.444031,-99.152187,"CE-266-267 Jesús García - Carlos J. Meneses",313
+19.442467,-99.151658,"CE-268-269 Luis Donaldo Colosio - Av. Jesús García",130
+19.436764,-99.153865,"CE-270 De la República-Ponciano Arriaga",243
+19.443684,-99.152465,"CE-271-272 Jesús García - Carlos J. Meneses",141
+19.442707,-99.152956,"CE-273-274 Luis Donaldo Colosio - Av. Jesús García",134
+19.401986,-99.156366,"CE-276 Anaxágoras-Obrero Mundial",402
+19.401807,-99.159090,"CE-277 Prolongación Tonalá-Obrero Mundial",435
+19.400710,-99.163831,"CE-278 Mier Y Pesado-Obrero Mundial",211
+19.399908,-99.166553,"CE-279 La Morena-Providencia",383
+19.401500,-99.156406,"CE-280 Anaxágoras-Obrero Mundial",172
+19.398532,-99.157308,"CE-281 Pitágoras-La Morena",232
+19.398719,-99.161280,"CE-282 La Morena-Eje 2 Poniente Gabriel Mancera",212
+19.397923,-99.167248,"CE-283 Av. Coyoacán-Rafael Dondé",209
+19.397693,-99.172981,"CE-284 Dakota-Vermont",64
+19.399763,-99.177538,"CE-285 12 de Octubre-Minería",182
+19.399201,-99.179943,"CE-286 13 de Septiembre-Avenida Patriotismo",357
+19.398946,-99.183254,"CE-287 13 de Septiembre-Puente de la Morena",30
+19.396340,-99.183571,"CE-288 11 de Abril-Avenida 2",31
+19.396380,-99.172708,"CE-290 Yosemite-Colorado",430
+19.397651,-99.169946,"CE-291 Magdalena-División Del Norte",385
+19.396917,-99.166264,"CE-292 Adolfo Prieto-Eje 4 Sur Xola",409
+19.397373,-99.164598,"CE-293 Mier y Pesado-Eje 4 Sur Xola",179
+19.396442,-99.160902,"CE-294 Nicolás San Juan-Eje 4 Sur Xola",210
+19.396505,-99.156877,"CE-295 Anaxágoras-Eje 4 Sur Xola",393
+19.394283,-99.158756,"CE-296 Diagonal San Antonio-Enrique Rébsamen",395
+19.394412,-99.158907,"CE-297 Diagonal San Antonio-Enrique Rébsamen",386
+19.394092,-99.162139,"CE-298 Romero de Terreros-Gabriel Mancera",222
+19.394601,-99.165054,"CE-299 Romero de Terreros-Mier Y Pesado",401
+19.393229,-99.168394,"CE-300 Providencia -Luz Saviñón",78
+19.393807,-99.171133,"CE-301 Luz Saviñón-Magdalena",464
+19.393914,-99.171675,"CE-302 Luz Saviñón-Magdalena",96
+19.394862,-99.173006,"CE-303 Montecito-Av. Insurgentes",45
+19.395043,-99.173821,"CE-304 Montecito-Dakota",404
+19.394693,-99.175531,"CE-305 Avenida del Parque-Arizona",277
+19.393699,-99.175664,"CE-306 Dakota-Minnesota",62
+19.393712,-99.175815,"CE-307 Minnesota-Dakota",59
+19.393643,-99.178156,"CE-308 Nueva York-Arizona",65
+19.393059,-99.179483,"CE-309 Pensilvania-Arizona",380
+19.395316,-99.181726,"CE-310 Calle 1-Av. Patriotismo",387
+19.392709,-99.183732,"CE-312 Avenida 2-Calle 7",66
+19.391431,-99.178989,"CE-313 Pensilvania-Oklahoma",457
+19.391647,-99.177331,"CE-314 Nueva York-Louisiana",388
+19.391444,-99.173687,"CE-315 Alabama-Montana",76
+19.391056,-99.171200,"CE-316 San Francisco-Concepción Beistegui",408
+19.391456,-99.166157,"CE-317 Avenida Coyoacán-Torres Adalid",400
+19.392195,-99.163987,"CE-318 Luz Saviñón-Amores",217
+19.391991,-99.162684,"CE-319 Diagonal San Antonio-Luz Saviñón",390
+19.391374,-99.159327,"CE-320 Enrique Rébsamen-Luz Saviñón",213
+19.389477,-99.157513,"CE-321 Torres Adalid-Anaxágoras",443
+19.388457,-99.160643,"CE-322 Heriberto Frías-Concepción Beistegui",216
+19.388986,-99.163245,"CE-323 Concepción Beistegui-Gabriel Mancera",396
+19.387483,-99.165409,"CE-324 Amores-Avenida Eugenia",70
+19.388178,-99.169667,"CE-325 Providencia -Avenida Del Valle",67
+19.388978,-99.174811,"CE-326 Eugenia-Nebraska",452
+19.388850,-99.177720,"CE-327 Georgia -Pensilvania",68
+19.392721,-99.184727,"CE-328 Avenida 1-Calle 7",418
+19.390306,-99.184812,"CE-329 Calle 13-Avenida 1",391
+19.389358,-99.182606,"CE-330 Calle 15-Avenida Patriotismo",75
+19.388748,-99.183924,"CE-331 Avenida 2-Calle 17",382
+19.385494,-99.183744,"CE-332 Calle 27-Avenida 3",22
+19.387624,-99.180978,"CE-333 Georgia-Carolina",48
+19.386531,-99.175107,"CE-334 Nueva York-Av. Insurgentes",424
+19.386989,-99.173438,"CE-335 Magdalena-Ameyalco",69
+19.385531,-99.169673,"CE-336 San Borja-Cda. Dr. J. Bartolache",394
+19.384849,-99.167040,"CE-337 San Borja-Martín Mendalde",19
+19.384242,-99.163260,"CE-338 Nicolás San Juan-San Borja",411
+19.386212,-99.160583,"CE-339 Enrique Rébsamen-Avenida Eugenia",220
+19.385625,-99.158193,"CE-340 Anaxágoras-Avenida Eugenia",397
+19.382889,-99.158352,"CE-341 San Borja-Avenida Cuauhtémoc",77
+19.382370,-99.159878,"CE-342 Pitágoras-Av. División del Norte",417
+19.384079,-99.160915,"CE-343 Enrique Rébsamen-División Del Norte",74
+19.384447,-99.172039,"CE-345 Patricio Sanz - Miraflores",57
+19.384966,-99.174117,"CE-346 San Francisco-Santa Margarita",429
+19.384474,-99.176084,"CE-347 Pennsylvania-Maximino Avila Camacho",416
+19.385457,-99.178272,"CE-348 Indiana-Avenida San Antonio",39
+19.385632,-99.180848,"CE-349 Augusto Rodin-Avenida San Antonio",63
+19.385751,-99.186297,"CE-351 Calle 27-Avenida Revolución",389
+19.384146,-99.185491,"CE-352 Tintoreto-Giorgione",405
+19.382335,-99.178884,"CE-353 Carolina-Holbein",41
+19.381714,-99.176664,"CE-354 Boston-Av. Insurgentes",47
+19.382011,-99.173289,"CE-355 California-Sacramento",428
+19.381287,-99.170200,"CE-356 Matías Romero -Adolfo Prieto",433
+19.380617,-99.167066,"CE-357 Matías Romero -Amores",462
+19.380087,-99.164270,"CE-358 Nicolás San Juan-Matias Romero",53
+19.379331,-99.161163,"CE-359 Matías Romero -Pestalozzi",448
+19.379435,-99.162794,"CE-360 Heriberto Frías-Matias Romero",25
+19.380691,-99.175036,"CE-361 Porfirio Díaz-Capulín",60
+19.382123,-99.181091,"CE-362 Augusto Rodin-Alberto Balderas",26
+19.380839,-99.183932,"CE-363 Holbein-Paulo Ucello",427
+19.381123,-99.186670,"CE-365 Holbein-Avenida Revolución",27
+19.378423,-99.181891,"CE-366 Porfirio Díaz-Augusto Rodin",406
+19.379593,-99.181351,"CE-367 Boston -Augusto Rodin",43
+19.379941,-99.177224,"CE-369 Porfirio Díaz-Av. Insurgentes",419
+19.378799,-99.176821,"CE-370 Tlacoquemécatl-Av. Insurgentes",46
+19.378546,-99.174297,"CE-371 Tlacoquemécatl-Capulín",431
+19.377966,-99.170272,"CE-372 Dr. Roberto Gayol-Tlacoquemécatl",32
+19.377932,-99.166594,"CE-373 Pilares-Gabriel Mancera",413
+19.376959,-99.161099,"CE-374 Pitágoras-Pilares",37
+19.376793,-99.158847,"CE-375 Tenayuca-División Del Norte",17
+19.375397,-99.163778,"CE-377 Heriberto Frías-Miguel Laurent",24
+19.375865,-99.168219,"CE-378 Miguel Laurent-Amores",35
+19.374756,-99.173539,"CE-380 Moras-San Lorenzo",410
+19.375543,-99.178011,"CE-381 San Lorenzo-Manzanas",21
+19.375865,-99.185573,"CE-384 Empresa-Poussin",38
+19.375651,-99.185586,"CE-385 Poussin-Empresa",425
+19.374912,-99.185807,"CE-386 Poussin-Donatello",415
+19.374267,-99.180546,"CE-387 Cadiz-Empresa",42
+19.373655,-99.179029,"CE-389 Santander-Félix Cuevas",420
+19.373161,-99.178243,"CE-390-391 Oso-Félix Cuevas",44
+19.373004,-99.174764,"CE-392 Patricio Sanz-Félix Cuevas",460
+19.373307,-99.172471,"CE-393 Adolfo Prieto-Félix Cuevas",61
+19.372474,-99.171639,"CE-394 Dr. Roberto Gayol-Félix Cuevas",18
+19.373725,-99.169807,"CE-395 San Lorenzo-Martín Mendalde",407
+19.371650,-99.170150,"CE-396 Martin Mendalde-Felix Cuevas",422
+19.373136,-99.167067,"CE-397 San Lorenzo-Gabriel Mancera",40
+19.371040,-99.165653,"CE-398 Juan Sánchez Azcona-Félix Cuevas",449
+19.372469,-99.164538,"CE-399 Heriberto Frías-San Lorenzo",23
+19.372101,-99.161501,"CE-401 San Lorenzo-Avenida Cuauhtémoc",432
+19.371142,-99.158591,"CE-402 Uxmal-Municipio Libre",454
+19.373833,-99.157433,"CE-404 Miguel Laurent-Avenida División Del Norte",437
+19.370566,-99.156622,"CE-405 División Del Norte-Municipio Libre",16
+19.367266,-99.158656,"CE-407  Prolongación Xochicalco-General Emiliano Zapata",5
+19.365023,-99.155490,"CE-409 Azores - División Del Norte",55
+19.368107,-99.164376,"CE-412 Parroquia-Avenida Universidad",20
+19.369823,-99.172164,"CE-413 Parroquia-Avenida Coyoacán",56
+19.370214,-99.173855,"CE-414 Parroquia-José Ignacio Bartolache",51
+19.370990,-99.176135,"CE-415 San Francisco-Parroquia",11
+19.371279,-99.177623,"CE-416 Recreo-Parroquia",414
+19.373447,-99.184465,"CE-417 Goya-Augusto Rodin",12
+19.370615,-99.181606,"CE-419 Actipan-Cadiz",58
+19.369672,-99.179581,"CE-420 María Luz Bringas-Oso",412
+19.369520,-99.179421,"CE-421 María Luz Bringas-Oso",29
+19.368403,-99.177472,"CE-422 Búfalo-José María Rico (Eje 8)",426
+19.367816,-99.175269,"CE-423 Moras-José María Rico (Eje 8)",9
+19.367103,-99.170581,"CE-424 Amores-José María Rico (Eje 8)",28
+19.367040,-99.167387,"CE-425 Nicolas San Juan-Avenida Universidad",473
+19.364956,-99.162987,"CE-427 Avenida México-Coyoacán-Av. Popocatépetl (Eje 8)",456
+19.363404,-99.160395,"CE-428  Prolongación Uxmal-Av. Popocatépetl (Eje 8)",6
+19.363061,-99.158334,"CE-429 Pirineos-Av. Popocatépetl (Eje 8)",50
+19.362050,-99.154976,"CE-430 Tripoli-Av. Popocatépetl (Eje 8)",378
+19.361245,-99.162390,"CE-432 Carrillo Puerto-Avenida México-Coyoacan",52
+19.363548,-99.170766,"CE-433 Jose María Olloqui-Lopéz Cotilla",434
+19.363699,-99.171185,"CE-434 Jose María Olloqui-Amores",33
+19.366230,-99.177904,"CE-436 Rodríguez Saro-Búfalo",423
+19.364916,-99.175985,"CE-437 Moras-Comunal",36
+19.364730,-99.174447,"CE-438 Adolfo Prieto-José María Olloqui",10
+19.362037,-99.172683,"CE-439 Amores-Avenida Coyoacán",34
+19.361792,-99.171471,"CE-440  Martin Mendalde - M. López Cotilla",683
+19.361214,-99.167721,"CE-441 Puente Xoco-Real de Mayorazgo",445
+19.359863,-99.165065,"CE-442  Real de Mayorazgo - Avenida México - Coyoacán",640
+19.359583,-99.162085,"CE-443 Bruno Traven-Golondrinas",8
+19.359475,-99.159437,"CE-444 General Manuel Rincón-Agustín Gutierrez",444
+19.358571,-99.156102,"CE-445-446 Riff-Avenida Río Churubusco",49
+19.418879,-99.176854,"CE-447 Agustín Melgar-Zamora",94
+19.426611,-99.144470,"CE-448 Dr. Andrade-Arcos De Belén",342
+19.420281,-99.174392,"CE-449 Acapulco-Puebla",297
+19.438326,-99.152238,"CE-450 Ramos Arizpe- Av México Tenochtitlan",241
+19.428847,-99.201299,"CE-451 Campos Elíseos-Goldsmith",322
+19.435867,-99.179856,"CE-452 Leibnitz-Av. Ejercito Nacional",335
+19.424842,-99.203739,"CE-453 Pedregal-Teapa",461
+19.425905,-99.204236,"CE-454 Montes Urales-Monte Pelvoux",202
+19.426308,-99.203300,"CE-455 Pedregal-Ferrocarril De Cuernavaca",312
+19.427517,-99.208412,"CE-456 Alpes-Montes Escandinavos",206
+19.427030,-99.212845,"CE-457 Av. Prado Norte-Explanada",208
+19.428679,-99.206605,"CE-458 Montes Urales-Volcán",485
+19.429324,-99.207159,"CE-459 Volcán-Montes Urales",207
+19.437165,-99.207931,"CE-460 Juan Vázquez De Mella-Homero",160
+19.440106,-99.210031,"CE-461 Presa Don Martín-Boulevard Miguel De Cervantes Saavedra",201
+19.442338,-99.205198,"CE-462 Presa Falcón-Presa Danxhó",440
+19.443239,-99.202809,"CE-463 Lago Andrómaco-Lago Zurich",552
+19.442421,-99.199838,"CE-464 Mateo Alemán-Prolongación Moliere",165
+19.445039,-99.194078,"CE-465 Lago Ginebra-Lago Wetter",309
+19.442690,-99.190830,"CE-466 Lago Onega-Lago Ladoga",203
+19.440399,-99.186784,"CE-467 Lago Mayor-Lago Alberto",196
+19.437250,-99.179573,"CE-468 Lago Xochimilco-Av. Ejército Nacional",236
+19.434183,-99.173089,"CE-469 Bahía de la Concepción-Bahía de Todos Los Santos",226
+19.435039,-99.173879,"CE-470 Bahía de Las Palmas-Bahía de Todos Los Santos",273
+19.436287,-99.174888,"CE-471 Bahía de Chachalacas-Bahía de Santa Bárbara",442
+19.437667,-99.177110,"CE-472 Bahía de Santa Bárbara-Bahía de Ballenas",227
+19.438143,-99.175190,"CE-473 Bahía del Espíritu Santo-Bahía de Banderas",439
+19.438984,-99.177549,"CE-474 Bahía de San Hipólito-Bahía del Espíritu Santo",304
+19.439249,-99.181065,"CE-475 Lago Muritz-Lago Alberto",239
+19.442127,-99.184433,"CE-476 Lago Como-Laguna de Mayrán",245
+19.440905,-99.181743,"CE-477 Lago Iseo-Laguna de Mayrán",441
+19.440818,-99.176961,"CE-478 Laguna de Mayrán-Lago Chalco",303
+19.444433,-99.179664,"CE-479 Lago Muritz-Av.Marina Nacional",231
+19.446073,-99.181654,"CE-480 Lago Iseo-Av. Marina Nacional",233
+19.449367,-99.182461,"CE-481 Lago Garda - Mariano Escobedo",474
+19.444826,-99.178393,"CE-482 Lago Xochimilco - Laguna de San Cristóbal",487
+19.443040,-99.177590,"CE-483 Colegio Salesiano - Marina Nacional",7
+19.440460,-99.174564,"CE-484 Laguna Mayran - Lago Cuitzeo",607
+19.438506,-99.172696,"CE-485 Lago de Pátzcuaro - Marina Nacional",459
+19.437334,-99.169573,"CE-486 Izcoatl - Circuito Interior Melchor Ocampo",489
+19.441728,-99.167477,"CE-487 Nopaltzin - Quetzalcoatl",344
+19.444812,-99.170307,"CE-488 Huetzin - Cuitláhuac",668
+19.446383,-99.175980,"CE-489 Lago Chalco - Laguna Tamiahua",651
+19.449023,-99.179622,"CE-490 Lago Garda - FFCC",491
+19.449460,-99.176660,"CE-491 Colegio Salesiano - Lago Catemaco",627
+19.449153,-99.173433,"CE-492 Lago Cuitzeo - Felipe Carrillo Puerto",480
+19.445916,-99.170401,"CE-493 Lago Tláhuac - Laguna de Guzmán",636
+19.444053,-99.167429,"CE-494 Tláloc - Calzada México Tacuba",538
+19.445528,-99.166934,"CE-495 Amado Nervo - de los Maestros",469
+19.449039,-99.170246,"CE-496 Maestro Rural - José Parres",466
+19.452688,-99.170157,"CE-497 Manuel Carpio - Plan de Ayala",479
+19.453146,-99.166455,"CE-498 de los Maestros - Plan de Agua Prieta",477
+19.455986,-99.165966,"CE-499 de los Maestros - Calzada de los Gallos",484
+19.456546,-99.169344,"CE-500 Plan de Guadalupe /Ferrocarril de Cuernavaca - Juan Sarabia",606
+19.454257,-99.172593,"CE-501 Plan de Guadalupe /Ferrocarril de Cuernavaca - Eligio Ancona",563
+19.453432,-99.174636,"CE-502 Mar Mediterráneo - Callejón de la Zanja",475
+19.455572,-99.175130,"CE-503 Nextitla - Mar Egeo",481
+19.455343,-99.179056,"CE-504 Mar Blanco - Calzada México Tacuba",476
+19.455319,-99.181368,"CE-505 Mar Negro - Mariano Escobedo",701
+19.459553,-99.185111,"CE-506 Mar Mediterráneo - Mar Arábigo",482
+19.460292,-99.188303,"CE-507 Mar Mediterráneo - Azcapotzalco",483
+19.462364,-99.183671,"CE-508 Libertad-C. José Sánchez Trujillo",673
+19.459686,-99.181778,"CE-509  Juárez - Venecia",681
+19.462152,-99.178291,"CE-510 Egipto - Calle Norte 79 A",575
+19.463941,-99.182280,"CE-511 Palestina - Egipto",697
+19.465638,-99.186178,"CE-512 Clavería - Floresta",583
+19.469578,-99.189828,"CE-513 Av. Aquiles Serdán - Av. Invierno",656
+19.470485,-99.188509,"CE-514 José F. Gutiérrez - Invierno",586
+19.469622,-99.184082,"CE-515 Tebas-C. Salónica",674
+19.466690,-99.180302,"CE-516 Texcoco - Nilo",589
+19.465377,-99.179197,"CE-517 Ignacio Allende - Clavería",591
+19.468315,-99.177386,"CE-518 Heliópolis - Norte 79A",594
+19.464891,-99.177242,"CE-519 Poniente 58 - Cuitláhuac",592
+19.470699,-99.178323,"CE-520 Salónica - Eje 3 Norte Camarones",659
+19.466423,-99.173061,"CE-521 Yuca - Clavelinas",593
+19.470597,-99.170053,"CE-522 Prol. Nueces - Av. Cuitlahuac",671
+19.471112,-99.165294,"CE-523 Toronjil - Av. Cuitlahuac",672
+19.468119,-99.167268,"CE-524 Malvón - Juan Sarabia",702
+19.468300,-99.165619,"CE-525 Boldo - Tila",587
+19.466952,-99.162928,"CE-526 Toronjil - Mejorana",666
+19.464826,-99.163177,"CE-527 Boldo - Alcanfores",588
+19.464964,-99.160455,"CE-528 Tlatilco - Av. Jardín",632
+19.465541,-99.166726,"CE-529  Av Plan de San Luis - Calle Clavelinas",694
+19.464500,-99.169480,"CE-530  Membrillo - Cda. Nueces",565
+19.460356,-99.174283,"CE-531 Norte 67 - Poniente 44",578
+19.460836,-99.171151,"CE-532  Av. Biólogo Maximino Martínez - Camarones",678
+19.460494,-99.167270,"CE-533  Av Plan de San Luis - Eulalia Gúzman",682
+19.458773,-99.164499,"CE-534 Tlatilco - Jazmín",647
+19.461773,-99.162241,"CE-535 Av. Jardín - Orquídea",610
+19.458881,-99.159215,"CE-536 Fresno - Eulalia Guzmán (Eje 2 Norte)",478
+19.457544,-99.159463,"CE-537 Fresno - Clavel",470
+19.453778,-99.163128,"CE-538 Nogal - Eligio Ancona",622
+19.455104,-99.157691,"CE-539 Naranjo - Av. Ricardo Flores Magon",621
+19.453965,-99.152468,"CE-540 Eucalipto - Ricardo Flores Magón",494
+19.452720,-99.158014,"CE-541 Eligio Ancona - Naranjo",486
+19.451838,-99.154584,"CE-542 Dr. Enrique González Martínez - Eligio Ancona",598
+19.450506,-99.157375,"CE-543 Jaime Torres Bodet - Manuel Carpio",493
+19.449773,-99.163136,"CE-544 Salvador Díaz Mirón - Nogal",611
+19.449098,-99.159952,"CE-545 Sabino - Salvador Díaz Mirón",488
+19.448764,-99.156817,"CE-546 Salvador Díaz Mirón - Santa María la Ribera",463
+19.447481,-99.155443,"CE-547 Dr. Enrique González Martínez - Salvador Díaz Mirón",667
+19.447029,-99.154311,"CE-548 Dr. Mariano Azuela - Jose Antonio Alzate",551
+19.445044,-99.157133,"CE-549 Sor Juana Ines de la Cruz - Dr. Atl",349
+19.445947,-99.161378,"CE-550 Sor Juana Ines de la Cruz - Fresno",347
+19.443581,-99.164883,"CE-551 Nogal - Ribera de San Cosme",348
+19.443108,-99.162454,"CE-552 Fresno - Ribera de San Cosme",336
+19.442000,-99.159333,"CE-553  Jaime Torres Bodet - Ribera de San Cosme",332
+19.441747,-99.155639,"CE-554 Heroes Ferrocarrileros - Mariano Azuela",345
+19.440216,-99.156168,"CE-555 Ribera de San Cosme - Insurgentes Centro",242
+19.423056,-99.134941,"CE-556 Plaza Tlaxcoaque - Diagonal 20 de noviembre",558
+19.419810,-99.135941,"CE-557 5 de Febrero - Fernando de Alva Ixtlilxochitl",581
+19.422300,-99.139872,"CE-558 Chimalpopoca - Simón Bolívar",624
+19.420029,-99.140999,"CE-559 Fernando de Alva Ixtlilxochitl - Diagonal 20 de noviembre",517
+19.421599,-99.143408,"CE-560 Doctor Liceaga - Eje Central",540
+19.423673,-99.147957,"CE-561 Dr. Jiménez - Dr. Lavista",600
+19.420370,-99.146818,"CE-562 Claudio Bernard - José María Vertiz",523
+19.419444,-99.149776,"CE-563 Doctor Velasco - Niños Héroes",539
+19.419509,-99.153227,"CE-564 Doctor Carmona y Valle - Doctor Velasco",544
+19.417671,-99.152786,"CE-565 Dr. Martinez del Rio - Dr. Lucio",663
+19.416239,-99.149542,"CE-566 Dr. Jiménez - Dr. García Diego",662
+19.417133,-99.145649,"CE-567 Doctor Martínez del Río - Doctor José Terrés",542
+19.418013,-99.144598,"CE-568 Doctor Barragán - Doctor Erazo",535
+19.415713,-99.141227,"CE-569 Gutiérrez Nájera - Bolívar",561
+19.417595,-99.140972,"CE-570 Alfredo Chavero - Simón Bolívar",641
+19.416221,-99.134909,"CE-571 Manuel M. Flores - Calzada San Antonio Abad",555
+19.414677,-99.136894,"CE-572 Manuel J. Othón - José T. Cuellar",637
+19.412853,-99.138723,"CE-573 Fernando Ramírez - Isabel la Católica",537
+19.411768,-99.140899,"CE-574 José María Roa Bárcenas - Simón Bolívar",648
+19.413235,-99.143476,"CE-575 Fernando Ramírez - Eje Central",568
+19.413464,-99.148029,"CE-576 Doctor Arce - Jose Maria Vertiz",658
+19.411609,-99.153140,"CE-577 Doctor Márquez - Doctor Jiménez",528
+19.408649,-99.151126,"CE-578 Doctor Jiménez - Doctor Federico Gómez Santos",556
+19.410884,-99.144975,"CE-579 Doctor Márquez - Privada Doctor Duran",547
+19.409817,-99.141643,"CE-580 Antonio Solís - Bolívar",567
+19.411398,-99.135655,"CE-581 José María Roa Bárcenas - San Antonio Abad",655
+19.409480,-99.135894,"CE-582 Antonio Solis-San Antonio Abad",670
+19.408087,-99.137763,"CE-583 Ángel del Campo - 5 de Febrero",635
+19.406970,-99.143830,"CE-584 Enrique Granados - José Peón Contreras (Eje 3)",566
+19.405358,-99.143160,"CE-585 José Toribio Medina - Manuel Navarrete",601
+19.406326,-99.138779,"CE-586 Bernardo Couto-Juan E. Hernández y Davalos",665
+19.404668,-99.136946,"CE-587 Jose Toribio Medina - Marcelino Davalos",664
+19.401175,-99.137480,"CE-588  Av. Fernando - La coruña",623
+19.398590,-99.137732,"CE-589 Cádiz - Calzada de Tlalpan",543
+19.399172,-99.140625,"CE-590 Fernando - Isabel la Católica",569
+19.402088,-99.142976,"CE-591 Simón Bolívar - La Coruña",605
+19.399664,-99.145136,"CE-592 Cádiz - Eje Central Lázaro Cárdenas",531
+19.401018,-99.147952,"CE-593 Zempoala - Diagonal de San Antonio",625
+19.402211,-99.153312,"CE-594 Xochicalco - Obrero Mundial",585
+19.396983,-99.155114,"CE-595 Yacatas - Diagonal de San Antonio",590
+19.395205,-99.155049,"CE-596 Cumbres de Maltrata - Uxmal",638
+19.398858,-99.151211,"CE-597 Diagonal San Antonio - Icacos",504
+19.393100,-99.152012,"CE-598 Palenque - Cumbres de Maltrata",633
+19.398143,-99.148333,"CE-599 La Morena - Zempoala",603
+19.392463,-99.150544,"CE-600 Cumbres de Acultzingo - Av. Universidad",602
+19.395888,-99.145344,"CE-601 Navarra - Fernando",608
+19.392523,-99.146194,"CE-602 Correspondencia - Eje Central Lázaro Cárdenas",516
+19.394422,-99.143291,"CE-603 Castilla - Eje 4 sur Xola",550
+19.390945,-99.142972,"CE-604 Andalucía - Carteros",533
+19.395063,-99.139476,"CE-605 5 de Febrero - Alfonso XIII",630
+19.394974,-99.138949,"CE-606 Alfonso XIII - Aragón",660
+19.390910,-99.138953,"CE-607 Unión Postal - Calzada de Tlalpan",615
+19.388430,-99.139772,"CE-608 Ahorro Postal - Francisco Márquez",643
+19.384623,-99.139817,"CE-609 Romero - Calzada de Tlalpan",524
+19.387174,-99.143708,"CE-610  Av. Víctor Hugo - Av. Niños Héroes de Chapultepec",645
+19.387506,-99.146338,"CE-611 Miguel Negrete - Niños Héroes de Chapultepec",541
+19.388148,-99.148446,"CE-612 Torres Adalid - Cumbres de Maltrata",527
+19.390019,-99.151110,"CE-613 Luz Saviñón - Doctor José María Vertiz",580
+19.389293,-99.156348,"CE-614 Torres Adalid - Av. Cuauhtémoc",652
+19.387480,-99.153876,"CE-615 Tajín - Universidad",508
+19.384965,-99.153588,"CE-616 Petén - Eje 5 Sur",649
+19.384589,-99.150517,"CE-617 Mitla - Eje 5 Sur",511
+19.381824,-99.148086,"CE-618 Bartolomé R. Salido - Edzna",515
+19.381277,-99.145804,"CE-619 Kiff - Rafael Solana Verduguillo",520
+19.381804,-99.142997,"CE-620 Fernando Montes de Oca - Priv. Lago",530
+19.379458,-99.140943,"CE-621 Lago Poniente - Calzada de Tlalpan",629
+19.378351,-99.143996,"CE-622 Fernando Montes de Oca - Eje 6 Sur",453
+19.375518,-99.144118,"CE-623 Fernando Montes de Oca - Antonio Rodríguez",525
+19.377516,-99.148116,"CE-624 Luis Spota - Eje Central Lázaro Cárdenas",529
+19.379442,-99.150064,"CE-625 Zempoala - Angel Urraza",654
+19.382115,-99.153988,"CE-626 San Borja - Petén",507
+19.382606,-99.156592,"CE-627 San Borja - Av. Universidad",628
+19.378281,-99.158410,"CE-628 Tenayuca - Chichen Itzá",574
+19.376367,-99.155872,"CE-629 Tajín - Chichen Itzá",522
+19.375677,-99.152953,"CE-630 Cuicuilco - Motozintla",509
+19.372907,-99.149207,"CE-631 Miguel Laurent - Eje Central",571
+19.370891,-99.151577,"CE-632 Victor Hugo - Sevilla",653
+19.372175,-99.146356,"CE-633 Canarias - Calzada Santa Cruz",545
+19.370133,-99.145866,"CE-634 Rumania - Víctor Hugo",534
+19.370586,-99.142294,"CE-635 Calzada Santa Cruz - Antillas",576
+19.367131,-99.142838,"CE-636 Ajusco - Antillas",599
+19.365760,-99.144413,"CE-637 Ajusco - Emperadores",532
+19.361743,-99.143867,"CE-638 Av Pirineos - C. Antillas",604
+19.364528,-99.146988,"CE-639 Bulgaria - Rumania",536
+19.367465,-99.148786,"CE-640 Odesa - Bulgaria",573
+19.368156,-99.151883,"CE-641 Sevilla - Av. Presidentes",646
+19.364106,-99.150541,"CE-642 Repúblicas - Monrovia",582
+19.362323,-99.148805,"CE-643 Filipinas - Av. Pirineos",503
+19.361371,-99.150619,"CE-644 Monrovia - Popocatépetl (Eje 8 Sur)",619
+19.358634,-99.152732,"CE-645 Saratoga - Ajusco",560
+19.360545,-99.147501,"CE-646  Rumania - Av. Popocatépetl",650
+19.359256,-99.144433,"CE-647 Antillas - Nevado",642
+19.354411,-99.147795,"CE-648 Rafael Olivia - 20 de agosto",617
+19.350720,-99.146786,"CE-649 Héroes del 47 - Calzada de Tlalpan",521
+19.355809,-99.149393,"CE-650 Xicoténcatl- Prolongación Xicoténcatl",570
+19.351578,-99.150941,"CE-651 Héroes del 47 - División del Norte",526
+19.354876,-99.153611,"CE-652 Xicoténcatl - División del Norte",548
+19.356689,-99.153269,"CE-653 Londres - División del Norte",596
+19.355942,-99.157461,"CE-654 Londres - San Pedro",595
+19.357086,-99.160197,"CE-655 Gomez Farias - Viena",577
+19.354311,-99.162436,"CE-656 Ignacio Allende - Paris",276
+19.357436,-99.163794,"CE-657 Madrid - Centenario",369
+19.355339,-99.165613,"CE-658 Vicente Guerrero - Berlín",368
+19.356486,-99.169456,"CE-659  Madrid - Avenida Mexico",360
+19.358003,-99.170106,"CE-660 Josefa Ortiz de Dominguez - Circuito Interior",364
+19.356750,-99.171769,"CE-661 Madrid - Universidad",514
+19.362041,-99.175158,"CE-662 Manzano - Circuito Interior",553
+19.354803,-99.175419,"CE-663 Hortensia - Avenida Universidad",549
+19.355544,-99.178992,"CE-664 Hortensia - 2da cerrada de Minerva",546
+19.358903,-99.177997,"CE-665 Moras - Mango",584
+19.361489,-99.177432,"CE-666 Moras - Naranjo",557
+19.363955,-99.180789,"CE-667 Hermes - Mosqueta",362
+19.367522,-99.181727,"CE-668 Plateros - Capuchinas",325
+19.370769,-99.187361,"CE-669 Los Juarez - Sagredo",398
+19.367600,-99.184992,"CE-670 Felix Parra - Flamencos",366
+19.364577,-99.186288,"CE-671 Plateros - Jose María Velasco",634
+19.363024,-99.182889,"CE-672 José María Velasco - Damas",492
+19.363153,-99.186963,"CE-673 Miguel Noreña - José María Ibarrarán",496
+19.361846,-99.186814,"CE-674 Silvestre Revueltas - Macedonio Alcalá",631
+19.362526,-99.188958,"CE-675 Manuel Castro Padilla - Av. Revolución",686
+19.358236,-99.188106,"CE-676  Ricardo Palmerín - Abundio Martínez",684
+19.359040,-99.184498,"CE-677  Juan Pablo II - Av. de los Insurgentes Sur",695
+19.358863,-99.182930,"CE-678 Francia - Tecoyotitla",559
+19.354886,-99.184642,"CE-679 Olivo - Tecoyotitla",554
+19.366701,-99.188228,"CE-680  Diego Becerra - Av. Revolución",685
+19.355844,-99.189141,"CE-681 Guty Cárdenas - Ricardo Castro",699
+19.353534,-99.189548,"CE-682 Manuel M. Ponce - Fernando M. Villalpando",698
+19.350383,-99.187223,"CE-683 Pedro Luis Ogazón-Insurgentes Sur",669
+19.351594,-99.184772,"CE-684 Vito Alessio Robles - Tecoyotitla",579
+19.347699,-99.186901,"CE-685 Av De la Paz - Insurgentes",609
+19.352203,-99.178393,"CE-686 Vito Alessio Robles - Universidad",562
+19.349307,-99.179074,"CE-687 Francisco Sosa - Panzacola",572
+19.346975,-99.178791,"CE-688 Panzacola - Miguel Ángel de Quevedo",513
+19.351426,-99.175455,"CE-689 G. Pérez Valenzuela - Salvador Novo",519
+19.345966,-99.172975,"CE-690 Tata Vasco - Av. Miguel Ángel de Quevedo",616
+19.347283,-99.170834,"CE-691 Melchor Ocampo - Dulce Olivia",518
+19.349149,-99.169646,"CE-692 Presidente Carranza - Francisco Sosa",512
+19.352531,-99.164913,"CE-693 Xicoténcatl - Vicente Guerrero",618
+19.353243,-99.163753,"CE-694 Ignacio Aldama - Centenario",505
+19.352141,-99.162250,"CE-695 Malintzin - Allende",614
+19.351576,-99.164567,"CE-696 México - Malintzin",506
+19.349277,-99.164921,"CE-697 Francisco Sosa - Tres Cruces",564
+19.344782,-99.163584,"CE-698 Cerrada Zamora - Av. Miguel Ángel de Quevedo",644
+19.346895,-99.163868,"CE-699 San Gregorio - Felipe Carrillo Puerto",626
+19.350062,-99.160024,"CE-700 Abasolo - Miguel Hidalgo",497
+19.352052,-99.157981,"CE-701 Cuauhtémoc - Morelos",510
+19.347246,-99.158570,"CE-702 Fernández Leal - Plaza de la Conchita",501
+19.350776,-99.155379,"CE-703 Miguel Hidalgo - Calzada General Anaya",495
+19.344842,-99.157702,"CE-704 Pacífico - Asia",498
+19.344107,-99.155933,"CE-705 Europa - Miguel Ángel de Quevedo",620
+19.347503,-99.152440,"CE-706 Canadá - Acolotitla",500
+19.348076,-99.149060,"CE-707 Irlanda - División del Norte",597
+19.346420,-99.145669,"CE-708 Irlanda-Canada",502
+19.344275,-99.149988,"CE-709 Inglaterra - Antigua Taxqueña",499
+19.416795,-99.192508,"CE-710 Molino del Rey - Glorieta de la Lealtad",1
+19.414108,-99.191983,"CE-711 Molino del Rey - Av. Constituyentes",700
+19.396901,-99.133336,"Simulada oriente 1",SIM-E01
+19.394643,-99.130953,"Simulada oriente 2",SIM-E02
+19.392386,-99.128570,"Simulada oriente 3",SIM-E03
+19.390125,-99.130950,"Simulada oriente 4",SIM-E04
+19.387867,-99.128567,"Simulada oriente 5",SIM-E05
+19.396904,-99.128574,"Simulada oriente 6",SIM-E06
+19.385609,-99.126184,"Simulada oriente 7",SIM-E07
+19.390128,-99.126188,"Simulada oriente 8",SIM-E08
+19.399165,-99.126195,"Simulada oriente 9",SIM-E09
+19.396907,-99.123812,"Simulada oriente 10",SIM-E10
+19.383352,-99.123802,"Simulada oriente 11",SIM-E11
+19.381094,-99.121419,"Simulada oriente 12",SIM-E12
+19.399168,-99.121433,"Simulada oriente 13",SIM-E13
+19.383355,-99.119040,"Simulada oriente 14",SIM-E14
+19.381097,-99.116658,"Simulada oriente 15",SIM-E15
+19.396911,-99.119050,"Simulada oriente 16",SIM-E16
+19.385616,-99.116661,"Simulada oriente 17",SIM-E17
+19.387876,-99.114282,"Simulada oriente 18",SIM-E18
+19.383358,-99.114279,"Simulada oriente 19",SIM-E19
+19.381100,-99.111896,"Simulada oriente 20",SIM-E20
+19.385619,-99.111899,"Simulada oriente 21",SIM-E21
+19.378839,-99.114275,"Simulada oriente 22",SIM-E22
+19.378842,-99.109514,"Simulada oriente 23",SIM-E23
+19.376581,-99.111893,"Simulada oriente 24",SIM-E24
+19.383361,-99.109517,"Simulada oriente 25",SIM-E25

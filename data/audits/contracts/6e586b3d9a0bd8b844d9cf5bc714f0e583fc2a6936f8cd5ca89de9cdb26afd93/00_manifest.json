@@ -1,0 +1,273 @@
+{
+  "code_hashes": {
+    "artifact_reader.py": "a7a2508223d8ab34738ea766ef70a3616dfcb11268f2c6cca744804ca52a4f95",
+    "auxiliary_etl.py": "6ee788a7aba07345f7206ade9f0854be7cbbc711e51b3110b4ed9e80948451d1",
+    "enterprise_etl.py": "da66b87a015e29dff59260186d220274f97bad3ca7903b479983842f36072539",
+    "etl_contract.py": "e102f3e451b61ccd641089ab2f8407f91df57ac6f8cd5289fce99357cf3862a5"
+  },
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "files": [
+    {
+      "bytes": 226315,
+      "path": "data/raw/ecobici_stations/station_information.json",
+      "role": "core_etl",
+      "sha256": "8b4eaa98653beea3d51dc3d894ea8d5ee749923daee40d2e4a0256d2680bb925"
+    },
+    {
+      "bytes": 110988817,
+      "path": "data/raw/ecobici_trips/2025-01.csv",
+      "role": "core_etl",
+      "sha256": "6b23c3d000856dabb72802eeb6cc84fdbbe0e5d104601950d690d9d1f21ef315"
+    },
+    {
+      "bytes": 107105837,
+      "path": "data/raw/ecobici_trips/2025-02.csv",
+      "role": "core_etl",
+      "sha256": "f61d8be8138e1f6f922335b807626db6649d7936bc859ad22a889f2f1401bd87"
+    },
+    {
+      "bytes": 112443905,
+      "path": "data/raw/ecobici_trips/2025-03.csv",
+      "role": "core_etl",
+      "sha256": "a7cd8385505b596f895976bfb42d78dc4204c1b620255972556a709b925ac9b5"
+    },
+    {
+      "bytes": 106058647,
+      "path": "data/raw/ecobici_trips/2025-04.csv",
+      "role": "core_etl",
+      "sha256": "d4cb45a4280c486ce905bfa932b9562731356cb979112e7708d27ffac9a4fb66"
+    },
+    {
+      "bytes": 109082864,
+      "path": "data/raw/ecobici_trips/2025-05.csv",
+      "role": "core_etl",
+      "sha256": "943aa9677b9440abd1a83fce52946c5909c6699f82e2870ed4bafcf2c051cdcd"
+    },
+    {
+      "bytes": 96821733,
+      "path": "data/raw/ecobici_trips/2025-06.csv",
+      "role": "core_etl",
+      "sha256": "e1f6f5f07436aa03668811f1f7e0d00aeeff411eeafbb6cba3154c838e79841e"
+    },
+    {
+      "bytes": 102053921,
+      "path": "data/raw/ecobici_trips/2025-07.csv",
+      "role": "core_etl",
+      "sha256": "0a8bf13ce0b0bf1ba395435a07178bf7ac4381773bd63bbd324bd7d82928d419"
+    },
+    {
+      "bytes": 98785437,
+      "path": "data/raw/ecobici_trips/2025-08.csv",
+      "role": "core_etl",
+      "sha256": "9be378627a1b4244a98d357c4d9c7a74570566b5598449b2e86b1cff74d5e72d"
+    },
+    {
+      "bytes": 97279076,
+      "path": "data/raw/ecobici_trips/2025-09.csv",
+      "role": "core_etl",
+      "sha256": "ea5bafb251c93265a759fc2ce3d43b136d4fa75938af528c81b89a72ba5183c2"
+    },
+    {
+      "bytes": 107575521,
+      "path": "data/raw/ecobici_trips/2025-10.csv",
+      "role": "core_etl",
+      "sha256": "1db4f8159d7ff26389cf97a744ecf364298d6c1eae1d6d3770082a2e83440b3b"
+    },
+    {
+      "bytes": 98150417,
+      "path": "data/raw/ecobici_trips/2025-11.csv",
+      "role": "core_etl",
+      "sha256": "c3b43f4ce217e89a0d1fa5acd1e0d8ab0f9fdd6b569c27765271e406aef61d4b"
+    },
+    {
+      "bytes": 88530445,
+      "path": "data/raw/ecobici_trips/2025-12.csv",
+      "role": "core_etl",
+      "sha256": "eac7663a00bd05f7fd5b5c3d624039707d4fe25ac58bb0ab5deb8ca1c26e7162"
+    },
+    {
+      "bytes": 895,
+      "path": "data/raw/gtfs/gtfs/agency.txt",
+      "role": "verified_mirror",
+      "sha256": "eb6d6fe12d9742f6510b2816f523bb0c6abbb9696da49f1cd6ddf1d6fd03e0b8"
+    },
+    {
+      "bytes": 565,
+      "path": "data/raw/gtfs/gtfs/calendar.txt",
+      "role": "verified_mirror",
+      "sha256": "77221ae329a7e9f844134cb25a0cb81f9797b62cc8cdb8eca35362e936103e07"
+    },
+    {
+      "bytes": 64551,
+      "path": "data/raw/gtfs/gtfs/frequencies.txt",
+      "role": "verified_mirror",
+      "sha256": "b50d15c91199cf01fc906e4a537c9a06c07a7a477633d3bafb6576b2ca38a402"
+    },
+    {
+      "bytes": 21603,
+      "path": "data/raw/gtfs/gtfs/routes.txt",
+      "role": "verified_mirror",
+      "sha256": "cead5d1efb6ebec22224ae074f1211f0652276566f8c31483bbbe1a0440724c6"
+    },
+    {
+      "bytes": 6512479,
+      "path": "data/raw/gtfs/gtfs/shapes.txt",
+      "role": "verified_mirror",
+      "sha256": "a315b8e4adc737ed1a29c36fd500704fae882184329f31d3fa1cd31c9545860a"
+    },
+    {
+      "bytes": 2517212,
+      "path": "data/raw/gtfs/gtfs/stop_times.txt",
+      "role": "verified_mirror",
+      "sha256": "f121a29ef7a86cedf5738bdf018b8d1d39cdf8e31b13f437d115ad5a70d69ead"
+    },
+    {
+      "bytes": 1008103,
+      "path": "data/raw/gtfs/gtfs/stops.txt",
+      "role": "verified_mirror",
+      "sha256": "f1aa8c5b33f1b04bfd40a8d02564c174737a6e8efbadd629602a9d8c838000b6"
+    },
+    {
+      "bytes": 141081,
+      "path": "data/raw/gtfs/gtfs/trips.txt",
+      "role": "verified_mirror",
+      "sha256": "562f809db1cb62a9ecf44ab42999c3b1e0de362de87a289ba8365db2c167c41a"
+    },
+    {
+      "bytes": 2397374,
+      "path": "data/raw/gtfs/gtfs.zip",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "a2ecd0fbdf56e787b8eee3a6a3719043667b022a849f7f510812054677225384"
+    },
+    {
+      "bytes": 12990807,
+      "path": "data/raw/inegi_ageb/ageb_mza_urbana_09_cpv2020_csv.zip",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "1f5f123b8e9a50991d1847271b5a2bf321e813e924e5bcf958cab612311c765a"
+    },
+    {
+      "bytes": 537167,
+      "path": "data/raw/inegi_ageb/ageb_rural_cdmx.geojson",
+      "role": "core_etl",
+      "sha256": "4e903ece4cc3d02e664e2f78fcb0994c5c98ffa0693d7c88bb5d73d0fd55a4c4"
+    },
+    {
+      "bytes": 5350118,
+      "path": "data/raw/inegi_ageb/ageb_urbana_cdmx.geojson",
+      "role": "core_etl",
+      "sha256": "f7082c9990acbb4c517be0f7db872dc76829b4361924449c027c363f54a45ff8"
+    },
+    {
+      "bytes": 260022563,
+      "path": "data/raw/inegi_ageb/denue_09_csv/conjunto_de_datos/denue_inegi_09_.csv",
+      "role": "verified_mirror",
+      "sha256": "e12fcc6c4d518a169c9445c7f160e9d6fc9ba02fd0a84d853659862cdf2e2f70"
+    },
+    {
+      "bytes": 10159,
+      "path": "data/raw/inegi_ageb/denue_09_csv/diccionario_de_datos/denue_diccionario_de_datos.csv",
+      "role": "verified_mirror",
+      "sha256": "53619afc3424522a2bb1587adc34b45b9660728df2d2f49326a4299362f95c0e"
+    },
+    {
+      "bytes": 1210,
+      "path": "data/raw/inegi_ageb/denue_09_csv/metadatos/metadatos_denue.txt",
+      "role": "verified_mirror",
+      "sha256": "bf05c821f1562fdbebb8ae1d38e091bb8e5b72d12fb671117fb256b819cc7894"
+    },
+    {
+      "bytes": 45439249,
+      "path": "data/raw/inegi_ageb/denue_09_csv.zip",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "ae608f30118f6313e9d537ea22918b2c9e9a3d3f19c2ddf5907f55dbb1642b19"
+    },
+    {
+      "bytes": 286182,
+      "path": "data/raw/urban_environment/accidentes_viales_2025.geojson",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "a1a1591fd3091fc733bb77189c1fc6dda03ee8151abfdfdeb83bfcb23d196feb"
+    },
+    {
+      "bytes": 107038,
+      "path": "data/raw/urban_environment/ciclovias.geojson",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "66d65948776d72107c4bfb10e8d08ff645211a6e226ce2afbd9c5bec494606a9"
+    },
+    {
+      "bytes": 303068,
+      "path": "data/raw/urban_environment/ciclovias.zip",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "afe606d143a0d3db729030a60e4527c2df2dd8d449bb3515f8639c5e8be01df3"
+    },
+    {
+      "bytes": 303068,
+      "path": "data/raw/urban_environment/ciclovias_semovi_2025.zip",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "afe606d143a0d3db729030a60e4527c2df2dd8d449bb3515f8639c5e8be01df3"
+    },
+    {
+      "bytes": 1190,
+      "path": "data/raw/urban_environment/fuentes_diagnostico.json",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "78d031983aed92f079724b6fd21d6c2744f731bdd58ba6eb31ce831cb85254d8"
+    },
+    {
+      "bytes": 436767816,
+      "path": "data/raw/urban_environment/incidentes_viales_c5.csv",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "a72931033bac6af9afa526de57b2edaafa5eba6f5376093a0a89da624f31e753"
+    },
+    {
+      "bytes": 3814881,
+      "path": "data/raw/urban_environment/ssc_semovi_2025_mapa.html",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "649a2b8374531bdc66f836140df7ce12d2acf6b239b77643f49f0a07f0cf2d7b"
+    },
+    {
+      "bytes": 7937,
+      "path": "data/raw/urban_environment/ssc_semovi_2025_publicacion.html",
+      "role": "auxiliary_etl_or_document",
+      "sha256": "c231a27df5a1c3c1fcb677e8f09e573bf6613405cfb99dc2483a06d068bcb212"
+    }
+  ],
+  "policy": {
+    "activity_cohort": "each valid 2025 endpoint independently; compound IDs share unit weight",
+    "ageb_default_declared_crs": "EPSG:6365",
+    "auxiliary_sources": "all registered datasets normalized; documents catalogued; mirrors verified once",
+    "calendar_days": 365,
+    "census": "all geographic levels retained; AGEB totals are a separate non-additive view",
+    "cycling": "layers stay separate; total layer not concatenated with component layers",
+    "daily_activity": "(withdrawal_weight + arrival_weight) / (2 * 365)",
+    "dedup": "latest_valid_update_then_sha256_then_source_file_then_row",
+    "denue": "snapshot 2026 retained and flagged; registration date is not an update timestamp",
+    "gtfs": "optional nulls and times beyond24h allowed; foreign keys checked; service-year flag",
+    "ignored_os_metadata": [
+      ".DS_Store"
+    ],
+    "incidents": "2025 analytical cohort; historical/out-of-domain rows retained in quarantine",
+    "metric_crs": "EPSG:32614",
+    "missing_values": "preserve legitimate nulls and suppression; never blanket fill/drop",
+    "negative_trip_duration": "flag_only; no silent removal",
+    "outlier_iqr_multiplier": 1.5,
+    "processed_at": "UTC epoch pinned when the immutable manifest is created",
+    "ssc": "victim records retained; repeated labels flagged, not inferred to be duplicated events",
+    "station_identity": "GBFS physical record; first short_name component is primary; all components are explicit aliases",
+    "trip_chunksize": 250000,
+    "trip_cohort": "both endpoints valid 2025, known station identifiers, nullable integer age",
+    "version": "v3-etl-3",
+    "year": 2025
+  },
+  "processed_at": "2026-10-11T23:49:59+00:00",
+  "raw_root": "V3/data/raw",
+  "timestamp_semantics": "UTC epoch pinned when the immutable manifest is created",
+  "versions": {
+    "beautifulsoup4": "4.14.3",
+    "geopandas": "1.1.2",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "pyarrow": "23.0.1",
+    "pyogrio": "0.11.1",
+    "pyproj": "3.7.1",
+    "shapely": "2.1.2"
+  }
+}

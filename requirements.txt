@@ -1,0 +1,24 @@
+# Núcleo del pipeline EcoBici (cuadernos 00-09, motores y validador).
+# Versiones exactas del entorno auditado (conda env "CM", Python 3.10.19).
+# Para re-ejecutar los cuadernos completos usar requirements-notebooks.txt,
+# que añade torch, la pila de Jupyter y herramientas de reporte.
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.15.2
+scikit-learn==1.7.2
+networkx==3.4.2
+shapely==2.1.2
+geopandas==1.1.2
+pyproj==3.7.1
+pyogrio==0.11.1
+pyarrow==23.0.1
+joblib==1.5.3
+deap==1.4.4
+folium==0.20.0
+branca==0.8.2
+matplotlib==3.10.8
+seaborn==0.13.2
+beautifulsoup4==4.14.3
+nbformat==5.10.4
+nbclient==0.10.4
+ipython==8.37.0

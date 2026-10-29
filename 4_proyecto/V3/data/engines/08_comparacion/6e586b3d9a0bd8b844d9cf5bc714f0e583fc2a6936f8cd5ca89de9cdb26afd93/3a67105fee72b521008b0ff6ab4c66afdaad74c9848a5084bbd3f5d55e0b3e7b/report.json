@@ -1,0 +1,1622 @@
+{
+  "analysis_id": "3a67105fee72b521008b0ff6ab4c66afdaad74c9848a5084bbd3f5d55e0b3e7b",
+  "analysis_identity": {
+    "code_hashes": {
+      "build_notebook_08.py": "297250c5f3b9d188931de20b62af9a95b0813dd0cdd8848371c5d6ced926c323",
+      "c8_analysis.py": "d176076c1d8dc8379c00c2092a801eca2a638e72348aea06a231bd21e321c605",
+      "c8_content.py": "51cc67ac394ce8d8fb5e6e97051571dad97774f4432e9407d4e9ee2aac52e810",
+      "c8_publication.py": "cc13cabcc28387ab0da38786398e4c7638df27cb4f68f283a4a1dace22c340f2",
+      "eda02_publication.py": "d6b9ef4a85c2d7bd423f6c34fb6a1f4a10f3503ff4d76cfb4a0f8ed0862da95e",
+      "engine_publication.py": "f946fe84f6de6a0f82a4aa17c11f89f1520184166dcacfdd77cb7c6323936d2f",
+      "fe03_publication.py": "cd3222a5a5bfbee709872e04fd2b5c34520caeb63c8ccc7fc0254f62b3f7d043",
+      "fe04_deployment.py": "e96f25e7cceac313c2eb1735ad0492b0abbe609039322686563bc42ef3a2058e",
+      "fe04_publication.py": "52a85ce3ce9bf9bdee69d1e5985a93f297a5e3abeed8789051b04bb15043d1af",
+      "m1_publication.py": "fab8bded45ba330b9b1073f4b9f27cbba2074351054139ce43e70852a542b2fb",
+      "m2_publication.py": "35fc8b1133b5ab9b210ab6ba9e6232ce716a511f37e3466a32b0806e634bbc36",
+      "m3_publication.py": "a627614fdf3fabe55fe5b142de16a971b07b8ab4c4a5925fb8f6def2289773a6"
+    },
+    "configuration": {
+      "budget_grid": [
+        15,
+        30,
+        50
+      ],
+      "max_reach_m": 3000,
+      "metric_crs": "EPSG:32614",
+      "metric_rtol": 1e-09,
+      "primary_budget": 30,
+      "primary_scheme": "fold_spatial_block",
+      "seed": 42
+    },
+    "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+    "input_artifacts": {
+      "eda/station_environment.parquet": {
+        "bytes": 273429,
+        "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/station_environment.parquet",
+        "sha256": "1d0243deab8390547dbdf580efda68308474788b21c23faf1446afcc462fabda"
+      },
+      "features/entorno_ageb_features.parquet": {
+        "bytes": 3155220,
+        "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/entorno_ageb_features.parquet",
+        "sha256": "3ac6047eaeb1329dc6b1d46b3ed0515bc88157a391495a40ebf82c70aa1185ef"
+      },
+      "motor1/m1_portafolios.parquet": {
+        "bytes": 22469,
+        "path": "data/engines/05_motor1/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/a70889ebd29856d78d44cf2b7622f2a43240def0783a137f3f1f35bef923916d/m1_portafolios.parquet",
+        "sha256": "2b05ed3f9930808c568ab2448e281c366049bba2858167af7de54b5aaafd3e5a"
+      },
+      "motor1/m1_techo_por_ageb.csv": {
+        "bytes": 404216,
+        "path": "data/engines/05_motor1/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/a70889ebd29856d78d44cf2b7622f2a43240def0783a137f3f1f35bef923916d/m1_techo_por_ageb.csv",
+        "sha256": "cc6b81237014bf01dd7251d1bd7a4829753fba5cd7205e5beea175eed3edf327"
+      },
+      "motor2/m2_portafolios.parquet": {
+        "bytes": 23571,
+        "path": "data/engines/06_motor2/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3f65f63ae317c1058054c4892b047d065f573fbc36d4e2b714f82a96a13bd694/m2_portafolios.parquet",
+        "sha256": "8d0310ec95eaca712aebbc5443690d062cd29bbbeb78a05ba2dbd31a715f7657"
+      },
+      "motor2/m2_techo_por_ageb.csv": {
+        "bytes": 408933,
+        "path": "data/engines/06_motor2/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3f65f63ae317c1058054c4892b047d065f573fbc36d4e2b714f82a96a13bd694/m2_techo_por_ageb.csv",
+        "sha256": "5506d27643b26c2c28abdee6a5cee154c8da4994778238501df8b4140891d018"
+      },
+      "motor3/m3_portafolios.parquet": {
+        "bytes": 29713,
+        "path": "data/engines/07_motor3/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/69a83e61b633b19f6b2914202c072d4b155a2cd59f397d4049e8cd90398e05e7/m3_portafolios.parquet",
+        "sha256": "73483ac341b1c712f82d0f8e40fba421c9a33c0299bfef4a46cef4abea5b8c8d"
+      },
+      "validation/celdas_poblacion.parquet": {
+        "bytes": 2116690,
+        "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2/celdas_poblacion.parquet",
+        "sha256": "b306a5aa8fbde1a18f5858685d49b3947249fbde9bb40bcf37baa25cbab21357"
+      },
+      "validation/sitios_candidatos.parquet": {
+        "bytes": 58979,
+        "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2/sitios_candidatos.parquet",
+        "sha256": "f6034e8df5a8fd01ffe787bf9d86b8a6eec4b9653cde374db3f7b14452dbfe60"
+      },
+      "validation/universo_evaluacion.parquet": {
+        "bytes": 2892032,
+        "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2/universo_evaluacion.parquet",
+        "sha256": "ebaf25cefe6d974e1883698b7fb20a0b5bf26b535fe20429c31685cf4307ca20"
+      },
+      "validation/validation_harness.joblib": {
+        "bytes": 11236,
+        "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2/validation_harness.joblib",
+        "sha256": "b989194a01100c83325286e3642c4a47c998a1a2d235f9adf5514a6d05c0a81d"
+      }
+    },
+    "schema_version": "v3-comparacion-1",
+    "upstream_refs": {
+      "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+      "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+      "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+      "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+      "feature_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+      "motor1_analysis_id": "a70889ebd29856d78d44cf2b7622f2a43240def0783a137f3f1f35bef923916d",
+      "motor1_audit_sha256": "a09c2c09a933524a5fc068ca826e3ae313e6384eca2889ad369a2ebe8754a2ab",
+      "motor2_analysis_id": "3f65f63ae317c1058054c4892b047d065f573fbc36d4e2b714f82a96a13bd694",
+      "motor2_audit_sha256": "5e958a7533699f2fdef9e3467ba65289e8a74250f95f2f1d77239d275b7a56a2",
+      "motor3_analysis_id": "69a83e61b633b19f6b2914202c072d4b155a2cd59f397d4049e8cd90398e05e7",
+      "motor3_audit_sha256": "9bce7374b22d7e15498703c3ddc9a0182a380dea1a1c393c8584bf12ed660542",
+      "never_reruns_motors": true,
+      "shared_validation_analysis_id": "6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2",
+      "validation_analysis_id": "6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2",
+      "validation_audit_sha256": "55191d04dac4b59d1c1fc8fadbc9155f9b2523b91e44b925ba0842aee794ccd1"
+    },
+    "versions": {
+      "geopandas": "1.1.2",
+      "joblib": "1.5.3",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "python": "3.10.19",
+      "scipy": "1.15.2",
+      "sklearn": "1.7.2"
+    }
+  },
+  "asignacion": [
+    {
+      "agebs_1": 9,
+      "agebs_2": 3,
+      "agebs_3plus": 0,
+      "agebs_techo_positivo": 600.0,
+      "agebs_topan_techo": 7.0,
+      "budget": 15,
+      "motor": "m1",
+      "n_agebs": 12,
+      "share_topan_techo": 0.011666666666666667
+    },
+    {
+      "agebs_1": 10,
+      "agebs_2": 1,
+      "agebs_3plus": 1,
+      "agebs_techo_positivo": 891.0,
+      "agebs_topan_techo": 2.0,
+      "budget": 15,
+      "motor": "m2",
+      "n_agebs": 12,
+      "share_topan_techo": 0.002244668911335578
+    },
+    {
+      "agebs_1": 10,
+      "agebs_2": 1,
+      "agebs_3plus": 1,
+      "agebs_techo_positivo": null,
+      "agebs_topan_techo": null,
+      "budget": 15,
+      "motor": "m3",
+      "n_agebs": 12,
+      "share_topan_techo": null
+    },
+    {
+      "agebs_1": 14,
+      "agebs_2": 5,
+      "agebs_3plus": 2,
+      "agebs_techo_positivo": 600.0,
+      "agebs_topan_techo": 10.0,
+      "budget": 30,
+      "motor": "m1",
+      "n_agebs": 21,
+      "share_topan_techo": 0.016666666666666666
+    },
+    {
+      "agebs_1": 23,
+      "agebs_2": 2,
+      "agebs_3plus": 1,
+      "agebs_techo_positivo": 891.0,
+      "agebs_topan_techo": 4.0,
+      "budget": 30,
+      "motor": "m2",
+      "n_agebs": 26,
+      "share_topan_techo": 0.004489337822671156
+    },
+    {
+      "agebs_1": 24,
+      "agebs_2": 1,
+      "agebs_3plus": 1,
+      "agebs_techo_positivo": null,
+      "agebs_topan_techo": null,
+      "budget": 30,
+      "motor": "m3",
+      "n_agebs": 26,
+      "share_topan_techo": null
+    },
+    {
+      "agebs_1": 25,
+      "agebs_2": 8,
+      "agebs_3plus": 3,
+      "agebs_techo_positivo": 600.0,
+      "agebs_topan_techo": 14.0,
+      "budget": 50,
+      "motor": "m1",
+      "n_agebs": 36,
+      "share_topan_techo": 0.023333333333333334
+    },
+    {
+      "agebs_1": 34,
+      "agebs_2": 5,
+      "agebs_3plus": 2,
+      "agebs_techo_positivo": 891.0,
+      "agebs_topan_techo": 11.0,
+      "budget": 50,
+      "motor": "m2",
+      "n_agebs": 41,
+      "share_topan_techo": 0.012345679012345678
+    },
+    {
+      "agebs_1": 39,
+      "agebs_2": 4,
+      "agebs_3plus": 1,
+      "agebs_techo_positivo": null,
+      "agebs_topan_techo": null,
+      "budget": 50,
+      "motor": "m3",
+      "n_agebs": 44,
+      "share_topan_techo": null
+    }
+  ],
+  "backtest_context": [
+    {
+      "decision_coverage": 0.5911727282817626,
+      "motor": "m1",
+      "ndcg_at_10": 0.6884198293575552,
+      "note": null,
+      "precision_at_10": 0.33999999999999997,
+      "recall_at_10": 0.3513814616755793,
+      "scheme": "fold_spatial_block",
+      "subject": "m1_coseno_compuerta"
+    },
+    {
+      "decision_coverage": 1.0,
+      "motor": "m1",
+      "ndcg_at_10": 0.7019233430370728,
+      "note": null,
+      "precision_at_10": 0.31999999999999995,
+      "recall_at_10": 0.2999108734402852,
+      "scheme": "fold_spatial_block",
+      "subject": "heur_metro"
+    },
+    {
+      "decision_coverage": 1.0,
+      "motor": "m1",
+      "ndcg_at_10": 0.5398411013031776,
+      "note": null,
+      "precision_at_10": 0.21999999999999997,
+      "recall_at_10": 0.2225935828877005,
+      "scheme": "fold_spatial_block",
+      "subject": "control_aleatorio"
+    },
+    {
+      "decision_coverage": 1.0,
+      "motor": "m2",
+      "ndcg_at_10": 0.46688015939126737,
+      "note": null,
+      "precision_at_10": 0.12,
+      "recall_at_10": 0.13257575757575757,
+      "scheme": "fold_spatial_block",
+      "subject": "constante"
+    },
+    {
+      "decision_coverage": 1.0,
+      "motor": "m2",
+      "ndcg_at_10": 0.7559919634698842,
+      "note": null,
+      "precision_at_10": 0.5,
+      "recall_at_10": 0.4751559714795009,
+      "scheme": "fold_spatial_block",
+      "subject": "ridge"
+    },
+    {
+      "decision_coverage": 1.0,
+      "motor": "m2",
+      "ndcg_at_10": 0.8024857660430491,
+      "note": null,
+      "precision_at_10": 0.54,
+      "recall_at_10": 0.5168226381461676,
+      "scheme": "fold_spatial_block",
+      "subject": "random_forest"
+    },
+    {
+      "decision_coverage": 1.0,
+      "motor": "m2",
+      "ndcg_at_10": 0.7569438757556466,
+      "note": null,
+      "precision_at_10": 0.4800000000000001,
+      "recall_at_10": 0.4623440285204991,
+      "scheme": "fold_spatial_block",
+      "subject": "ft_transformer"
+    },
+    {
+      "decision_coverage": null,
+      "motor": "m3",
+      "ndcg_at_10": null,
+      "note": "sin backtest de AGEB: el puntaje del Motor 3 es afinidad estructural, no un modelo de actividad",
+      "precision_at_10": null,
+      "recall_at_10": null,
+      "scheme": null,
+      "subject": "afinidad_estructural"
+    }
+  ],
+  "configuration": {
+    "budget_grid": [
+      15,
+      30,
+      50
+    ],
+    "max_reach_m": 3000,
+    "metric_crs": "EPSG:32614",
+    "metric_rtol": 1e-09,
+    "primary_budget": 30,
+    "primary_scheme": "fold_spatial_block",
+    "seed": 42
+  },
+  "consensus_counts": {
+    "15": {
+      "selected_by_2plus": 5,
+      "selected_by_3": 0
+    },
+    "30": {
+      "selected_by_2plus": 10,
+      "selected_by_3": 2
+    },
+    "50": {
+      "selected_by_2plus": 30,
+      "selected_by_3": 3
+    }
+  },
+  "consistency": {
+    "all_feasible": true,
+    "all_metrics_reproduced": true,
+    "checked": [
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 15,
+        "tag": "m1/greedy_techos/B15"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 15,
+        "tag": "m2/ft_transformer/B15"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 15,
+        "tag": "m3/ga_w0.5/B15"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 30,
+        "tag": "m1/greedy_techos/B30"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 30,
+        "tag": "m2/ft_transformer/B30"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 30,
+        "tag": "m3/ga_w0.5/B30"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 50,
+        "tag": "m1/greedy_techos/B50"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 50,
+        "tag": "m2/ft_transformer/B50"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 50,
+        "tag": "m3/ga_w0.5/B50"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 30,
+        "tag": "m2/random_forest/B30"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 30,
+        "tag": "m3/greedy/B30"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 30,
+        "tag": "m3/ga_hop_ablation/B30"
+      },
+      {
+        "is_feasible": true,
+        "metrics_equal": true,
+        "n_selected": 30,
+        "tag": "m3/greedy_centroid/B30"
+      }
+    ],
+    "n_portfolios_checked": 13,
+    "rtol": 1e-09
+  },
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "input_artifacts": {
+    "eda/station_environment.parquet": {
+      "bytes": 273429,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/station_environment.parquet",
+      "sha256": "1d0243deab8390547dbdf580efda68308474788b21c23faf1446afcc462fabda"
+    },
+    "features/entorno_ageb_features.parquet": {
+      "bytes": 3155220,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/entorno_ageb_features.parquet",
+      "sha256": "3ac6047eaeb1329dc6b1d46b3ed0515bc88157a391495a40ebf82c70aa1185ef"
+    },
+    "motor1/m1_portafolios.parquet": {
+      "bytes": 22469,
+      "path": "data/engines/05_motor1/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/a70889ebd29856d78d44cf2b7622f2a43240def0783a137f3f1f35bef923916d/m1_portafolios.parquet",
+      "sha256": "2b05ed3f9930808c568ab2448e281c366049bba2858167af7de54b5aaafd3e5a"
+    },
+    "motor1/m1_techo_por_ageb.csv": {
+      "bytes": 404216,
+      "path": "data/engines/05_motor1/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/a70889ebd29856d78d44cf2b7622f2a43240def0783a137f3f1f35bef923916d/m1_techo_por_ageb.csv",
+      "sha256": "cc6b81237014bf01dd7251d1bd7a4829753fba5cd7205e5beea175eed3edf327"
+    },
+    "motor2/m2_portafolios.parquet": {
+      "bytes": 23571,
+      "path": "data/engines/06_motor2/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3f65f63ae317c1058054c4892b047d065f573fbc36d4e2b714f82a96a13bd694/m2_portafolios.parquet",
+      "sha256": "8d0310ec95eaca712aebbc5443690d062cd29bbbeb78a05ba2dbd31a715f7657"
+    },
+    "motor2/m2_techo_por_ageb.csv": {
+      "bytes": 408933,
+      "path": "data/engines/06_motor2/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3f65f63ae317c1058054c4892b047d065f573fbc36d4e2b714f82a96a13bd694/m2_techo_por_ageb.csv",
+      "sha256": "5506d27643b26c2c28abdee6a5cee154c8da4994778238501df8b4140891d018"
+    },
+    "motor3/m3_portafolios.parquet": {
+      "bytes": 29713,
+      "path": "data/engines/07_motor3/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/69a83e61b633b19f6b2914202c072d4b155a2cd59f397d4049e8cd90398e05e7/m3_portafolios.parquet",
+      "sha256": "73483ac341b1c712f82d0f8e40fba421c9a33c0299bfef4a46cef4abea5b8c8d"
+    },
+    "validation/celdas_poblacion.parquet": {
+      "bytes": 2116690,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2/celdas_poblacion.parquet",
+      "sha256": "b306a5aa8fbde1a18f5858685d49b3947249fbde9bb40bcf37baa25cbab21357"
+    },
+    "validation/sitios_candidatos.parquet": {
+      "bytes": 58979,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2/sitios_candidatos.parquet",
+      "sha256": "f6034e8df5a8fd01ffe787bf9d86b8a6eec4b9653cde374db3f7b14452dbfe60"
+    },
+    "validation/universo_evaluacion.parquet": {
+      "bytes": 2892032,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2/universo_evaluacion.parquet",
+      "sha256": "ebaf25cefe6d974e1883698b7fb20a0b5bf26b535fe20429c31685cf4307ca20"
+    },
+    "validation/validation_harness.joblib": {
+      "bytes": 11236,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2/validation_harness.joblib",
+      "sha256": "b989194a01100c83325286e3642c4a47c998a1a2d235f9adf5514a6d05c0a81d"
+    }
+  },
+  "metricas": [
+    {
+      "agebs_1": 9,
+      "agebs_2": 3,
+      "agebs_3plus": 0,
+      "budget": 15,
+      "max_hops_golden": 20,
+      "max_hops_network": 15,
+      "mean_dist_to_network_m": 1404.698537473917,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 12.794666666666668,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.56879791780448,
+      "median_hops_golden": 13.0,
+      "motor": "m1",
+      "n_agebs": 12,
+      "n_selected": 15,
+      "new_pop": 92894.80993280609,
+      "new_pop_share": 0.011658355583585257,
+      "out_of_domain_04_share": 0.0,
+      "p_norm": 349123.5308133508,
+      "redundancy": 0.5472778843797219,
+      "tier": "oficial",
+      "variant": "greedy_techos"
+    },
+    {
+      "agebs_1": 10,
+      "agebs_2": 1,
+      "agebs_3plus": 1,
+      "budget": 15,
+      "max_hops_golden": 11,
+      "max_hops_network": 6,
+      "mean_dist_to_network_m": 1171.7717884539752,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.892,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.47129858835629707,
+      "median_hops_golden": 8.0,
+      "motor": "m2",
+      "n_agebs": 12,
+      "n_selected": 15,
+      "new_pop": 128739.61565296067,
+      "new_pop_share": 0.016156900671436426,
+      "out_of_domain_04_share": 0.3333333333333333,
+      "p_norm": 349123.5308133508,
+      "redundancy": 0.48044660743675,
+      "tier": "oficial",
+      "variant": "ft_transformer"
+    },
+    {
+      "agebs_1": 10,
+      "agebs_2": 1,
+      "agebs_3plus": 1,
+      "budget": 15,
+      "max_hops_golden": 15,
+      "max_hops_network": 10,
+      "mean_dist_to_network_m": 1562.6306127643172,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.402666666666669,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.42366654664644604,
+      "median_hops_golden": 9.0,
+      "motor": "m3",
+      "n_agebs": 12,
+      "n_selected": 15,
+      "new_pop": 158915.70714667533,
+      "new_pop_share": 0.01994401864940526,
+      "out_of_domain_04_share": 0.8666666666666667,
+      "p_norm": 349123.5308133508,
+      "redundancy": 0.5501164730353415,
+      "tier": "oficial",
+      "variant": "ga_w0.5"
+    },
+    {
+      "agebs_1": 14,
+      "agebs_2": 5,
+      "agebs_3plus": 2,
+      "budget": 30,
+      "max_hops_golden": 23,
+      "max_hops_network": 18,
+      "mean_dist_to_network_m": 1634.8958160024035,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 12.878666666666666,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.5814084865391115,
+      "median_hops_golden": 17.0,
+      "motor": "m1",
+      "n_agebs": 21,
+      "n_selected": 30,
+      "new_pop": 153809.57098202483,
+      "new_pop_share": 0.019303195431092428,
+      "out_of_domain_04_share": 0.0,
+      "p_norm": 659672.5873122249,
+      "redundancy": 0.6546291788418088,
+      "tier": "oficial",
+      "variant": "greedy_techos"
+    },
+    {
+      "agebs_1": 23,
+      "agebs_2": 2,
+      "agebs_3plus": 1,
+      "budget": 30,
+      "max_hops_golden": 17,
+      "max_hops_network": 12,
+      "mean_dist_to_network_m": 1589.8742698996755,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.603999999999997,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.4416892052009718,
+      "median_hops_golden": 10.5,
+      "motor": "m2",
+      "n_agebs": 26,
+      "n_selected": 30,
+      "new_pop": 275943.27107271005,
+      "new_pop_share": 0.034631049650570414,
+      "out_of_domain_04_share": 0.2,
+      "p_norm": 659672.5873122249,
+      "redundancy": 0.5590028455611186,
+      "tier": "oficial",
+      "variant": "ft_transformer"
+    },
+    {
+      "agebs_1": 24,
+      "agebs_2": 1,
+      "agebs_3plus": 1,
+      "budget": 30,
+      "max_hops_golden": 18,
+      "max_hops_network": 13,
+      "mean_dist_to_network_m": 1843.0087399300378,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.333999999999998,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.44313538529864255,
+      "median_hops_golden": 11.0,
+      "motor": "m3",
+      "n_agebs": 26,
+      "n_selected": 30,
+      "new_pop": 304459.5365476905,
+      "new_pop_share": 0.038209858445848774,
+      "out_of_domain_04_share": 0.5333333333333333,
+      "p_norm": 659672.5873122249,
+      "redundancy": 0.5220267306346524,
+      "tier": "oficial",
+      "variant": "ga_w0.5"
+    },
+    {
+      "agebs_1": 25,
+      "agebs_2": 8,
+      "agebs_3plus": 3,
+      "budget": 50,
+      "max_hops_golden": 21,
+      "max_hops_network": 16,
+      "mean_dist_to_network_m": 1671.4939248626408,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 12.603600000000002,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.5363320908376781,
+      "median_hops_golden": 13.5,
+      "motor": "m1",
+      "n_agebs": 36,
+      "n_selected": 50,
+      "new_pop": 289448.49643809476,
+      "new_pop_share": 0.03632596371153892,
+      "out_of_domain_04_share": 0.0,
+      "p_norm": 1038672.6505221666,
+      "redundancy": 0.6563101048346325,
+      "tier": "oficial",
+      "variant": "greedy_techos"
+    },
+    {
+      "agebs_1": 34,
+      "agebs_2": 5,
+      "agebs_3plus": 2,
+      "budget": 50,
+      "max_hops_golden": 21,
+      "max_hops_network": 16,
+      "mean_dist_to_network_m": 1741.5213672051646,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.592600000000003,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.4455523679055984,
+      "median_hops_golden": 12.0,
+      "motor": "m2",
+      "n_agebs": 41,
+      "n_selected": 50,
+      "new_pop": 421997.19228340156,
+      "new_pop_share": 0.0529609062817734,
+      "out_of_domain_04_share": 0.26,
+      "p_norm": 1038672.6505221666,
+      "redundancy": 0.6190906300846613,
+      "tier": "oficial",
+      "variant": "ft_transformer"
+    },
+    {
+      "agebs_1": 39,
+      "agebs_2": 4,
+      "agebs_3plus": 1,
+      "budget": 50,
+      "max_hops_golden": 17,
+      "max_hops_network": 14,
+      "mean_dist_to_network_m": 1773.3718388139764,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.4936,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.43304313374909853,
+      "median_hops_golden": 11.0,
+      "motor": "m3",
+      "n_agebs": 44,
+      "n_selected": 50,
+      "new_pop": 439883.73262167606,
+      "new_pop_share": 0.0552056780572319,
+      "out_of_domain_04_share": 0.42,
+      "p_norm": 1038672.6505221666,
+      "redundancy": 0.6323772107826937,
+      "tier": "oficial",
+      "variant": "ga_w0.5"
+    },
+    {
+      "agebs_1": 23,
+      "agebs_2": 2,
+      "agebs_3plus": 1,
+      "budget": 30,
+      "max_hops_golden": 17,
+      "max_hops_network": 12,
+      "mean_dist_to_network_m": 1545.9706812783706,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.607666666666665,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.4403023675212776,
+      "median_hops_golden": 10.5,
+      "motor": "m2",
+      "n_agebs": 26,
+      "n_selected": 30,
+      "new_pop": 275708.7382519366,
+      "new_pop_share": 0.034601615637813665,
+      "out_of_domain_04_share": 0.23333333333333334,
+      "p_norm": 659672.5873122249,
+      "redundancy": 0.5605884796394162,
+      "tier": "sensibilidad",
+      "variant": "random_forest"
+    },
+    {
+      "agebs_1": 26,
+      "agebs_2": 2,
+      "agebs_3plus": 0,
+      "budget": 30,
+      "max_hops_golden": 13,
+      "max_hops_network": 10,
+      "mean_dist_to_network_m": 1643.6854753057803,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.716000000000003,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.43927912533752383,
+      "median_hops_golden": 9.0,
+      "motor": "m3",
+      "n_agebs": 28,
+      "n_selected": 30,
+      "new_pop": 297125.1588233226,
+      "new_pop_share": 0.03728938954605924,
+      "out_of_domain_04_share": 0.5333333333333333,
+      "p_norm": 659672.5873122249,
+      "redundancy": 0.5592250852966798,
+      "tier": "sensibilidad",
+      "variant": "greedy"
+    },
+    {
+      "agebs_1": 22,
+      "agebs_2": 4,
+      "agebs_3plus": 0,
+      "budget": 30,
+      "max_hops_golden": 14,
+      "max_hops_network": 11,
+      "mean_dist_to_network_m": 1836.2646731924067,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.047999999999996,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.4004357764226233,
+      "median_hops_golden": 9.5,
+      "motor": "m3",
+      "n_agebs": 26,
+      "n_selected": 30,
+      "new_pop": 305089.72563268157,
+      "new_pop_share": 0.03828894756227018,
+      "out_of_domain_04_share": 0.5,
+      "p_norm": 659672.5873122249,
+      "redundancy": 0.5711105289658953,
+      "tier": "sensibilidad",
+      "variant": "ga_hop_ablation"
+    },
+    {
+      "agebs_1": 26,
+      "agebs_2": 2,
+      "agebs_3plus": 0,
+      "budget": 30,
+      "max_hops_golden": 15,
+      "max_hops_network": 12,
+      "mean_dist_to_network_m": 1700.2847946644545,
+      "mean_grado_escolar_prom_all_sites": 12.234021739130435,
+      "mean_grado_escolar_prom_selected": 11.639000000000003,
+      "mean_pct_viviendas_auto_all_sites": 0.5210344956806683,
+      "mean_pct_viviendas_auto_selected": 0.4378027387897612,
+      "median_hops_golden": 9.5,
+      "motor": "m3",
+      "n_agebs": 28,
+      "n_selected": 30,
+      "new_pop": 310287.8135300797,
+      "new_pop_share": 0.03894131077940182,
+      "out_of_domain_04_share": 0.5666666666666667,
+      "p_norm": 659672.5873122249,
+      "redundancy": 0.5214150919592848,
+      "tier": "sensibilidad",
+      "variant": "greedy_centroid"
+    }
+  ],
+  "notebook": "08_Evaluacion_Comparativa.ipynb",
+  "outputs": [
+    {
+      "bytes": 5083,
+      "path": "data/engines/08_comparacion/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3a67105fee72b521008b0ff6ab4c66afdaad74c9848a5084bbd3f5d55e0b3e7b/c8_metricas.csv",
+      "sha256": "3f4dc2bcff2b093a7b86802f5e21aa4ec40903ff9db1b4ef5bff05ca722342ef"
+    },
+    {
+      "bytes": 14498,
+      "path": "data/engines/08_comparacion/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3a67105fee72b521008b0ff6ab4c66afdaad74c9848a5084bbd3f5d55e0b3e7b/c8_radar.csv",
+      "sha256": "7ff286a0af8064ca1feff1320aa62713fefa3f396ee61053188470207c73c438"
+    },
+    {
+      "bytes": 1865,
+      "path": "data/engines/08_comparacion/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3a67105fee72b521008b0ff6ab4c66afdaad74c9848a5084bbd3f5d55e0b3e7b/c8_overlap.csv",
+      "sha256": "95388d9b8750131f60a36d4885d24e5fec969ec7def6d93978697d3d0856d420"
+    },
+    {
+      "bytes": 19375,
+      "path": "data/engines/08_comparacion/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3a67105fee72b521008b0ff6ab4c66afdaad74c9848a5084bbd3f5d55e0b3e7b/c8_consensus.parquet",
+      "sha256": "7c8bfd5c1cb1190c55586314a9f29b1defa6acbd4fc64158f953eb5965de8b13"
+    },
+    {
+      "bytes": 1647,
+      "path": "data/engines/08_comparacion/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3a67105fee72b521008b0ff6ab4c66afdaad74c9848a5084bbd3f5d55e0b3e7b/c8_asignacion.csv",
+      "sha256": "1ade06f39ac56436b38b7011fc1dac64fb8c43fcae3db182e8560f4866f82bae"
+    },
+    {
+      "bytes": 1940,
+      "path": "data/engines/08_comparacion/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/3a67105fee72b521008b0ff6ab4c66afdaad74c9848a5084bbd3f5d55e0b3e7b/c8_backtest_contexto.csv",
+      "sha256": "8af5c341fc65868ddb7171b757879f405a8651d6b167cbbae64ea9df60edfefa"
+    }
+  ],
+  "overlap": [
+    {
+      "budget": 15,
+      "jaccard_agebs": 0.043478260869565216,
+      "jaccard_sites": 0.034482758620689655,
+      "motor_a": "m1",
+      "motor_b": "m2",
+      "n_a_agebs": 12,
+      "n_a_sites": 15,
+      "n_b_agebs": 12,
+      "n_b_sites": 15,
+      "n_inter_agebs": 1,
+      "n_inter_sites": 1
+    },
+    {
+      "budget": 15,
+      "jaccard_agebs": 0.0,
+      "jaccard_sites": 0.0,
+      "motor_a": "m1",
+      "motor_b": "m3",
+      "n_a_agebs": 12,
+      "n_a_sites": 15,
+      "n_b_agebs": 12,
+      "n_b_sites": 15,
+      "n_inter_agebs": 0,
+      "n_inter_sites": 0
+    },
+    {
+      "budget": 15,
+      "jaccard_agebs": 0.14285714285714285,
+      "jaccard_sites": 0.15384615384615385,
+      "motor_a": "m2",
+      "motor_b": "m3",
+      "n_a_agebs": 12,
+      "n_a_sites": 15,
+      "n_b_agebs": 12,
+      "n_b_sites": 15,
+      "n_inter_agebs": 3,
+      "n_inter_sites": 4
+    },
+    {
+      "budget": 30,
+      "jaccard_agebs": 0.044444444444444446,
+      "jaccard_sites": 0.034482758620689655,
+      "motor_a": "m1",
+      "motor_b": "m2",
+      "n_a_agebs": 21,
+      "n_a_sites": 30,
+      "n_b_agebs": 26,
+      "n_b_sites": 30,
+      "n_inter_agebs": 2,
+      "n_inter_sites": 2
+    },
+    {
+      "budget": 30,
+      "jaccard_agebs": 0.044444444444444446,
+      "jaccard_sites": 0.034482758620689655,
+      "motor_a": "m1",
+      "motor_b": "m3",
+      "n_a_agebs": 21,
+      "n_a_sites": 30,
+      "n_b_agebs": 26,
+      "n_b_sites": 30,
+      "n_inter_agebs": 2,
+      "n_inter_sites": 2
+    },
+    {
+      "budget": 30,
+      "jaccard_agebs": 0.18181818181818182,
+      "jaccard_sites": 0.2,
+      "motor_a": "m2",
+      "motor_b": "m3",
+      "n_a_agebs": 26,
+      "n_a_sites": 30,
+      "n_b_agebs": 26,
+      "n_b_sites": 30,
+      "n_inter_agebs": 8,
+      "n_inter_sites": 10
+    },
+    {
+      "budget": 50,
+      "jaccard_agebs": 0.2222222222222222,
+      "jaccard_sites": 0.14942528735632185,
+      "motor_a": "m1",
+      "motor_b": "m2",
+      "n_a_agebs": 36,
+      "n_a_sites": 50,
+      "n_b_agebs": 41,
+      "n_b_sites": 50,
+      "n_inter_agebs": 14,
+      "n_inter_sites": 13
+    },
+    {
+      "budget": 50,
+      "jaccard_agebs": 0.0958904109589041,
+      "jaccard_sites": 0.06382978723404255,
+      "motor_a": "m1",
+      "motor_b": "m3",
+      "n_a_agebs": 36,
+      "n_a_sites": 50,
+      "n_b_agebs": 44,
+      "n_b_sites": 50,
+      "n_inter_agebs": 7,
+      "n_inter_sites": 6
+    },
+    {
+      "budget": 50,
+      "jaccard_agebs": 0.26865671641791045,
+      "jaccard_sites": 0.20481927710843373,
+      "motor_a": "m2",
+      "motor_b": "m3",
+      "n_a_agebs": 41,
+      "n_a_sites": 50,
+      "n_b_agebs": 44,
+      "n_b_sites": 50,
+      "n_inter_agebs": 18,
+      "n_inter_sites": 17
+    }
+  ],
+  "pending_validation": [
+    "Comparison is descriptive: no aggregate winner is declared",
+    "Radar area is not a score; axes encode different objectives",
+    "Areal interpolation and 500 m catchments are assumptions, not observed demand",
+    "No street network, cost, or field validation",
+    "Motor 3 has no AGEB backtest: its score is structural affinity, not an activity model"
+  ],
+  "radar": [
+    {
+      "axis": "cobertura",
+      "budget": 15,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.2660800597324095,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 15,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.4527221156202781,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 15,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.531767154175361,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "equidad",
+      "budget": 15,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.2,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 15,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 1.0,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 15,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.8,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 15,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.3687508984371143,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 15,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.5195533925632501,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 15,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.6094094038486749,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "equidad",
+      "budget": 15,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.6,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 15,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.6666666666666667,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 15,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.8,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 15,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.4551847501554835,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 15,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.4498835269646585,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 15,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.4791231290785609,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "equidad",
+      "budget": 15,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.6,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 15,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.1333333333333333,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 15,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.8,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 30,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.23316047072489057,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 30,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.3453708211581912,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 30,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.45503472799919886,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "equidad",
+      "budget": 30,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.23333333333333334,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 30,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 1.0,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 30,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.7,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.41830337712988114,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.44099715443888143,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.47004191003344153,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "equidad",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.7,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.8,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.8666666666666667,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.4615312844636804,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.47797326936534756,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.38566375335665404,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "equidad",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.7,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.4666666666666667,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.8666666666666667,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 50,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.27867152975731263,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 50,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.3436898951653675,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 50,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.4428353583791197,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "equidad",
+      "budget": 50,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.32,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 50,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 1.0,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 50,
+      "motor": "m1",
+      "tier": "oficial",
+      "value": 0.72,
+      "variant": "greedy_techos"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 50,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.4062850716934282,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 50,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.38090936991533875,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 50,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.41949287759827847,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "equidad",
+      "budget": 50,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.64,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 50,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.74,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 50,
+      "motor": "m2",
+      "tier": "oficial",
+      "value": 0.82,
+      "variant": "ft_transformer"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 50,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.4235056467507213,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 50,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.3676227892173063,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 50,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.4088760537286745,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "equidad",
+      "budget": 50,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.62,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 50,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.5800000000000001,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 50,
+      "motor": "m3",
+      "tier": "oficial",
+      "value": 0.88,
+      "variant": "ga_w0.5"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "sensibilidad",
+      "value": 0.4179478480003034,
+      "variant": "random_forest"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "sensibilidad",
+      "value": 0.43941152036058384,
+      "variant": "random_forest"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "sensibilidad",
+      "value": 0.4846764395738764,
+      "variant": "random_forest"
+    },
+    {
+      "axis": "equidad",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "sensibilidad",
+      "value": 0.7,
+      "variant": "random_forest"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "sensibilidad",
+      "value": 0.7666666666666666,
+      "variant": "random_forest"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 30,
+      "motor": "m2",
+      "tier": "sensibilidad",
+      "value": 0.8666666666666667,
+      "variant": "random_forest"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.4504130754226603,
+      "variant": "greedy"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.4407749147033202,
+      "variant": "greedy"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.45210484156473985,
+      "variant": "greedy"
+    },
+    {
+      "axis": "equidad",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.5666666666666667,
+      "variant": "greedy"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.4666666666666667,
+      "variant": "greedy"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.9333333333333333,
+      "variant": "greedy"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.4624865903186026,
+      "variant": "ga_hop_ablation"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.4288894710341047,
+      "variant": "ga_hop_ablation"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.3879117756025311,
+      "variant": "ga_hop_ablation"
+    },
+    {
+      "axis": "equidad",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.7666666666666667,
+      "variant": "ga_hop_ablation"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.5,
+      "variant": "ga_hop_ablation"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.8666666666666667,
+      "variant": "ga_hop_ablation"
+    },
+    {
+      "axis": "cobertura",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.47036639008196285,
+      "variant": "greedy_centroid"
+    },
+    {
+      "axis": "eficiencia",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.4785849080407152,
+      "variant": "greedy_centroid"
+    },
+    {
+      "axis": "proximidad_red",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.43323840177851514,
+      "variant": "greedy_centroid"
+    },
+    {
+      "axis": "equidad",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.6,
+      "variant": "greedy_centroid"
+    },
+    {
+      "axis": "similitud_golden",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.43333333333333335,
+      "variant": "greedy_centroid"
+    },
+    {
+      "axis": "dispersion",
+      "budget": 30,
+      "motor": "m3",
+      "tier": "sensibilidad",
+      "value": 0.9333333333333333,
+      "variant": "greedy_centroid"
+    }
+  ],
+  "radar_axes_semantics": {
+    "cobertura": "new_pop / P_norm(ctx, B)",
+    "dispersion": "n_agebs / n_selected",
+    "eficiencia": "1 - redundancia",
+    "equidad": "fracción de sitios en AGEBs bajo la mediana de grado_escolar_prom de todos los sitios",
+    "proximidad_red": "1 - distancia media a la red / max_reach_m",
+    "similitud_golden": "1 - fracción de sitios en AGEBs out_of_domain del 04"
+  },
+  "schema_version": "v3-comparacion-1",
+  "scope": {
+    "fixed_0_1_axis_scales": true,
+    "metrics_recomputed_and_verified": true,
+    "never_reruns_motors": true,
+    "no_aggregate_winner": true,
+    "radar_area_not_a_score": true,
+    "same_task_same_contract_same_rules": true
+  },
+  "shared_validation_analysis_id": "6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2",
+  "upstream": {
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+    "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+    "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+    "feature_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+    "motor1_analysis_id": "a70889ebd29856d78d44cf2b7622f2a43240def0783a137f3f1f35bef923916d",
+    "motor1_audit_sha256": "a09c2c09a933524a5fc068ca826e3ae313e6384eca2889ad369a2ebe8754a2ab",
+    "motor2_analysis_id": "3f65f63ae317c1058054c4892b047d065f573fbc36d4e2b714f82a96a13bd694",
+    "motor2_audit_sha256": "5e958a7533699f2fdef9e3467ba65289e8a74250f95f2f1d77239d275b7a56a2",
+    "motor3_analysis_id": "69a83e61b633b19f6b2914202c072d4b155a2cd59f397d4049e8cd90398e05e7",
+    "motor3_audit_sha256": "9bce7374b22d7e15498703c3ddc9a0182a380dea1a1c393c8584bf12ed660542",
+    "never_reruns_motors": true,
+    "shared_validation_analysis_id": "6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2",
+    "validation_analysis_id": "6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2",
+    "validation_audit_sha256": "55191d04dac4b59d1c1fc8fadbc9155f9b2523b91e44b925ba0842aee794ccd1"
+  },
+  "upstream_refs": {
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+    "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+    "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+    "feature_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+    "motor1_analysis_id": "a70889ebd29856d78d44cf2b7622f2a43240def0783a137f3f1f35bef923916d",
+    "motor1_audit_sha256": "a09c2c09a933524a5fc068ca826e3ae313e6384eca2889ad369a2ebe8754a2ab",
+    "motor2_analysis_id": "3f65f63ae317c1058054c4892b047d065f573fbc36d4e2b714f82a96a13bd694",
+    "motor2_audit_sha256": "5e958a7533699f2fdef9e3467ba65289e8a74250f95f2f1d77239d275b7a56a2",
+    "motor3_analysis_id": "69a83e61b633b19f6b2914202c072d4b155a2cd59f397d4049e8cd90398e05e7",
+    "motor3_audit_sha256": "9bce7374b22d7e15498703c3ddc9a0182a380dea1a1c393c8584bf12ed660542",
+    "never_reruns_motors": true,
+    "shared_validation_analysis_id": "6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2",
+    "validation_analysis_id": "6e006d5d607fd70003b8eb6499e12eba2548c7966b7900be63e6b237fe2dbfd2",
+    "validation_audit_sha256": "55191d04dac4b59d1c1fc8fadbc9155f9b2523b91e44b925ba0842aee794ccd1"
+  }
+}

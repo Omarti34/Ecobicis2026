@@ -1,0 +1,791 @@
+{
+  "analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+  "analysis_identity": {
+    "code_hashes": {
+      "build_notebook_03.py": "9a5ecde1ba2f87b755f6959f21dde9acab0cc1098b64cb9d76ac33599c358f44",
+      "eda02_analysis.py": "50c82cb18a286306bb8c4641efda0b590bc171b5ebc665474a76711c5112f7ae",
+      "eda02_publication.py": "d6b9ef4a85c2d7bd423f6c34fb6a1f4a10f3503ff4d76cfb4a0f8ed0862da95e",
+      "fe03_analysis.py": "7a83190a8ef23b3d98687368c8a1fd64a64234b978e61b2d41bec69ca82da937",
+      "fe03_content.py": "58d49b145fa7b307f57d18424f1d96ddcba0f976aafb804fc7c65d65abb2f512",
+      "fe03_publication.py": "cd3222a5a5bfbee709872e04fd2b5c34520caeb63c8ccc7fc0254f62b3f7d043"
+    },
+    "configuration": {
+      "buffer_radius_m": 500,
+      "candidate_area_threshold": 0.15,
+      "coverage_tolerance": 1e-10,
+      "cycle_operational_status": "En operacion",
+      "fit_scope": "descriptive_transductive; not an inductive backtest",
+      "metric_crs": "EPSG:32614",
+      "metro_metrobus_agencies": [
+        "METRO",
+        "MB"
+      ],
+      "open_employment_band_reference": 300,
+      "registration_last_year": 2025,
+      "seed": 42,
+      "sensitivity_area_thresholds": [
+        0.05,
+        0.15,
+        0.3
+      ],
+      "sensitivity_radii_m": [
+        300,
+        400,
+        500,
+        800
+      ],
+      "tertiary_scian_sectors": [
+        "43",
+        "46",
+        "48",
+        "49",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "61",
+        "62",
+        "71",
+        "72",
+        "81",
+        "93"
+      ],
+      "variance_target": 0.8
+    },
+    "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+    "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+    "feature_names": [
+      "densidad_pob_km2",
+      "POBTOT",
+      "pct_edad_productiva",
+      "pct_jovenes_18_24",
+      "pct_adultos_mayores",
+      "grado_escolar_prom",
+      "tasa_ocupacion",
+      "pct_viviendas_internet",
+      "pct_viviendas_bici",
+      "pct_viviendas_auto",
+      "establecimientos_km2",
+      "empleo_proxy_km2",
+      "share_oficinas",
+      "share_comercio",
+      "share_alimentos",
+      "share_educacion_salud",
+      "ciclovia_km_km2",
+      "dist_metro_metrobus_m"
+    ],
+    "imputable_features": [
+      "pct_edad_productiva",
+      "pct_jovenes_18_24",
+      "pct_adultos_mayores",
+      "tasa_ocupacion",
+      "pct_viviendas_internet",
+      "pct_viviendas_bici",
+      "pct_viviendas_auto"
+    ],
+    "input_artifacts": {
+      "agebs": {
+        "bytes": 3370211,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/agebs.parquet",
+        "sha256": "330b35759a62175cb176e617fce2643b201e83c912bb72b0e5d29cf10c2671fc"
+      },
+      "censo_ageb_2020": {
+        "bytes": 3019354,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/censo_ageb_2020.parquet",
+        "sha256": "466080516453676ef3236fa6f9503b17b3f9624e5bb75adfd90443bbec467312"
+      },
+      "ciclovias_capa_06": {
+        "bytes": 481504,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_06.parquet",
+        "sha256": "2847246b5fd4e63e389d2250ae23e65a5683b0d1766ced55a5e1313a9272a150"
+      },
+      "denue": {
+        "bytes": 120385228,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/denue.parquet",
+        "sha256": "e24128bd510cb1c2ac20192b582328062af5cb0dcef72293466ae8634764e91e"
+      },
+      "estaciones": {
+        "bytes": 123929,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/estaciones.parquet",
+        "sha256": "545db7cf6afb1675422fee0169f34009cbde2b25ab6bbf21fd9f9be9a29f8f85"
+      },
+      "gtfs_agency": {
+        "bytes": 10703,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_agency.parquet",
+        "sha256": "3489189f1fe81c62e28fb53b4c88be8f48c86a15e7a13d50d5bacb02b94c906c"
+      },
+      "gtfs_calendar": {
+        "bytes": 14935,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_calendar.parquet",
+        "sha256": "bf5d490cdffd23dd7fa425dc466d8bd573b92df2a198cb63b2bb7d83424061ae"
+      },
+      "gtfs_routes": {
+        "bytes": 37938,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_routes.parquet",
+        "sha256": "b1431debaa799c5bf05e094074b084e31c8ce392e911707f0d6fe44555ca64ee"
+      },
+      "gtfs_stop_times": {
+        "bytes": 2797733,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stop_times.parquet",
+        "sha256": "13aa124a57c7cb9ccba262ba454010b46b5de9552ba30c7b1ddb88bebfe6ece1"
+      },
+      "gtfs_stops": {
+        "bytes": 1363212,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stops.parquet",
+        "sha256": "79c7d1a3e1f535b1dccbffa2c7db5c340be537a6c7da27a3e7b0f776724cfd3c"
+      },
+      "gtfs_trips": {
+        "bytes": 111698,
+        "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_trips.parquet",
+        "sha256": "04af0a98b63de0236191a98fd2440ed4ad920b1352070875e7161efc57da4fa9"
+      }
+    },
+    "input_columns": [
+      "densidad_pob_km2",
+      "POBTOT",
+      "pct_edad_productiva",
+      "pct_jovenes_18_24",
+      "pct_adultos_mayores",
+      "grado_escolar_prom",
+      "tasa_ocupacion",
+      "pct_viviendas_internet",
+      "pct_viviendas_bici",
+      "pct_viviendas_auto",
+      "establecimientos_km2",
+      "empleo_proxy_km2",
+      "share_oficinas",
+      "share_comercio",
+      "share_alimentos",
+      "share_educacion_salud",
+      "ciclovia_km_km2",
+      "dist_metro_metrobus_m",
+      "TVIVHAB",
+      "PEA"
+    ],
+    "log_transforms": [
+      "densidad_pob_km2",
+      "POBTOT",
+      "establecimientos_km2",
+      "empleo_proxy_km2",
+      "ciclovia_km_km2",
+      "dist_metro_metrobus_m"
+    ],
+    "schema_version": "v3-features-2",
+    "versions": {
+      "geopandas": "1.1.2",
+      "joblib": "1.5.3",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "python": "3.10.19",
+      "scipy": "1.15.2",
+      "sklearn": "1.7.2"
+    }
+  },
+  "configuration": {
+    "buffer_radius_m": 500,
+    "candidate_area_threshold": 0.15,
+    "coverage_tolerance": 1e-10,
+    "cycle_operational_status": "En operacion",
+    "fit_scope": "descriptive_transductive; not an inductive backtest",
+    "metric_crs": "EPSG:32614",
+    "metro_metrobus_agencies": [
+      "METRO",
+      "MB"
+    ],
+    "open_employment_band_reference": 300,
+    "registration_last_year": 2025,
+    "seed": 42,
+    "sensitivity_area_thresholds": [
+      0.05,
+      0.15,
+      0.3
+    ],
+    "sensitivity_radii_m": [
+      300,
+      400,
+      500,
+      800
+    ],
+    "tertiary_scian_sectors": [
+      "43",
+      "46",
+      "48",
+      "49",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "61",
+      "62",
+      "71",
+      "72",
+      "81",
+      "93"
+    ],
+    "variance_target": 0.8
+  },
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+  "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+  "eda_report_path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/report.json",
+  "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+  "feature_matrix": {
+    "feature_contract": [
+      {
+        "denominator": "area_km2",
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "densidad_pob_km2",
+        "numerator": "POBTOT",
+        "source": "Censo 2020 + geometry",
+        "transform": "log1p",
+        "unit": "inhabitants/km2"
+      },
+      {
+        "denominator": null,
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "POBTOT",
+        "numerator": "POBTOT",
+        "source": "Censo 2020",
+        "transform": "log1p",
+        "unit": "inhabitants"
+      },
+      {
+        "denominator": "POBTOT",
+        "missing_policy": "median only with applicable positive denominator",
+        "name": "pct_edad_productiva",
+        "numerator": "POB15_64",
+        "source": "Censo 2020",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "POBTOT",
+        "missing_policy": "median only with applicable positive denominator",
+        "name": "pct_jovenes_18_24",
+        "numerator": "P_18A24",
+        "source": "Censo 2020",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "POBTOT",
+        "missing_policy": "median only with applicable positive denominator",
+        "name": "pct_adultos_mayores",
+        "numerator": "P_60YMAS",
+        "source": "Censo 2020",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": null,
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "grado_escolar_prom",
+        "numerator": "GRAPROES",
+        "source": "Censo 2020",
+        "transform": "identity",
+        "unit": "school years"
+      },
+      {
+        "denominator": "PEA",
+        "missing_policy": "median only with applicable positive denominator",
+        "name": "tasa_ocupacion",
+        "numerator": "POCUPADA",
+        "source": "Censo 2020",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "TVIVHAB",
+        "missing_policy": "median only with applicable positive denominator",
+        "name": "pct_viviendas_internet",
+        "numerator": "VPH_INTER",
+        "source": "Censo 2020",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "TVIVHAB",
+        "missing_policy": "median only with applicable positive denominator",
+        "name": "pct_viviendas_bici",
+        "numerator": "VPH_BICI",
+        "source": "Censo 2020",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "TVIVHAB",
+        "missing_policy": "median only with applicable positive denominator",
+        "name": "pct_viviendas_auto",
+        "numerator": "VPH_AUTOM",
+        "source": "Censo 2020",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "area_km2",
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "establecimientos_km2",
+        "numerator": "establecimientos",
+        "source": "eligible tertiary DENUE",
+        "transform": "log1p",
+        "unit": "units/km2"
+      },
+      {
+        "denominator": "area_km2",
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "empleo_proxy_km2",
+        "numerator": "empleo_proxy",
+        "source": "eligible tertiary DENUE",
+        "transform": "log1p",
+        "unit": "proxy persons/km2"
+      },
+      {
+        "denominator": "establecimientos",
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "share_oficinas",
+        "numerator": "oficinas",
+        "source": "eligible tertiary DENUE",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "establecimientos",
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "share_comercio",
+        "numerator": "comercio",
+        "source": "eligible tertiary DENUE",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "establecimientos",
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "share_alimentos",
+        "numerator": "alimentos",
+        "source": "eligible tertiary DENUE",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "establecimientos",
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "share_educacion_salud",
+        "numerator": "educ_salud",
+        "source": "eligible tertiary DENUE",
+        "transform": "identity",
+        "unit": "fraction"
+      },
+      {
+        "denominator": "area_km2",
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "ciclovia_km_km2",
+        "numerator": "ciclovia_km",
+        "source": "cycle total layer; En operacion only",
+        "transform": "log1p",
+        "unit": "km/km2"
+      },
+      {
+        "denominator": null,
+        "missing_policy": "must be observed or defined by source convention",
+        "name": "dist_metro_metrobus_m",
+        "numerator": null,
+        "source": "eligible METRO/MB GTFS stops",
+        "transform": "log1p",
+        "unit": "Euclidean meters"
+      }
+    ],
+    "feature_names": [
+      "densidad_pob_km2",
+      "POBTOT",
+      "pct_edad_productiva",
+      "pct_jovenes_18_24",
+      "pct_adultos_mayores",
+      "grado_escolar_prom",
+      "tasa_ocupacion",
+      "pct_viviendas_internet",
+      "pct_viviendas_bici",
+      "pct_viviendas_auto",
+      "establecimientos_km2",
+      "empleo_proxy_km2",
+      "share_oficinas",
+      "share_comercio",
+      "share_alimentos",
+      "share_educacion_salud",
+      "ciclovia_km_km2",
+      "dist_metro_metrobus_m"
+    ],
+    "historical_ex_ante_eligibility_certified": false,
+    "imputable_features": [
+      "pct_edad_productiva",
+      "pct_jovenes_18_24",
+      "pct_adultos_mayores",
+      "tasa_ocupacion",
+      "pct_viviendas_internet",
+      "pct_viviendas_bici",
+      "pct_viviendas_auto"
+    ],
+    "imputed_candidate_rows": 22,
+    "imputed_cells": 41,
+    "imputed_cells_by_feature": {
+      "POBTOT": 0,
+      "ciclovia_km_km2": 0,
+      "densidad_pob_km2": 0,
+      "dist_metro_metrobus_m": 0,
+      "empleo_proxy_km2": 0,
+      "establecimientos_km2": 0,
+      "grado_escolar_prom": 0,
+      "pct_adultos_mayores": 7,
+      "pct_edad_productiva": 0,
+      "pct_jovenes_18_24": 4,
+      "pct_viviendas_auto": 10,
+      "pct_viviendas_bici": 15,
+      "pct_viviendas_internet": 5,
+      "share_alimentos": 0,
+      "share_comercio": 0,
+      "share_educacion_salud": 0,
+      "share_oficinas": 0,
+      "tasa_ocupacion": 0
+    },
+    "imputed_golden_rows": 0,
+    "imputed_rows": 23,
+    "input_columns": [
+      "densidad_pob_km2",
+      "POBTOT",
+      "pct_edad_productiva",
+      "pct_jovenes_18_24",
+      "pct_adultos_mayores",
+      "grado_escolar_prom",
+      "tasa_ocupacion",
+      "pct_viviendas_internet",
+      "pct_viviendas_bici",
+      "pct_viviendas_auto",
+      "establecimientos_km2",
+      "empleo_proxy_km2",
+      "share_oficinas",
+      "share_comercio",
+      "share_alimentos",
+      "share_educacion_salud",
+      "ciclovia_km_km2",
+      "dist_metro_metrobus_m",
+      "TVIVHAB",
+      "PEA"
+    ],
+    "log_transformed_features": [
+      "densidad_pob_km2",
+      "POBTOT",
+      "establecimientos_km2",
+      "empleo_proxy_km2",
+      "ciclovia_km_km2",
+      "dist_metro_metrobus_m"
+    ],
+    "n_features_raw": 18,
+    "operational_target_features_used": false,
+    "projectable_agebs": 2402,
+    "rural_nans_preserved_count": 22,
+    "unprojectable_agebs": 50
+  },
+  "input_artifacts": {
+    "agebs": {
+      "bytes": 3370211,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/agebs.parquet",
+      "sha256": "330b35759a62175cb176e617fce2643b201e83c912bb72b0e5d29cf10c2671fc"
+    },
+    "censo_ageb_2020": {
+      "bytes": 3019354,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/censo_ageb_2020.parquet",
+      "sha256": "466080516453676ef3236fa6f9503b17b3f9624e5bb75adfd90443bbec467312"
+    },
+    "ciclovias_capa_06": {
+      "bytes": 481504,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ciclovias_capa_06.parquet",
+      "sha256": "2847246b5fd4e63e389d2250ae23e65a5683b0d1766ced55a5e1313a9272a150"
+    },
+    "denue": {
+      "bytes": 120385228,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/denue.parquet",
+      "sha256": "e24128bd510cb1c2ac20192b582328062af5cb0dcef72293466ae8634764e91e"
+    },
+    "estaciones": {
+      "bytes": 123929,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/estaciones.parquet",
+      "sha256": "545db7cf6afb1675422fee0169f34009cbde2b25ab6bbf21fd9f9be9a29f8f85"
+    },
+    "gtfs_agency": {
+      "bytes": 10703,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_agency.parquet",
+      "sha256": "3489189f1fe81c62e28fb53b4c88be8f48c86a15e7a13d50d5bacb02b94c906c"
+    },
+    "gtfs_calendar": {
+      "bytes": 14935,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_calendar.parquet",
+      "sha256": "bf5d490cdffd23dd7fa425dc466d8bd573b92df2a198cb63b2bb7d83424061ae"
+    },
+    "gtfs_routes": {
+      "bytes": 37938,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_routes.parquet",
+      "sha256": "b1431debaa799c5bf05e094074b084e31c8ce392e911707f0d6fe44555ca64ee"
+    },
+    "gtfs_stop_times": {
+      "bytes": 2797733,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stop_times.parquet",
+      "sha256": "13aa124a57c7cb9ccba262ba454010b46b5de9552ba30c7b1ddb88bebfe6ece1"
+    },
+    "gtfs_stops": {
+      "bytes": 1363212,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stops.parquet",
+      "sha256": "79c7d1a3e1f535b1dccbffa2c7db5c340be537a6c7da27a3e7b0f776724cfd3c"
+    },
+    "gtfs_trips": {
+      "bytes": 111698,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_trips.parquet",
+      "sha256": "04af0a98b63de0236191a98fd2440ed4ad920b1352070875e7161efc57da4fa9"
+    }
+  },
+  "mathematical_checks": {
+    "finite_projected_scores": true,
+    "golden_covariance_rank": 8,
+    "no_projection_for_ineligible_rows": true,
+    "orthonormal_components": true,
+    "rural_scores_remain_missing": true,
+    "shared_pipeline_for_all_rows": true,
+    "unique_ageb_keys": true
+  },
+  "maup_mitigation": {
+    "buffer_area_km2": 87.67968384992247,
+    "buffer_radius_m": 500,
+    "candidate_ageb_share": 0.8609298531810766,
+    "candidate_area_share": 0.9332311385698363,
+    "coverage_method": "Euclidean projected buffer; not a walking service area",
+    "covered_or_consolidated_count": 341,
+    "golden_cluster_agebs_count": 61,
+    "golden_projected_count": 61,
+    "golden_territorial_candidate_overlap": 0,
+    "maup_resolved": false,
+    "projectable_candidates_count": 2064,
+    "pure_candidate_threshold": 0.15,
+    "territorial_candidates_count": 2111,
+    "total_agebs": 2452,
+    "unprojectable_candidates_count": 47
+  },
+  "notebook": "03_Feature_Engineering.ipynb",
+  "outputs": [
+    {
+      "bytes": 3155220,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/entorno_ageb_features.parquet",
+      "sha256": "3ac6047eaeb1329dc6b1d46b3ed0515bc88157a391495a40ebf82c70aa1185ef"
+    },
+    {
+      "bytes": 213110,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/pca_espacio_compartido.parquet",
+      "sha256": "7b8a6d3ad538ecdbc2c9df3fd28ba3c0cd3c6e531cf8794074f8cba14bf9c991"
+    },
+    {
+      "bytes": 8949,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/pca_loadings.parquet",
+      "sha256": "742f31f91bc6c1ce63cba05becfd37d07c48accdcceeff1c43b7820441dc3aa4"
+    },
+    {
+      "bytes": 7202,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/golden_centroid.parquet",
+      "sha256": "33763ce9157573b9d52f32f52987fcb13e05507d818af47cb58b1b0428cb3ec6"
+    },
+    {
+      "bytes": 2290,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/maup_sensitivity.csv",
+      "sha256": "9bdfe5351a28a99b345d2bb08a9aefdebc172286fe160975e1718fca4975529e"
+    },
+    {
+      "bytes": 5025,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/pca_pipeline.joblib",
+      "sha256": "b70ba0517581285d9e14ecab6fb650cca3fe21fac53768e16a635f24ead7bdf5"
+    }
+  ],
+  "pca_reduction": {
+    "cumulative_variance_explained": 0.803702083456323,
+    "fit_scope": "descriptive_transductive; not an inductive backtest",
+    "golden_cluster_centroid_vector": [
+      3.542395507024744,
+      1.733247148818595,
+      -2.459367235696589,
+      0.49182772087344917,
+      0.39788351579136033,
+      0.31118157178248135,
+      -0.32499350314128406,
+      -0.6252969913634103
+    ],
+    "golden_weighting": "one equal weight per projectable Golden AGEB",
+    "imputer_statistics_transformed_scale": [
+      9.676321334594789,
+      8.14031537016276,
+      0.704058095480576,
+      0.10634693197076608,
+      0.16812227074235808,
+      11.41,
+      0.9777167015441902,
+      0.7532989099254159,
+      0.19441069258809235,
+      0.4354002110821906,
+      6.274163155129723,
+      7.901753240764884,
+      0.042719834534781155,
+      0.4925740754356297,
+      0.1257247899159664,
+      0.07865168539325842,
+      0.0,
+      6.9040300684100036
+    ],
+    "income_bias_risk": true,
+    "income_measured_directly": false,
+    "individual_variance_explained": [
+      0.27684466191710855,
+      0.15632083116292025,
+      0.08520118495164086,
+      0.06884092332830767,
+      0.06310192090981145,
+      0.05627092222247508,
+      0.0520398768060907,
+      0.04508176215796836
+    ],
+    "k_components_80_pct": 8,
+    "loadings_definition": "eigenvector coefficients, not causal effects or correlations",
+    "pc1_label": "Eje de Equipamiento y Composición Socioeconómica Residencial",
+    "scaler_mean": [
+      9.464775182303525,
+      7.985182799132581,
+      0.7064051721582203,
+      0.10505739620385326,
+      0.17456261626228112,
+      11.697385512073271,
+      0.9771416695140372,
+      0.7552667615682631,
+      0.20118700362744674,
+      0.4785038738807468,
+      6.04335365047088,
+      7.723950133461019,
+      0.06404623287101499,
+      0.48419927523421724,
+      0.13326604334919828,
+      0.09737017793271754,
+      0.261764396952301,
+      6.9588264363805505
+    ],
+    "scaler_scale": [
+      0.9176512097362567,
+      0.8703454901677482,
+      0.036919846953148164,
+      0.026814025043584197,
+      0.058878035474475135,
+      1.8084551603603733,
+      0.010077025916810783,
+      0.13102720661286893,
+      0.10367905760747285,
+      0.17262456293503348,
+      1.1727073212376404,
+      1.3319668404528757,
+      0.08050392317445337,
+      0.1712075747652955,
+      0.07800010071454702,
+      0.09201706266456072,
+      0.5704258316113747,
+      1.1446454104249162
+    ],
+    "top_pc1_features": [
+      "grado_escolar_prom",
+      "pct_viviendas_internet",
+      "pct_viviendas_auto",
+      "pct_adultos_mayores",
+      "share_comercio"
+    ],
+    "top_pc1_signed_coefficients": {
+      "grado_escolar_prom": 0.4094124994513326,
+      "pct_adultos_mayores": 0.34225706883690776,
+      "pct_viviendas_auto": 0.345989959146766,
+      "pct_viviendas_internet": 0.38689831490123466,
+      "share_comercio": -0.3348548264438186
+    },
+    "whiten": false
+  },
+  "pending_validation": [
+    "Fold-local preprocessing, Golden selection and centroid for inductive evaluation",
+    "Spatial blocks/buffers; GroupKFold alone does not isolate neighboring AGEBs",
+    "Ranking sensitivity to imputation, PCA truncation and Golden P85 threshold",
+    "Nonresidential candidate representation; exclusions do not mean no potential demand",
+    "Physical network connectivity and spatial out-of-domain screening",
+    "Historical source availability and equity-versus-similarity objectives",
+    "Declared Mahalanobis reference covariance and calibrated domain threshold"
+  ],
+  "schema_version": "v3-features-2",
+  "source_filters": {
+    "buffer_area_km2": 87.67968384992247,
+    "census_keys_without_geometry": 3,
+    "cycling": {
+      "excluded_segments": 137,
+      "excluded_status_counts": {
+        "Fuera de servicio": 63,
+        "Requiere mantenimiento": 74
+      },
+      "included_segments": 514,
+      "included_status": "En operacion",
+      "included_typologies": {
+        "Carril bus bici": 71,
+        "Carril de prioridad ciclista": 17,
+        "Ciclocarril": 56,
+        "Ciclovia": 221,
+        "Ciclovia bidireccional": 61,
+        "Infraestructura ciclista emergente": 3,
+        "Sendero compartido": 85
+      },
+      "input_segments": 651,
+      "length_inside_agebs_km": 482.16275669850967,
+      "operation_verified_in_field": false,
+      "segregated_infrastructure_only": false
+    },
+    "denue": {
+      "historical_2025_stock_reconstructed": false,
+      "input_records": 462732,
+      "matched_tertiary_records": 417864,
+      "nontertiary_known_registration_through_2025_excluded": 33848,
+      "open_band_assumed_employees": 300,
+      "open_band_selected_records": 1612,
+      "registration_after_2025": 9627,
+      "registration_unknown_excluded": 36,
+      "selected_tertiary_records": 419221,
+      "selected_without_geometry": 1357,
+      "snapshot_years": [
+        2026
+      ],
+      "zero_semantics": "no matched eligible establishment; not zero jobs in 2025"
+    },
+    "exclusion_reason_counts_nonexclusive": {
+      "no_resident_population": 17,
+      "nonimputable_feature_missing": 32,
+      "nonurban": 22,
+      "population_missing": 22,
+      "schooling_missing": 32,
+      "undefined_household_denominator": 40,
+      "undefined_labour_denominator": 50
+    },
+    "gtfs": {
+      "agencies": [
+        "METRO",
+        "MB"
+      ],
+      "calendar_rule": "has_2025_service; declared coverage, not observed service",
+      "centroids_outside_polygon": 55,
+      "distance_method": "AGEB centroid to eligible stop; Euclidean in EPSG:32614",
+      "eligible_unique_stop_ids": 568,
+      "historical_stop_positions_reconstructed": false,
+      "stop_ids_by_agency": {
+        "MB": 373,
+        "METRO": 195
+      },
+      "walking_access_measured": false
+    }
+  }
+}

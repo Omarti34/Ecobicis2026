@@ -1,0 +1,9 @@
+# Entorno completo para re-ejecutar los cuadernos 00-09 de punta a punta.
+# Extiende el núcleo con el caso de estudio FT-Transformer (torch) y la
+# pila de ejecución de Jupyter usada por los empaquetadores de src/.
+-r requirements.txt
+torch==2.2.2
+torchmetrics==1.8.2
+ipykernel==7.2.0
+nbconvert==7.17.0
+jupyter==1.1.1

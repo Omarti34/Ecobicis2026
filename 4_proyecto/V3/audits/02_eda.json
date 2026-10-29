@@ -1,0 +1,860 @@
+{
+  "analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+  "analysis_identity": {
+    "code_hashes": {
+      "build_notebook_02.py": "74fc0ae05fdf9807d132df722bffe45a3cb75b294bdddf96811b8e4eacc91c90",
+      "eda02_analysis.py": "50c82cb18a286306bb8c4641efda0b590bc171b5ebc665474a76711c5112f7ae",
+      "eda02_content.py": "765e37adb8242d463e24a05737220922df843066fb670510a3b64ae40cfbfb0c",
+      "eda02_publication.py": "d6b9ef4a85c2d7bd423f6c34fb6a1f4a10f3503ff4d76cfb4a0f8ed0862da95e",
+      "eda02_urban.py": "4e7a3e2bcf36c9207a134f06fc6821449ccccf17935f5f1b8f1a1050abc8398e",
+      "eda02_urban_content.py": "93317c6c1ef6434dff33b31c621745badd051e1811805db52930fb81a2ea4c59"
+    },
+    "configuration": {
+      "bootstrap_ageb_replicates": 1000,
+      "bootstrap_percentiles": [
+        2.5,
+        97.5
+      ],
+      "diagnostic_access_radius_m": 400,
+      "golden_quantile": 0.85,
+      "iqr_multiplier": 1.5,
+      "metric_crs": "EPSG:32614",
+      "moran_k": 8,
+      "moran_sensitivity_k": [
+        4,
+        8,
+        12
+      ],
+      "open_employment_band_reference": 300,
+      "open_employment_band_scenarios": [
+        251,
+        300,
+        500,
+        1000
+      ],
+      "permutations": 999,
+      "seed": 42,
+      "tertiary_scian_sectors": [
+        "43",
+        "46",
+        "48",
+        "49",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "61",
+        "62",
+        "71",
+        "72",
+        "81",
+        "93"
+      ]
+    },
+    "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+    "urban_configuration": {
+      "census_year": 2020,
+      "conservation_atol": 1e-05,
+      "day_types": {
+        "weekday": "Monday-Friday, including holidays",
+        "weekend": "Saturday-Sunday"
+      },
+      "local_timezone": "America/Mexico_City",
+      "modal_agencies": {
+        "dist_transporte_ligero_m": [
+          "RTP",
+          "TROLE"
+        ],
+        "dist_transporte_pesado_m": [
+          "METRO",
+          "MB"
+        ]
+      },
+      "modal_service_filter": "has_2025_service; not proof of historical stop position",
+      "population_variable": "POBTOT",
+      "study_year": 2025,
+      "temporal_cohort": "accepted trips plus valid known endpoint fractions from quarantine",
+      "trip_batch_rows": 250000
+    },
+    "urban_enrichment_version": "v3-eda-urban-1",
+    "versions": {
+      "geopandas": "1.1.2",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "pyarrow": "23.0.1",
+      "python": "3.10.19",
+      "scipy": "1.15.2"
+    }
+  },
+  "configuration": {
+    "bootstrap_ageb_replicates": 1000,
+    "bootstrap_percentiles": [
+      2.5,
+      97.5
+    ],
+    "diagnostic_access_radius_m": 400,
+    "golden_quantile": 0.85,
+    "iqr_multiplier": 1.5,
+    "metric_crs": "EPSG:32614",
+    "moran_k": 8,
+    "moran_sensitivity_k": [
+      4,
+      8,
+      12
+    ],
+    "open_employment_band_reference": 300,
+    "open_employment_band_scenarios": [
+      251,
+      300,
+      500,
+      1000
+    ],
+    "permutations": 999,
+    "seed": 42,
+    "tertiary_scian_sectors": [
+      "43",
+      "46",
+      "48",
+      "49",
+      "51",
+      "52",
+      "53",
+      "54",
+      "55",
+      "56",
+      "61",
+      "62",
+      "71",
+      "72",
+      "81",
+      "93"
+    ]
+  },
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "correlations": [
+    {
+      "n_agebs": 243,
+      "n_stations": 677,
+      "pearson_ci_ageb_high": -0.013701583427763522,
+      "pearson_ci_ageb_low": -0.24820838355441463,
+      "pearson_p_iid_reference": 0.0003421695474942414,
+      "pearson_r": -0.1372342099418935,
+      "predictor": "densidad_pob_km2",
+      "spearman_ci_ageb_high": 0.07386968596549211,
+      "spearman_ci_ageb_low": -0.18563395073923245,
+      "spearman_p_iid_reference": 0.10466735682516923,
+      "spearman_rho": -0.06241747373806903,
+      "transform": "identity"
+    },
+    {
+      "n_agebs": 243,
+      "n_stations": 677,
+      "pearson_ci_ageb_high": -0.18271533205174592,
+      "pearson_ci_ageb_low": -0.30650644336737853,
+      "pearson_p_iid_reference": 6.168548560644491e-11,
+      "pearson_r": -0.24786279410665,
+      "predictor": "dist_gtfs_m",
+      "spearman_ci_ageb_high": -0.15999713451056355,
+      "spearman_ci_ageb_low": -0.3170244825824913,
+      "spearman_p_iid_reference": 1.9054162692513923e-10,
+      "spearman_rho": -0.2415838034215259,
+      "transform": "identity"
+    },
+    {
+      "n_agebs": 243,
+      "n_stations": 677,
+      "pearson_ci_ageb_high": 0.3802185985609918,
+      "pearson_ci_ageb_low": 0.18970924328503644,
+      "pearson_p_iid_reference": 3.915216829485378e-14,
+      "pearson_r": 0.28516924851855474,
+      "predictor": "empleo_terciario_proxy",
+      "spearman_ci_ageb_high": 0.4309089312573922,
+      "spearman_ci_ageb_low": 0.22221995408460612,
+      "spearman_p_iid_reference": 2.0900258297782377e-18,
+      "spearman_rho": 0.327655061583904,
+      "transform": "log1p"
+    }
+  ],
+  "denue_retrospective_proxy": {
+    "historical_2025_stock_reconstructed": false,
+    "input_establishments": 462732,
+    "open_band_sensitivity": [
+      {
+        "open_band_assumption": 251,
+        "pearson_log1p": 0.2846415851014711,
+        "spearman": 0.32545565721813025
+      },
+      {
+        "open_band_assumption": 300,
+        "pearson_log1p": 0.28516924851855474,
+        "spearman": 0.327655061583904
+      },
+      {
+        "open_band_assumption": 500,
+        "pearson_log1p": 0.2856176950766879,
+        "spearman": 0.3215899750210943
+      },
+      {
+        "open_band_assumption": 1000,
+        "pearson_log1p": 0.2828920406863712,
+        "spearman": 0.3076431718869161
+      }
+    ],
+    "registration_after_2025": 9627,
+    "registration_unknown": 36,
+    "snapshot_years": [
+      2026
+    ],
+    "tertiary_open_employment_band": 1612,
+    "tertiary_unmatched_ageb": 1357,
+    "tertiary_with_known_registration_through_2025": 419221
+  },
+  "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+  "feature_coverage": [
+    {
+      "cohort": "with_internal_station",
+      "density_missing": 0,
+      "n_agebs": 243,
+      "population_missing": 0,
+      "rural_missing_population": 0,
+      "zero_matched_tertiary_establishments": 0
+    },
+    {
+      "cohort": "without_internal_station",
+      "density_missing": 22,
+      "n_agebs": 2209,
+      "population_missing": 22,
+      "rural_missing_population": 22,
+      "zero_matched_tertiary_establishments": 40
+    }
+  ],
+  "golden_cluster": {
+    "ageb_ids": [
+      "0901400010026",
+      "0901400010223",
+      "0901400010469",
+      "0901400010717",
+      "0901400010793",
+      "0901500010485",
+      "090150001049A",
+      "0901500010606",
+      "0901500010678",
+      "0901500010682",
+      "0901500010697",
+      "0901500010714",
+      "0901500010729",
+      "0901500010733",
+      "0901500010748",
+      "0901500010790",
+      "0901500010803",
+      "0901500010818",
+      "0901500010822",
+      "0901500010837",
+      "0901500010841",
+      "0901500010856",
+      "0901500010860",
+      "0901500010926",
+      "0901500010930",
+      "0901500010945",
+      "090150001095A",
+      "0901500010983",
+      "0901500010998",
+      "0901500011002",
+      "0901500011017",
+      "0901500011036",
+      "0901500011089",
+      "0901500011093",
+      "0901500011106",
+      "0901500011110",
+      "0901500011178",
+      "0901500011182",
+      "0901500011197",
+      "090150001120A",
+      "0901500011214",
+      "0901500011303",
+      "0901500011318",
+      "0901500011322",
+      "0901500011341",
+      "0901500011356",
+      "090150001138A",
+      "0901500011411",
+      "0901500011534",
+      "0901600010073",
+      "0901600010213",
+      "090160001029A",
+      "0901600010444",
+      "0901600010478",
+      "0901600010482",
+      "0901600010552",
+      "0901600010660",
+      "090160001068A",
+      "0901600010779",
+      "0901600010798",
+      "0901600011226"
+    ],
+    "ageb_pca_weighting": "not decided by EDA; station and AGEB weighting differ",
+    "cannibalization_identified": false,
+    "golden_neighbor_median_m": 249.61452766507364,
+    "n_stations": 102,
+    "n_unique_agebs": 61,
+    "network_neighbor_median_m": 220.40291683629894,
+    "optimal_spacing_identified": false
+  },
+  "gtfs_proximity": {
+    "accepted_stops": 11362,
+    "calendar_link_is_not_proof_of_historical_stop_location": true,
+    "distance_universe": "all accepted GTFS stops; not Metro-only or 2025-only",
+    "nearest_agency_counts": {
+      "CBB": 1,
+      "CC": 344,
+      "MB": 100,
+      "MB|TROLE": 10,
+      "METRO": 26,
+      "RTP": 118,
+      "TROLE": 57,
+      "unlinked_in_accepted_trips": 21
+    },
+    "nearest_without_2025_calendar_link": 21,
+    "route_type_counts": {
+      "0": 1,
+      "1": 13,
+      "2": 1,
+      "3": 282,
+      "6": 3
+    },
+    "stops_linked_to_accepted_trips": 10961
+  },
+  "human_dimension": {
+    "agebs_without_internal_station": 2209,
+    "census_keys_without_geometry": 3,
+    "census_year": 2020,
+    "join": "unique cvegeo, AGEB totals",
+    "known_population_is_complete_for_all_polygons": false,
+    "population_updated_to_2025": false,
+    "population_without_internal_station_known": 8185081,
+    "unknown_population_without_internal_station_agebs": 22,
+    "variable": "POBTOT",
+    "walking_access_measured": false
+  },
+  "input_artifacts": {
+    "actividad_estaciones": {
+      "bytes": 139026,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/actividad_estaciones.parquet",
+      "sha256": "c2918a5f2b935c586476d33bf41cb7a0322e43cc419e00f864165441dd3e6e17"
+    },
+    "agebs": {
+      "bytes": 3370211,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/agebs.parquet",
+      "sha256": "330b35759a62175cb176e617fce2643b201e83c912bb72b0e5d29cf10c2671fc"
+    },
+    "censo_ageb_2020": {
+      "bytes": 3019354,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/censo_ageb_2020.parquet",
+      "sha256": "466080516453676ef3236fa6f9503b17b3f9624e5bb75adfd90443bbec467312"
+    },
+    "denue": {
+      "bytes": 120385228,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/denue.parquet",
+      "sha256": "e24128bd510cb1c2ac20192b582328062af5cb0dcef72293466ae8634764e91e"
+    },
+    "gtfs_calendar": {
+      "bytes": 14935,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_calendar.parquet",
+      "sha256": "bf5d490cdffd23dd7fa425dc466d8bd573b92df2a198cb63b2bb7d83424061ae"
+    },
+    "gtfs_routes": {
+      "bytes": 37938,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_routes.parquet",
+      "sha256": "b1431debaa799c5bf05e094074b084e31c8ce392e911707f0d6fe44555ca64ee"
+    },
+    "gtfs_stop_times": {
+      "bytes": 2797733,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stop_times.parquet",
+      "sha256": "13aa124a57c7cb9ccba262ba454010b46b5de9552ba30c7b1ddb88bebfe6ece1"
+    },
+    "gtfs_stops": {
+      "bytes": 1363212,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_stops.parquet",
+      "sha256": "79c7d1a3e1f535b1dccbffa2c7db5c340be537a6c7da27a3e7b0f776724cfd3c"
+    },
+    "gtfs_trips": {
+      "bytes": 111698,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/gtfs_trips.parquet",
+      "sha256": "04af0a98b63de0236191a98fd2440ed4ad920b1352070875e7161efc57da4fa9"
+    },
+    "quarantine_viajes_2025-01": {
+      "bytes": 50907,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-01.parquet",
+      "sha256": "4d3ecc83d41cb0945d4f5083175cc7f7051edbb83bf123eefb8f38231391e75f"
+    },
+    "quarantine_viajes_2025-02": {
+      "bytes": 37541,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-02.parquet",
+      "sha256": "b5870e02cfe8add45c0f6d0c4a471ff6c77837888fb9922cfbe4147e09414790"
+    },
+    "quarantine_viajes_2025-03": {
+      "bytes": 45974,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-03.parquet",
+      "sha256": "380e9449162d5ceb27285bb96acc65378d9791bc5e14a50ca994174c3b69f4f4"
+    },
+    "quarantine_viajes_2025-04": {
+      "bytes": 76637,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-04.parquet",
+      "sha256": "db7d0f2220c6f39ef506293c8795cd01d07c5b88ffeda30fdeb8b100290687dc"
+    },
+    "quarantine_viajes_2025-05": {
+      "bytes": 46808,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-05.parquet",
+      "sha256": "3af5758fbe6858b5410129153065ff69a9eeccc4a1d586ed518184f12beb4217"
+    },
+    "quarantine_viajes_2025-06": {
+      "bytes": 42965,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-06.parquet",
+      "sha256": "bba00e62a4c73226f8820f12590077f7dcbfebc0b48b6870c575b120fa369505"
+    },
+    "quarantine_viajes_2025-07": {
+      "bytes": 42975,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-07.parquet",
+      "sha256": "dec379e89ac728c6dc79f6c4dcdfbd095d7cebddb506d4a08a01c0a9e0790f9e"
+    },
+    "quarantine_viajes_2025-08": {
+      "bytes": 41502,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-08.parquet",
+      "sha256": "5931f1a3f99ec65cdca602868548560f8050d67e4cd1f0ee9a430a1aca05e48a"
+    },
+    "quarantine_viajes_2025-09": {
+      "bytes": 41483,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-09.parquet",
+      "sha256": "87d12849c9684187aa4d1b1ca4daa6fb04ba5e188b62943d37b9ef0a274ffd84"
+    },
+    "quarantine_viajes_2025-10": {
+      "bytes": 44045,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-10.parquet",
+      "sha256": "eb6e409a5ee34fcb0f977ad35e8ce3674cfe955ef3da831369fcbaa4e05ae8b8"
+    },
+    "quarantine_viajes_2025-11": {
+      "bytes": 44088,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-11.parquet",
+      "sha256": "d03dc453a0a9176810000b59bd7cd45af28a9ff03f4decf2e991ce31ac0abdda"
+    },
+    "quarantine_viajes_2025-12": {
+      "bytes": 38100,
+      "path": "data/quarantine/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-12.parquet",
+      "sha256": "92186fc1b65482b17df150bbf574e91045fd4a74b086ac533534c2eb545fef47"
+    },
+    "station_aliases": {
+      "bytes": 6101,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/station_aliases.parquet",
+      "sha256": "eeae78e926481bf003fcb67e6e4e6df374c4cd575b8da050a5f98b0dd45eaed1"
+    },
+    "viajes_2025-01": {
+      "bytes": 36021816,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-01.parquet",
+      "sha256": "75d43c8703bb5c3cb7b77141fc4a2da3a9bd944dda11ad062c92a44484caa320"
+    },
+    "viajes_2025-02": {
+      "bytes": 34604673,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-02.parquet",
+      "sha256": "d26587971b70033bd1aed2e197cd1e5f14b8d47c18ba99adf6c2874a0ec3f7cd"
+    },
+    "viajes_2025-03": {
+      "bytes": 36397268,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-03.parquet",
+      "sha256": "03ddfcc3ae41bf2b74e00dce2631d7e3bfca37687c5a44aad57c99188a626c2d"
+    },
+    "viajes_2025-04": {
+      "bytes": 34506116,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-04.parquet",
+      "sha256": "beb3574d982df7fea298a5648f2aa54bc8383944406dc831d06d8a44c64c03b7"
+    },
+    "viajes_2025-05": {
+      "bytes": 35557919,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-05.parquet",
+      "sha256": "e04c0b1d3ba9307196badde0c8abf9e824301ac0e7067ffc15595be1a9ab750e"
+    },
+    "viajes_2025-06": {
+      "bytes": 31881511,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-06.parquet",
+      "sha256": "ac2096dc97738b6f584fdf3d017c42dccbc92c83460886516a3d7bb00dbc4bc2"
+    },
+    "viajes_2025-07": {
+      "bytes": 33687642,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-07.parquet",
+      "sha256": "ec26b4c5051e1cf9b0b9b86c4f86aba29e95ee54b86b455922670d67a43cfa17"
+    },
+    "viajes_2025-08": {
+      "bytes": 32658946,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-08.parquet",
+      "sha256": "2ad54afb17535d0e99d0b0bb41371e696bc64d6675c0693f92a7030da443daed"
+    },
+    "viajes_2025-09": {
+      "bytes": 32029504,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-09.parquet",
+      "sha256": "27872b184e24e386bf17ad2fe2cbbbc1974aba39fdddf6a89cf4d5e9e275ccdb"
+    },
+    "viajes_2025-10": {
+      "bytes": 35229416,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-10.parquet",
+      "sha256": "b7f5aed22b79e19790cf07d49999060ad33e5fa7dead758ab7694b432b34fe90"
+    },
+    "viajes_2025-11": {
+      "bytes": 32341717,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-11.parquet",
+      "sha256": "ac85dc0cc4ffa2749d3421c9285b9ec8af17b8132c1b941105d798fbfa6a6048"
+    },
+    "viajes_2025-12": {
+      "bytes": 29588708,
+      "path": "data/processed/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/viajes_2025-12.parquet",
+      "sha256": "9a28a8d59c99878e088c6e6f311a7b330950764f06c8153d441aee9e45bd38f0"
+    }
+  },
+  "leakage_audit": {
+    "models_trained": false,
+    "n_undefined_turnover": 1,
+    "n_valid_capacity": 676,
+    "pagerank_empirically_measured_here": false,
+    "same_period_od_centrality_predictor_eligible": false,
+    "turnover_ratio_definition": "2 * daily_activity / catalog_capacity",
+    "turnover_ratio_predictor_eligible": false,
+    "turnover_ratio_spearman": 0.8983836898562167,
+    "undefined_turnover_reason": "catalog capacity missing or nonpositive; station retained elsewhere",
+    "undefined_turnover_station_ids": [
+      "673"
+    ]
+  },
+  "modal_transport": {
+    "calendar_filter": "has_2025_service; not proof of historical stop position",
+    "causal_impact_on_adoption_identified": false,
+    "correlations": [
+      {
+        "n_agebs": 243,
+        "n_stations": 677,
+        "pearson_ci_ageb_high": -0.2799143630406352,
+        "pearson_ci_ageb_low": -0.4053255641000986,
+        "pearson_p_iid_reference": 5.552002364421949e-20,
+        "pearson_r": -0.34175288118330643,
+        "predictor": "dist_transporte_pesado_m",
+        "spearman_ci_ageb_high": -0.3390361087194978,
+        "spearman_ci_ageb_low": -0.5001844202529235,
+        "spearman_p_iid_reference": 3.265438157814036e-30,
+        "spearman_rho": -0.4193432094531851,
+        "transform": "identity"
+      },
+      {
+        "n_agebs": 243,
+        "n_stations": 677,
+        "pearson_ci_ageb_high": -0.0016076688820372477,
+        "pearson_ci_ageb_low": -0.15667642585445513,
+        "pearson_p_iid_reference": 0.0333167259585563,
+        "pearson_r": -0.0818091589449084,
+        "predictor": "dist_transporte_ligero_m",
+        "spearman_ci_ageb_high": 0.026557412141517772,
+        "spearman_ci_ageb_low": -0.16657989611199092,
+        "spearman_p_iid_reference": 0.0711302922200926,
+        "spearman_rho": -0.0694027365597605,
+        "transform": "identity"
+      }
+    ],
+    "group_names_are_operational_not_vehicle_weight_classification": true,
+    "groups": {
+      "dist_transporte_ligero_m": {
+        "agencies": [
+          "RTP",
+          "TROLE"
+        ],
+        "eligible_stop_ids": 5656
+      },
+      "dist_transporte_pesado_m": {
+        "agencies": [
+          "METRO",
+          "MB"
+        ],
+        "eligible_stop_ids": 568
+      }
+    },
+    "stop_ids_shared_between_groups": 26,
+    "unit": "observed stations; annual activity, not individual adoption"
+  },
+  "notebook": "02_EDA_y_Equidad.ipynb",
+  "outputs": [
+    {
+      "bytes": 142376,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/golden_agebs.parquet",
+      "sha256": "5cc9bf0a37375b6ae5560755ee74bb1dee617debbd54e96c35706e57b05f09e9"
+    },
+    {
+      "bytes": 273429,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/station_environment.parquet",
+      "sha256": "1d0243deab8390547dbdf580efda68308474788b21c23faf1446afcc462fabda"
+    },
+    {
+      "bytes": 5422689,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/ageb_diagnostics.parquet",
+      "sha256": "178e4163d3cefcc40e1fbd4e120c74550cdda4d0e91d6098028c30bf92f56113"
+    },
+    {
+      "bytes": 5436717,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/census_population_by_ageb.parquet",
+      "sha256": "a30a68f730f19744cba5dfbad7d5c0fce022e017c8cc4c4cc7cf6115613caab1"
+    },
+    {
+      "bytes": 296800,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/station_modal_environment.parquet",
+      "sha256": "769a5dd680357f1ae4922566b40d78f3b1229b36f01dc0f526d0607f8b0eeb8c"
+    },
+    {
+      "bytes": 11053,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/golden_agebs.csv",
+      "sha256": "2ea414bef2b1ce478f32d0e1c64bbe28a5046144e19ec8746d94978802f81e44"
+    },
+    {
+      "bytes": 1209,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/correlations.csv",
+      "sha256": "d1aba1d638c520ba55e6d2e5cddcc4a5aa28548910a8d5b54242b72d2842355b"
+    },
+    {
+      "bytes": 1501,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/moran_sensitivity.csv",
+      "sha256": "4f643b55582fff5e90a4d31908dd017e588a64be267e6f5f028835132e3b5818"
+    },
+    {
+      "bytes": 764,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/employment_sensitivity.csv",
+      "sha256": "e85e6719694f5d8a2ded24621296e62b9184bdb2acdaa283738bafd5d2c2a4ec"
+    },
+    {
+      "bytes": 478,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/feature_coverage.csv",
+      "sha256": "fab214461e382721d421242aca54ca4c66cb1a511a30e4a769c3a076610457a5"
+    },
+    {
+      "bytes": 17197,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/hourly_profile.csv",
+      "sha256": "99f1383a17230dc5048ee9443dec76a7963e40d7c6b147c858acdd2290ef31b7"
+    },
+    {
+      "bytes": 898,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/modal_correlations.csv",
+      "sha256": "8a78ff7cf844ab23e48025da1c0092cbf93cc8a7770d9aadbb38e8d013cf6a17"
+    },
+    {
+      "bytes": 645,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/population_summary.csv",
+      "sha256": "b5c61304bad9fc64c507a3221b729d0b172cb548f1402e8d982e1e38a306f761"
+    }
+  ],
+  "pending_validation": [
+    "Population-weighted and walking-network accessibility, social equity covariates",
+    "Monthly activity and Golden stability; station-level withdrawal/arrival imbalance",
+    "Spatial blocks/buffers, temporal eligibility and fold-local PCA/centroids",
+    "Remove held-out observed flows before graph backtesting",
+    "Physical connectivity and greedy baselines before graph/genetic comparisons"
+  ],
+  "sample_accounting": {
+    "accepted_rows": 20133540,
+    "activity_is_latent_demand": false,
+    "catalog_feed_updated_at": "2026-09-06T07:52:55+00:00",
+    "endpoint_activity_trip_equivalents": 20134151.0,
+    "input_rows": 20134900,
+    "known_arrival_events": 20134000.0,
+    "known_withdrawal_events": 20134302.0,
+    "quarantine_rows": 1360,
+    "retention_percent": 99.99324555870652,
+    "valid_arribos": 20134527,
+    "valid_retiros": 20134368
+  },
+  "schema_version": "v3-eda-2",
+  "spatial_autocorrelation": {
+    "alternative": "positive_autocorrelation_upper_tail",
+    "coordinate_crs": "EPSG:32614",
+    "eighth_neighbor_distance_m_quantiles": [
+      239.90434616778666,
+      527.2958030218032,
+      782.0724767906022,
+      1208.719028328056
+    ],
+    "expected_i": -0.0014792899408284023,
+    "i": 0.42930525786792695,
+    "k": 8,
+    "local_significance_tested": false,
+    "p_value": 0.001,
+    "permutation_exceedances": 0,
+    "permutations": 999,
+    "quadrant_counts": {
+      "High-High": 188,
+      "High-Low": 76,
+      "Low-High": 84,
+      "Low-Low": 329
+    },
+    "seed": 42,
+    "sensitivity": [
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.45618841722426795,
+        "k": 4,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "raw"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.5512680907708113,
+        "k": 4,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "log1p"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.42930525786792695,
+        "k": 8,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "raw"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.5203845126412994,
+        "k": 8,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "log1p"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.4174277945645958,
+        "k": 12,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "raw"
+      },
+      {
+        "alternative": "positive_autocorrelation_upper_tail",
+        "expected_i": -0.0014792899408284023,
+        "i": 0.5121820558171015,
+        "k": 12,
+        "p_value": 0.001,
+        "permutation_exceedances": 0,
+        "permutations": 999,
+        "seed": 42,
+        "transform": "log1p"
+      }
+    ],
+    "unit": "stations",
+    "weights": "directed K-NN; row-standardized; zero diagonal"
+  },
+  "spatial_equity": {
+    "agebs_with_internal_station": 243,
+    "agebs_without_internal_station": 2209,
+    "gini_activity": 0.9448655255637436,
+    "gini_stations": 0.9296140250264457,
+    "gini_unit": "equal-weight AGEB polygons; raw counts, not per capita",
+    "population_access_equity_measured": false,
+    "total_agebs": 2452
+  },
+  "target_metrics": {
+    "calendar_denominator_days": 365,
+    "mean_daily_activity": 81.48014406831103,
+    "median_daily_activity": 66.46438356164384,
+    "n_stations": 677,
+    "p85": 127.61835616438356,
+    "q1": 43.721917808219175,
+    "q3": 101.03698630136986,
+    "upper_fence": 187.0095890410959
+  },
+  "temporal_dynamics": {
+    "accepted_trip_rows": 20133540,
+    "arribos_known_endpoint_weight": 20134000.0,
+    "arribos_weekday_peak_hour": 18,
+    "arribos_weekday_top_three_hours": [
+      18,
+      8,
+      17
+    ],
+    "arribos_weekend_peak_hour": 13,
+    "arribos_weekend_top_three_hours": [
+      13,
+      12,
+      14
+    ],
+    "calendar_weekdays": 261,
+    "calendar_weekend_days": 104,
+    "cohort": "accepted trips plus valid known endpoint fractions from quarantine",
+    "endpoint_day_type_uses_each_endpoint_own_date": true,
+    "holidays_excluded_from_weekdays": false,
+    "quarantine_trip_rows": 1360,
+    "retiros_known_endpoint_weight": 20134302.0,
+    "retiros_weekday_peak_hour": 18,
+    "retiros_weekday_top_three_hours": [
+      18,
+      17,
+      8
+    ],
+    "retiros_weekend_peak_hour": 13,
+    "retiros_weekend_top_three_hours": [
+      13,
+      12,
+      11
+    ],
+    "timezone": "America/Mexico_City",
+    "trip_purpose_identified": false
+  },
+  "territorial_gap": {
+    "centroids_outside_own_polygon": 51,
+    "continuous_expansion_impossibility_established": false,
+    "mean_km": 7.117685253737667,
+    "median_km": 6.435363900675209,
+    "no_internal_station_but_centroid_within_400m": 50,
+    "p75_km": 9.920399338937798,
+    "unit": "unweighted AGEB centroid to nearest current catalog station"
+  },
+  "uncertainty": {
+    "iid_p_values": "reference only; spatial/station independence is not established",
+    "intervals": "percentile bootstrap resampling AGEB groups with replacement",
+    "remaining_limitation": "between-AGEB spatial dependence is not removed by this bootstrap"
+  },
+  "urban_enrichment": {
+    "configuration": {
+      "census_year": 2020,
+      "conservation_atol": 1e-05,
+      "day_types": {
+        "weekday": "Monday-Friday, including holidays",
+        "weekend": "Saturday-Sunday"
+      },
+      "local_timezone": "America/Mexico_City",
+      "modal_agencies": {
+        "dist_transporte_ligero_m": [
+          "RTP",
+          "TROLE"
+        ],
+        "dist_transporte_pesado_m": [
+          "METRO",
+          "MB"
+        ]
+      },
+      "modal_service_filter": "has_2025_service; not proof of historical stop position",
+      "population_variable": "POBTOT",
+      "study_year": 2025,
+      "temporal_cohort": "accepted trips plus valid known endpoint fractions from quarantine",
+      "trip_batch_rows": 250000
+    },
+    "version": "v3-eda-urban-1"
+  }
+}

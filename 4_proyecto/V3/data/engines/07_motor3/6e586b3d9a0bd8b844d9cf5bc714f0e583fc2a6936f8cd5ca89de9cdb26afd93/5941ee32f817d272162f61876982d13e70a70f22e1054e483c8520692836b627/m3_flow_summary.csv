@@ -1,0 +1,2 @@
+rows_used,mapped_weight,unmapped_weight,self_loop_weight,n_communities,modularity,golden_community,golden_share,golden_intra_median_m,lcc_size,embedding_geo_spearman,_etl_contract_id,_analysis_id
+20133540,20133540.0,0.0,579412.0,4,0.4206772946561348,2,0.45098039215686275,1883.8743110517576,677,0.6689148793602663,6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93,5941ee32f817d272162f61876982d13e70a70f22e1054e483c8520692836b627

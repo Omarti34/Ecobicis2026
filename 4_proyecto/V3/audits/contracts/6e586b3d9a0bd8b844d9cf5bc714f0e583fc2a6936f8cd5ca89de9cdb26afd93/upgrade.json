@@ -1,0 +1,7 @@
+{
+  "child_contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "from_version": "v3-etl-2",
+  "parent_contract_id": "dc08dd03cfc57d0c265154fa9b9158d2aeedbe3ee2ad56cc24191fd45169b99b",
+  "reason": "Complete source normalization and verified artifact resolution",
+  "to_version": "v3-etl-3"
+}

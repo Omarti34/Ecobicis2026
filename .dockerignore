@@ -1,0 +1,7 @@
+# El contexto de build solo necesita requirements, el script demo y los
+# artefactos sellados. Todo lo demás queda fuera para mantener la imagen ligera.
+*
+!requirements.txt
+!src/generar_tabla5_resultados.py
+!data/resultados/
+!data/audits/08_comparacion_portafolios.json

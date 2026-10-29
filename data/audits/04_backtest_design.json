@@ -1,0 +1,660 @@
+{
+  "analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+  "analysis_identity": {
+    "code_hashes": {
+      "build_notebook_04.py": "c41a6c85270397f4823eaf11d17f7c736e0288167546610975b5fca25022383a",
+      "fe03_analysis.py": "7a83190a8ef23b3d98687368c8a1fd64a64234b978e61b2d41bec69ca82da937",
+      "fe03_publication.py": "cd3222a5a5bfbee709872e04fd2b5c34520caeb63c8ccc7fc0254f62b3f7d043",
+      "fe04_analysis.py": "497b0801794bf369bc06b886f8d73de5d8dae67b7321b9b73219f069a0bf2b6e",
+      "fe04_content.py": "0150683e251959abc129bceab29000fabca408492ad00051a415c272d4f3e059",
+      "fe04_deployment.py": "e96f25e7cceac313c2eb1735ad0492b0abbe609039322686563bc42ef3a2058e",
+      "fe04_publication.py": "52205d44f476ba4dcbb911d8191353cfb1ce7541955ada541ad9c0dda6beaaf1"
+    },
+    "configuration": {
+      "adjacency_tolerance_m": 1.0,
+      "buffer_m": 500,
+      "buffered_schemes": [
+        "fold_spatial_block"
+      ],
+      "covariance_relative_tolerance": 1e-10,
+      "k_grid": [
+        10,
+        20,
+        50
+      ],
+      "label_quantile": 0.85,
+      "mahalanobis_quantile": 0.9973,
+      "metric_crs": "EPSG:32614",
+      "min_train_rows": 30,
+      "n_folds": 5,
+      "n_spatial_blocks": 15,
+      "primary_scheme": "fold_spatial_block",
+      "ranking_task": "recover high observed mean per-station activity among served AGEBs (diagnostic of observed activity; not a validation of latent expansion demand)",
+      "seed": 42,
+      "target": "actividad_media_estacion"
+    },
+    "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+    "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+    "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+    "feature_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+    "input_artifacts": {
+      "eda/station_environment": {
+        "bytes": 273429,
+        "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/station_environment.parquet",
+        "sha256": "1d0243deab8390547dbdf580efda68308474788b21c23faf1446afcc462fabda"
+      },
+      "features/entorno_ageb_features": {
+        "bytes": 3155220,
+        "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/entorno_ageb_features.parquet",
+        "sha256": "3ac6047eaeb1329dc6b1d46b3ed0515bc88157a391495a40ebf82c70aa1185ef"
+      },
+      "features/pca_espacio_compartido": {
+        "bytes": 213110,
+        "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/pca_espacio_compartido.parquet",
+        "sha256": "7b8a6d3ad538ecdbc2c9df3fd28ba3c0cd3c6e531cf8794074f8cba14bf9c991"
+      }
+    },
+    "schema_version": "v3-backtest-4",
+    "versions": {
+      "geopandas": "1.1.2",
+      "joblib": "1.5.3",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "python": "3.10.19",
+      "scipy": "1.15.2",
+      "sklearn": "1.7.2"
+    }
+  },
+  "configuration": {
+    "adjacency_tolerance_m": 1.0,
+    "buffer_m": 500,
+    "buffered_schemes": [
+      "fold_spatial_block"
+    ],
+    "covariance_relative_tolerance": 1e-10,
+    "k_grid": [
+      10,
+      20,
+      50
+    ],
+    "label_quantile": 0.85,
+    "mahalanobis_quantile": 0.9973,
+    "metric_crs": "EPSG:32614",
+    "min_train_rows": 30,
+    "n_folds": 5,
+    "n_spatial_blocks": 15,
+    "primary_scheme": "fold_spatial_block",
+    "ranking_task": "recover high observed mean per-station activity among served AGEBs (diagnostic of observed activity; not a validation of latent expansion demand)",
+    "seed": 42,
+    "target": "actividad_media_estacion"
+  },
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "deployment_contract": {
+    "asserted_min_single_component_m": 500,
+    "config": {
+      "budget_grid": [
+        15,
+        30,
+        50
+      ],
+      "coverage_radius_m": 500,
+      "link_distance_m": 500,
+      "link_grid": [
+        300,
+        400,
+        500,
+        600,
+        700,
+        800
+      ],
+      "max_reach_m": 3000,
+      "metric_crs": "EPSG:32614",
+      "min_spacing_m": 300,
+      "nn_quantiles": [
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        0.99
+      ],
+      "pop_cell_m": 200,
+      "primary_budget": 30,
+      "site_grid_m": 250
+    },
+    "link_distance_table": [
+      {
+        "golden_in_largest": 60,
+        "largest_component": 153,
+        "link_distance_m": 300,
+        "n_components": 195
+      },
+      {
+        "golden_in_largest": 100,
+        "largest_component": 601,
+        "link_distance_m": 400,
+        "n_components": 29
+      },
+      {
+        "golden_in_largest": 102,
+        "largest_component": 677,
+        "link_distance_m": 500,
+        "n_components": 1
+      },
+      {
+        "golden_in_largest": 102,
+        "largest_component": 677,
+        "link_distance_m": 600,
+        "n_components": 1
+      },
+      {
+        "golden_in_largest": 102,
+        "largest_component": 677,
+        "link_distance_m": 700,
+        "n_components": 1
+      },
+      {
+        "golden_in_largest": 102,
+        "largest_component": 677,
+        "link_distance_m": 800,
+        "n_components": 1
+      }
+    ],
+    "n_agebs_with_sites": 446,
+    "n_sites": 1656,
+    "nn_distance_quantiles_m": {
+      "P05": 58.804599933468964,
+      "P10": 114.58128294132439,
+      "P25": 167.92386557416881,
+      "P50": 220.40291683629894,
+      "P75": 278.7848392126158,
+      "P90": 323.09859750428257,
+      "P95": 345.65641280841123,
+      "P99": 429.4422278779161
+    },
+    "population": {
+      "covered_existing_pop": 1170299.4246609272,
+      "n_cells": 67872,
+      "total_pop": 9138387.999999994,
+      "uncovered_pop": 7968088.575339066,
+      "unknown_area_share": 0.25320786441926985
+    },
+    "sites_per_ageb": {
+      "25%": 2.0,
+      "50%": 3.0,
+      "75%": 4.0,
+      "count": 446.0,
+      "max": 59.0,
+      "mean": 3.713004484304933,
+      "min": 1.0,
+      "std": 4.064442848889619
+    },
+    "statement": "Los motores 05, 06 y 07 usan exactamente estos sitios, reglas de factibilidad, superficie poblacional, métricas de portafolio y la misma malla de presupuestos fijada por el usuario"
+  },
+  "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+  "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+  "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+  "evaluation_universe": {
+    "covered_without_station_treatment": "excluded from labels; their absence of stations is not evidence of low demand",
+    "definition": "is_projectable AND n_estaciones > 0 AND NOT is_candidata_territorial",
+    "gain_for_ndcg": "linear actividad_media_estacion",
+    "golden_reference_relation": {
+      "golden_03_definition": "AGEB hosting >=1 station above the station-level P85 over ALL stations",
+      "golden_in_universe": 61,
+      "golden_mean_target": 129.8844723193567,
+      "non_golden_mean_target": 58.66738019555056,
+      "note": "Golden labels use test-fold stations in their P85 and are forbidden as engine inputs; fold-local references are rebuilt from the train target"
+    },
+    "label": "target >= P85 fitted on the retained TRAIN rows only",
+    "roles": {
+      "candidate_unlabeled": 2111,
+      "covered_without_station_unlabeled": 98,
+      "labeled_served": 242,
+      "served_not_evaluable": 1
+    },
+    "size": 242,
+    "sum_spearman_with_station_count": 0.7766153376688995,
+    "target": "actividad_media_estacion",
+    "target_definition": "mean viajes_diarios_prom of stations hosted by the AGEB polygon",
+    "target_quantiles": {
+      "0.0": 12.552968036529682,
+      "0.25": 48.385616438356166,
+      "0.5": 66.22671232876712,
+      "0.75": 94.51837899543379,
+      "0.85": 122.38141552511415,
+      "1.0": 219.44520547945206
+    },
+    "target_spearman_with_station_count": 0.17871583774451782,
+    "why_mean_not_sum": "the AGEB sum grows with station count; the mean per station measures intensity per site"
+  },
+  "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+  "feature_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+  "fold_local_protocol": {
+    "applied_as_transform_to_validation": [
+      "Pipeline fe03.build_pipeline() re-instanciado y ajustado fuera de fit_exclusion_ids; prueba solo recibe .transform()",
+      "Distancia de Mahalanobis con mu/Sigma_inv del fold"
+    ],
+    "description": "Todo estimador de preprocesamiento y referencia se ajusta exclusivamente con filas fuera de fit_exclusion_ids (prueba ∪ buffer) del pliegue.",
+    "engine_interface": "engine_fn(task) -> list (ranking completo) o {'ranked': [...], 'abstained': [...]} que particionen exactamente task['test_ids']",
+    "forbidden": [
+      "Reutilizar el PCA global del cuaderno 03 como preprocesamiento de validación",
+      "Usar is_golden_cluster/has_golden_station: su umbral P85 se calculó con todas las estaciones, incluidas las de prueba",
+      "Calcular P85/centroide/covarianza con filas de prueba o del buffer",
+      "Partir AGEBs de un mismo bloque espacial entre pliegues",
+      "Tratar AGEBs sin estación interna como negativos de demanda"
+    ],
+    "refit_inside_each_training_fold": [
+      "SimpleImputer(strategy='median') sobre las tasas permitidas",
+      "StandardScaler",
+      "PCA (n_components=0.80, svd_solver='full'); k puede variar por fold",
+      "Umbral P85 del objetivo para la referencia de alta actividad",
+      "Centroide y covarianza de la referencia de entrenamiento",
+      "Umbral de dominio sqrt(chi2.ppf(0.9973, df=k_fold))"
+    ]
+  },
+  "input_artifacts": {
+    "eda/station_environment": {
+      "bytes": 273429,
+      "path": "data/eda/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67/station_environment.parquet",
+      "sha256": "1d0243deab8390547dbdf580efda68308474788b21c23faf1446afcc462fabda"
+    },
+    "features/entorno_ageb_features": {
+      "bytes": 3155220,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/entorno_ageb_features.parquet",
+      "sha256": "3ac6047eaeb1329dc6b1d46b3ed0515bc88157a391495a40ebf82c70aa1185ef"
+    },
+    "features/pca_espacio_compartido": {
+      "bytes": 213110,
+      "path": "data/features/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c/pca_espacio_compartido.parquet",
+      "sha256": "7b8a6d3ad538ecdbc2c9df3fd28ba3c0cd3c6e531cf8794074f8cba14bf9c991"
+    }
+  },
+  "mahalanobis_gate": {
+    "candidates_in_domain": 769,
+    "candidates_out_of_domain": 1295,
+    "chi2_ppf": 23.574394426213484,
+    "condition_number": 14.32482545581896,
+    "covariance_estimator_comparison": {
+      "empirical": {
+        "condition_number": 14.32482545581896,
+        "covariance_rank": 8,
+        "in_domain_count": 1057
+      },
+      "ledoit_wolf": {
+        "condition_number": 4.969607545864003,
+        "covariance_rank": 8,
+        "in_domain_count": 1382,
+        "shrinkage": 0.29957453242184356
+      },
+      "note": "descriptive comparison over the Golden gate, which stays empirical; the chi-square threshold is nominal under shrinkage (train distances no longer follow chi2_k exactly)"
+    },
+    "covariance_rank": 8,
+    "df": 8,
+    "estimator": "empirical",
+    "golden_self_in_domain": 59,
+    "golden_self_in_domain_interpretation": "descriptive only; does not demonstrate calibration",
+    "in_domain_counts": {
+      "in_domain": 1057,
+      "not_projectable": 50,
+      "out_of_domain": 1345
+    },
+    "k_dims": 8,
+    "min_eigenvalue": 0.2220899731787118,
+    "n_reference": 61,
+    "normality_assumption": "chi-square calibration assumes approximately elliptical reference scores; it is a support heuristic, not a probability guarantee",
+    "out_of_domain_interpretation": "outside the Golden statistical envelope; not evidence of a bad location",
+    "quantile": 0.9973,
+    "scope": "global descriptive gate referenced to the 61 Golden AGEBs of notebook 03; engines must refit a fold-local gate for backtests",
+    "singular_covariance_policy": "rejected (no pseudoinverse)",
+    "threshold": 4.855346993389194
+  },
+  "notebook": "04_Diseno_Validacion_Backtest.ipynb",
+  "outputs": [
+    {
+      "bytes": 2892035,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/universo_evaluacion.parquet",
+      "sha256": "037c53daaee28185608c25e66db907f2b863db569f63f970faed5cc82c9cdbf5"
+    },
+    {
+      "bytes": 6900,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/cv_folds.parquet",
+      "sha256": "2d40f49dd2178075fde6e52708ad5e9b30f5bfdf841ccdf28c1f44e0d8aae7db"
+    },
+    {
+      "bytes": 7308,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/cv_buffer_exclusions.parquet",
+      "sha256": "90e88a62575a7382369a07857099fb3ee429aca03813ddf16ee1b414ab13dd4e"
+    },
+    {
+      "bytes": 58979,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/sitios_candidatos.parquet",
+      "sha256": "f92458393de3644d6fa583f40753deedebdf572302403f2c253c16aac91971be"
+    },
+    {
+      "bytes": 2116690,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/celdas_poblacion.parquet",
+      "sha256": "0c4874943ad56ba4991869d764d4adde2570958a2c3b92232cfc073b39ab8179"
+    },
+    {
+      "bytes": 8139,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/metric_selftests.csv",
+      "sha256": "ff7f13da774fc3b9ad7744978e606b95593f2c476eab011dc41729a40e04cc57"
+    },
+    {
+      "bytes": 2038,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/cv_separation.csv",
+      "sha256": "c784a16fc486f754b1abe8211a7e1f279de207daa115a323bbc864f06050d1fa"
+    },
+    {
+      "bytes": 961,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/red_enlace.csv",
+      "sha256": "30acb09d721f32e742123da6f018b4729473ec47270ecf08235ca4dbf9fe6d17"
+    },
+    {
+      "bytes": 11427,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/validation_harness.joblib",
+      "sha256": "9e6365b3a5a819f2f39e578342431def837ade64d433a47102443f9f406a2580"
+    }
+  ],
+  "pending_validation": [
+    "Engine rankings themselves (cuadernos 05/06/07)",
+    "Sensitivity of in_domain to the Mahalanobis quantile",
+    "Sensitivity of metrics to the label quantile",
+    "Alternative NDCG gains (binary vs linear vs log)",
+    "Buffer distance sensitivity (500 m declared)"
+  ],
+  "random_control": {
+    "fold_groupkfold_ageb": {
+      "decision_coverage": 1.0,
+      "effective_k@10": 10.0,
+      "effective_k@20": 20.0,
+      "effective_k@50": 48.4,
+      "ndcg@10": 0.5356925047507866,
+      "ndcg@20": 0.5899326909853564,
+      "ndcg@50": 0.8102138175543534,
+      "ndcg_cond@10": 0.5356925047507866,
+      "ndcg_cond@20": 0.5899326909853564,
+      "ndcg_cond@50": 0.8102138175543534,
+      "precision@10": 0.22000000000000003,
+      "precision@20": 0.14,
+      "precision@50": 0.1485544217687075,
+      "precision_cond@10": 0.22000000000000003,
+      "precision_cond@20": 0.14,
+      "precision_cond@50": 0.1485544217687075,
+      "recall@10": 0.30785714285714283,
+      "recall@20": 0.3814285714285714,
+      "recall@50": 1.0,
+      "relevant_abstained": 0.0
+    },
+    "fold_spatial_block": {
+      "decision_coverage": 1.0,
+      "effective_k@10": 10.0,
+      "effective_k@20": 20.0,
+      "effective_k@50": 47.0,
+      "ndcg@10": 0.5805600316186816,
+      "ndcg@20": 0.6177811505906196,
+      "ndcg@50": 0.8232055617865637,
+      "ndcg_cond@10": 0.5805600316186816,
+      "ndcg_cond@20": 0.6177811505906196,
+      "ndcg_cond@50": 0.8232055617865637,
+      "precision@10": 0.25999999999999995,
+      "precision@20": 0.19,
+      "precision@50": 0.22457338811138206,
+      "precision_cond@10": 0.25999999999999995,
+      "precision_cond@20": 0.19,
+      "precision_cond@50": 0.22457338811138206,
+      "recall@10": 0.27992577597840756,
+      "recall@20": 0.34622132253711196,
+      "recall@50": 0.976923076923077,
+      "relevant_abstained": 0.0
+    }
+  },
+  "ranking_metrics": {
+    "abstention": "unranked test IDs count as abstained: they never shrink denominators; decision_coverage and relevant_abstained are reported",
+    "effective_k_by_fold": {
+      "fold_groupkfold_ageb": {
+        "effective_k@10": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "effective_k@20": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "effective_k@50": [
+          49,
+          49,
+          48,
+          48,
+          48
+        ]
+      },
+      "fold_spatial_block": {
+        "effective_k@10": [
+          10,
+          10,
+          10,
+          10,
+          10
+        ],
+        "effective_k@20": [
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "effective_k@50": [
+          50,
+          39,
+          47,
+          50,
+          49
+        ]
+      }
+    },
+    "input_validation": "duplicate, foreign or missing IDs are rejected",
+    "k_grid": [
+      10,
+      20,
+      50
+    ],
+    "n_selftests": 42,
+    "ndcg_at_k": "linear gains, log2(position+1) discount, IDCG over the full fold at K_eff (NaN if IDCG = 0); unconditional primary",
+    "ndcg_cond_at_k": "IDCG over the effectively ranked set only: does not penalize abstention and may reward gates that abstain on hard cases; always read together with decision_coverage",
+    "precision_at_k": "|top-K ∩ relevant| / K_eff, K_eff = min(K, |fold|)",
+    "precision_cond_at_k": "hits / min(K_eff, |ranked|): quality among recommended only",
+    "recall_at_k": "|top-K ∩ relevant| / |relevant in fold| (NaN if 0)",
+    "selftests_all_passed": true
+  },
+  "schema_version": "v3-backtest-4",
+  "scope": {
+    "is_validation_harness_only": true,
+    "models_trained": false,
+    "produces_engine_results": false,
+    "random_control_is_a_plumbing_check": true,
+    "time_series_validation": "excluded; operational Motor 2 (stockouts) officially descoped",
+    "what_it_does_not_test": "latent demand in AGEBs without stations; physical feasibility; network design",
+    "what_the_backtest_tests": "recover high observed mean per-station activity among served AGEBs (diagnostic of observed activity; not a validation of latent expansion demand)"
+  },
+  "serialization": "validation_harness.joblib stores calibrated parameters, full fold assignments, unfitted GroupKFold splitters and the metric/backtest callables pickled by reference to fe04_analysis; their code is pinned by code_hashes",
+  "spatial_cv": {
+    "blocks_contiguous_share": 1.0,
+    "buffer_exclusions_by_scheme": {
+      "fold_spatial_block": 278
+    },
+    "buffer_m": 500,
+    "buffered_schemes": [
+      "fold_spatial_block"
+    ],
+    "components_per_block": {
+      "0": 1,
+      "1": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 1,
+      "14": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1
+    },
+    "evaluation_universe_size": 242,
+    "fold_sizes_groupkfold_ageb": {
+      "0": 49,
+      "1": 49,
+      "2": 48,
+      "3": 48,
+      "4": 48
+    },
+    "fold_sizes_spatial_block": {
+      "0": 55,
+      "1": 39,
+      "2": 47,
+      "3": 52,
+      "4": 49
+    },
+    "groupkfold_ageb_note": "at AGEB granularity equals shuffled KFold; no spatial isolation; optimistic reference",
+    "n_adjacency_components": 1,
+    "n_blocks": 15,
+    "n_folds": 5,
+    "n_spatial_blocks": 15,
+    "primary_scheme": "fold_spatial_block",
+    "random_state": 42,
+    "separation": [
+      {
+        "fold": 0,
+        "fold_scheme": "fold_groupkfold_ageb",
+        "min_train_test_distance_m": 0.0,
+        "n_buffer_excluded": 0,
+        "n_test": 49,
+        "n_train_retained": 193,
+        "touching_train_test_pairs_after_buffer": 220,
+        "touching_train_test_pairs_before_buffer": 220,
+        "train_within_buffer": 180
+      },
+      {
+        "fold": 1,
+        "fold_scheme": "fold_groupkfold_ageb",
+        "min_train_test_distance_m": 0.0,
+        "n_buffer_excluded": 0,
+        "n_test": 49,
+        "n_train_retained": 193,
+        "touching_train_test_pairs_after_buffer": 232,
+        "touching_train_test_pairs_before_buffer": 232,
+        "train_within_buffer": 177
+      },
+      {
+        "fold": 2,
+        "fold_scheme": "fold_groupkfold_ageb",
+        "min_train_test_distance_m": 0.0,
+        "n_buffer_excluded": 0,
+        "n_test": 48,
+        "n_train_retained": 194,
+        "touching_train_test_pairs_after_buffer": 206,
+        "touching_train_test_pairs_before_buffer": 206,
+        "train_within_buffer": 189
+      },
+      {
+        "fold": 3,
+        "fold_scheme": "fold_groupkfold_ageb",
+        "min_train_test_distance_m": 0.0,
+        "n_buffer_excluded": 0,
+        "n_test": 48,
+        "n_train_retained": 194,
+        "touching_train_test_pairs_after_buffer": 214,
+        "touching_train_test_pairs_before_buffer": 214,
+        "train_within_buffer": 178
+      },
+      {
+        "fold": 4,
+        "fold_scheme": "fold_groupkfold_ageb",
+        "min_train_test_distance_m": 0.0,
+        "n_buffer_excluded": 0,
+        "n_test": 48,
+        "n_train_retained": 194,
+        "touching_train_test_pairs_after_buffer": 216,
+        "touching_train_test_pairs_before_buffer": 216,
+        "train_within_buffer": 183
+      },
+      {
+        "fold": 0,
+        "fold_scheme": "fold_spatial_block",
+        "min_train_test_distance_m": 500.58314890463805,
+        "n_buffer_excluded": 70,
+        "n_test": 55,
+        "n_train_retained": 117,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 95,
+        "train_within_buffer": 0
+      },
+      {
+        "fold": 1,
+        "fold_scheme": "fold_spatial_block",
+        "min_train_test_distance_m": 508.32295135256345,
+        "n_buffer_excluded": 53,
+        "n_test": 39,
+        "n_train_retained": 150,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 57,
+        "train_within_buffer": 0
+      },
+      {
+        "fold": 2,
+        "fold_scheme": "fold_spatial_block",
+        "min_train_test_distance_m": 502.63221791646197,
+        "n_buffer_excluded": 56,
+        "n_test": 47,
+        "n_train_retained": 139,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 59,
+        "train_within_buffer": 0
+      },
+      {
+        "fold": 3,
+        "fold_scheme": "fold_spatial_block",
+        "min_train_test_distance_m": 505.0495351525718,
+        "n_buffer_excluded": 54,
+        "n_test": 52,
+        "n_train_retained": 136,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 50,
+        "train_within_buffer": 0
+      },
+      {
+        "fold": 4,
+        "fold_scheme": "fold_spatial_block",
+        "min_train_test_distance_m": 506.37087463386837,
+        "n_buffer_excluded": 45,
+        "n_test": 49,
+        "n_train_retained": 148,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 59,
+        "train_within_buffer": 0
+      }
+    ],
+    "shuffle": true,
+    "spatial_block_note": "Ward agglomerative clustering on centroids with polygon-adjacency connectivity: Ward only merges neighbouring AGEBs, so blocks are geographically coherent; if the adjacency graph is fragmented (n_adjacency_components > 1) blocks may join separate islands — reported via blocks_contiguous_share. Adjacency leakage is prevented by the training buffer, not by block contiguity"
+  },
+  "upstream": {
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "feature_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+    "pca_space_fit_scope": "descriptive_transductive; not an inductive backtest",
+    "pca_space_k": 8
+  }
+}

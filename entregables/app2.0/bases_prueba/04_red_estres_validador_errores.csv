@@ -1,0 +1,61 @@
+latitud,longitud,nombre,id
+19.426755,-99.135014,"CE-105 San Jerónimo-5 de Febrero",100
+19.426490,-99.133537,"CE-106 San Jerónimo-José María Pino Suarez",613
+19.425311,-99.137421,"CE-109 Nezahualcóyotl-Isabel la Católica",114
+19.425126,-99.143391,"CE-110 Dr. Valenzuela-Dr. Río de la loza",107
+19.422392,-99.150358,"CE-124 Claudio Bernard-Dr. Liceaga",249
+19.423056,-99.134941,"CE-556 Plaza Tlaxcoaque - Diagonal 20 de noviembre",558
+19.419810,-99.135941,"CE-557 5 de Febrero - Fernando de Alva Ixtlilxochitl",581
+19.422300,-99.139872,"CE-558 Chimalpopoca - Simón Bolívar",624
+19.420029,-99.140999,"CE-559 Fernando de Alva Ixtlilxochitl - Diagonal 20 de noviembre",517
+19.421599,-99.143408,"CE-560 Doctor Liceaga - Eje Central",540
+19.423673,-99.147957,"CE-561 Dr. Jiménez - Dr. Lavista",600
+19.420370,-99.146818,"CE-562 Claudio Bernard - José María Vertiz",523
+19.419444,-99.149776,"CE-563 Doctor Velasco - Niños Héroes",539
+19.417671,-99.152786,"CE-565 Dr. Martinez del Rio - Dr. Lucio",663
+19.416239,-99.149542,"CE-566 Dr. Jiménez - Dr. García Diego",662
+19.417133,-99.145649,"CE-567 Doctor Martínez del Río - Doctor José Terrés",542
+19.418013,-99.144598,"CE-568 Doctor Barragán - Doctor Erazo",535
+19.415713,-99.141227,"CE-569 Gutiérrez Nájera - Bolívar",561
+19.417595,-99.140972,"CE-570 Alfredo Chavero - Simón Bolívar",641
+19.416221,-99.134909,"CE-571 Manuel M. Flores - Calzada San Antonio Abad",555
+19.414677,-99.136894,"CE-572 Manuel J. Othón - José T. Cuellar",637
+19.412853,-99.138723,"CE-573 Fernando Ramírez - Isabel la Católica",537
+19.411768,-99.140899,"CE-574 José María Roa Bárcenas - Simón Bolívar",648
+19.413235,-99.143476,"CE-575 Fernando Ramírez - Eje Central",568
+19.413464,-99.148029,"CE-576 Doctor Arce - Jose Maria Vertiz",658
+19.410884,-99.144975,"CE-579 Doctor Márquez - Privada Doctor Duran",547
+19.409817,-99.141643,"CE-580 Antonio Solís - Bolívar",567
+19.411398,-99.135655,"CE-581 José María Roa Bárcenas - San Antonio Abad",655
+19.409480,-99.135894,"CE-582 Antonio Solis-San Antonio Abad",670
+19.408087,-99.137763,"CE-583 Ángel del Campo - 5 de Febrero",635
+19.406970,-99.143830,"CE-584 Enrique Granados - José Peón Contreras (Eje 3)",566
+19.405358,-99.143160,"CE-585 José Toribio Medina - Manuel Navarrete",601
+19.406326,-99.138779,"CE-586 Bernardo Couto-Juan E. Hernández y Davalos",665
+19.404668,-99.136946,"CE-587 Jose Toribio Medina - Marcelino Davalos",664
+19.401175,-99.137480,"CE-588  Av. Fernando - La coruña",623
+19.398590,-99.137732,"CE-589 Cádiz - Calzada de Tlalpan",543
+19.399172,-99.140625,"CE-590 Fernando - Isabel la Católica",569
+19.402088,-99.142976,"CE-591 Simón Bolívar - La Coruña",605
+19.399664,-99.145136,"CE-592 Cádiz - Eje Central Lázaro Cárdenas",531
+19.401018,-99.147952,"CE-593 Zempoala - Diagonal de San Antonio",625
+19.398858,-99.151211,"CE-597 Diagonal San Antonio - Icacos",504
+19.398143,-99.148333,"CE-599 La Morena - Zempoala",603
+19.395888,-99.145344,"CE-601 Navarra - Fernando",608
+19.392523,-99.146194,"CE-602 Correspondencia - Eje Central Lázaro Cárdenas",516
+19.394422,-99.143291,"CE-603 Castilla - Eje 4 sur Xola",550
+19.390945,-99.142972,"CE-604 Andalucía - Carteros",533
+19.395063,-99.139476,"CE-605 5 de Febrero - Alfonso XIII",630
+19.394974,-99.138949,"CE-606 Alfonso XIII - Aragón",660
+19.390910,-99.138953,"CE-607 Unión Postal - Calzada de Tlalpan",615
+19.388430,-99.139772,"CE-608 Ahorro Postal - Francisco Márquez",643
+19.2926,-99.6569,"Toluca Centro",ERR-TOL-01
+19.5970,-99.2130,"Ecatepec Edomex",ERR-TOL-02
+19.2833,-99.5000,"Lerma Edomex",ERR-TOL-03
+,,"Sin coordenadas",ERR-EMPTY-01
+NaN,NaN,"NaN explicito",ERR-NAN-01
+ , ,"Espacios en blanco",ERR-EMPTY-02
+19.426755,-99.135014,"Duplicado id 1",100
+19.426490,-99.133537,"Duplicado id 2",613
+19.425311,-99.137421,"Duplicado xy 1",ERR-DUPXY-01
+19.425311,-99.137421,"Duplicado xy 2",ERR-DUPXY-02

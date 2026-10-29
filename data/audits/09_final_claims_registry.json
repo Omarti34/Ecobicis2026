@@ -1,0 +1,1456 @@
+{
+  "analysis_id": "acd556d569dfef3511f037479780acc3b54ed5f850aea2670b279bbf32b96422",
+  "analysis_identity": {
+    "code_hashes": {
+      "build_notebook_09.py": "65b064f71c738c58e9b102596a493f1c52b2197a76fb74fe9775855fd8020f79",
+      "c8_analysis.py": "80d03a8356d937da8af10375faa2a4e749083c1b842b95e0edc256dbf1ca5c52",
+      "c8_publication.py": "cc13cabcc28387ab0da38786398e4c7638df27cb4f68f283a4a1dace22c340f2",
+      "c9_analysis.py": "ce048fc9bb17a596979df66d485dd42e6b9a995bde9be4e2ca09e1afe40aec2d",
+      "c9_content.py": "784b5ac07647b605733d91cd3c664bc686014d0817a3d79e50e615f2bdb4fda6",
+      "c9_publication.py": "98e993e425ff8b6b5296c9aa3c9a4f3e6f0ffcbf81bedd933e9956baaf338321",
+      "eda02_publication.py": "d6b9ef4a85c2d7bd423f6c34fb6a1f4a10f3503ff4d76cfb4a0f8ed0862da95e",
+      "engine_publication.py": "f946fe84f6de6a0f82a4aa17c11f89f1520184166dcacfdd77cb7c6323936d2f",
+      "fe03_publication.py": "cd3222a5a5bfbee709872e04fd2b5c34520caeb63c8ccc7fc0254f62b3f7d043",
+      "fe04_analysis.py": "497b0801794bf369bc06b886f8d73de5d8dae67b7321b9b73219f069a0bf2b6e",
+      "fe04_publication.py": "52205d44f476ba4dcbb911d8191353cfb1ce7541955ada541ad9c0dda6beaaf1",
+      "m1_publication.py": "533e0035b08cbc736b04d072932d99753880e43b20e8b6b6e1855da1170856cd",
+      "m2_publication.py": "122a9d8af892c69776b16551dc216beb9f48b7b81bc51af7c01ea1c7b6089a41",
+      "m3_publication.py": "2fff5c38017428c5b9d5e91010f978abf1e95a6a873c1d1740ed8a8269bff0d9"
+    },
+    "configuration": {
+      "docs_target": "docs/TESIS_DATA_POINTS.md",
+      "metric_crs": "EPSG:32614",
+      "metric_rtol": 1e-09,
+      "primary_budget": 30,
+      "primary_scheme": "fold_spatial_block",
+      "primary_weight": 0.5
+    },
+    "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+    "input_artifacts": {
+      "validation/cv_buffer_exclusions.parquet": {
+        "bytes": 7308,
+        "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/cv_buffer_exclusions.parquet",
+        "sha256": "90e88a62575a7382369a07857099fb3ee429aca03813ddf16ee1b414ab13dd4e"
+      },
+      "validation/cv_folds.parquet": {
+        "bytes": 6900,
+        "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/cv_folds.parquet",
+        "sha256": "2d40f49dd2178075fde6e52708ad5e9b30f5bfdf841ccdf28c1f44e0d8aae7db"
+      },
+      "validation/universo_evaluacion.parquet": {
+        "bytes": 2892035,
+        "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/universo_evaluacion.parquet",
+        "sha256": "037c53daaee28185608c25e66db907f2b863db569f63f970faed5cc82c9cdbf5"
+      }
+    },
+    "schema_version": "v3-claims-1",
+    "upstream_refs": {
+      "comparacion_analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+      "comparacion_audit_sha256": "adcb5ff88a0760f15d3679521ffa3b04c05c6a8ca17aa7b9589004f0e2e36d51",
+      "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+      "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+      "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+      "features_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+      "features_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+      "motor1_analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+      "motor1_audit_sha256": "bfc72c5ebb4f824a649cda661d9d9a95654f1d1f8c6a1dd3a4b799b97c3bcbbc",
+      "motor2_analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+      "motor2_audit_sha256": "50212264e2f0fa885a9c21ca2e3a55d3c59ea70323d5905b65f233a8110be6e4",
+      "motor3_analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+      "motor3_audit_sha256": "1dc9bb280efb746fc2711f211f24f722352111d25133197e7e52f6043246ae88",
+      "never_reruns_engines": true,
+      "reads_verified_publications_only": true,
+      "shared_validation_analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+      "validation_analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+      "validation_audit_sha256": "61beeaa81a0a013fea1d2f273d14217c8dbe44fc1a82178da457dce9c4d37250"
+    },
+    "versions": {
+      "geopandas": "1.1.2",
+      "joblib": "1.5.3",
+      "numpy": "1.26.4",
+      "pandas": "2.3.3",
+      "python": "3.10.19",
+      "scipy": "1.15.2",
+      "sklearn": "1.7.2"
+    }
+  },
+  "certificacion_arnes_espacial": {
+    "adjacency_tolerance_m": 1.0,
+    "blocks_contiguous_share": 1.0,
+    "buffer_m": 500.0,
+    "certificado": true,
+    "esquema": "fold_spatial_block",
+    "evaluation_universe_size": 242,
+    "folds": [
+      {
+        "fold": 0,
+        "min_train_test_distance_m": 500.58314890463805,
+        "recomputado_after": 0,
+        "recomputado_before": 95,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 95
+      },
+      {
+        "fold": 1,
+        "min_train_test_distance_m": 508.32295135256345,
+        "recomputado_after": 0,
+        "recomputado_before": 57,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 57
+      },
+      {
+        "fold": 2,
+        "min_train_test_distance_m": 502.63221791646197,
+        "recomputado_after": 0,
+        "recomputado_before": 59,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 59
+      },
+      {
+        "fold": 3,
+        "min_train_test_distance_m": 505.0495351525718,
+        "recomputado_after": 0,
+        "recomputado_before": 50,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 50
+      },
+      {
+        "fold": 4,
+        "min_train_test_distance_m": 506.37087463386837,
+        "recomputado_after": 0,
+        "recomputado_before": 59,
+        "touching_train_test_pairs_after_buffer": 0,
+        "touching_train_test_pairs_before_buffer": 59
+      }
+    ],
+    "min_train_test_distance_m": 500.58314890463805,
+    "n_adjacency_components": 1,
+    "n_blocks": 15,
+    "n_folds": 5,
+    "recomputo": {
+      "coincide_con_publicado": true,
+      "metodo": "cv_folds + cv_buffer_exclusions publicados + polygon_adjacency del 04 (distancia poligonal <= 1 m en metric_crs)"
+    },
+    "referencia_optimista_groupkfold": {
+      "nota": "GroupKFold por AGEB sin buffer: pares colindantes antes = después (esquema de referencia optimista)",
+      "pares_por_fold": {
+        "0": 220,
+        "1": 232,
+        "2": 206,
+        "3": 214,
+        "4": 216
+      },
+      "suma_pares": 1088
+    },
+    "salvedad": "La garantía es sobre colindancia poligonal (<=1 m) y buffer de 500 m en el universo de AGEBs evaluadas; no implica ausencia de autocorrelación espacial a mayores distancias.",
+    "suma_pares_after_buffer": 0
+  },
+  "claims": [
+    {
+      "enunciado": "A B=30, la población nueva en áreas de captura es Motor 1 (similitud): 202,337 hab. nuevos en 21 AGEBs (15/5/1 con 1/2/3+ estaciones); Motor 2 (bosque aleatorio): 282,102 hab. nuevos en 25 AGEBs (21/3/1 con 1/2/3+ estaciones); Motor 3 (afinidad de saltos): 310,288 hab. nuevos en 28 AGEBs (26/2/0 con 1/2/3+ estaciones). Tras retirar el techo por análogos, los portafolios B=30 de los motores 1 y 2 cambiaron en +48,528 y +6,159 habitantes respecto a la versión previa.",
+      "estatus": "comparacion_descriptiva",
+      "fuentes": [
+        {
+          "analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+          "reporte": "08",
+          "ruta_json": "metricas[tier=oficial]"
+        },
+        {
+          "analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+          "reporte": "05",
+          "ruta_json": "portafolio.por_presupuesto"
+        },
+        {
+          "analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+          "reporte": "05",
+          "ruta_json": "portafolio.techo_removido"
+        },
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "portafolio.por_presupuesto"
+        },
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "portafolio.techo_removido"
+        },
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "portfolios.budget_sensitivity"
+        }
+      ],
+      "id": "C01",
+      "salvedades": [
+        "Población dentro de áreas de captura de 500 m con interpolación areal; no es demanda observada",
+        "Los motores 1 y 2 ya no usan techos por AGEB",
+        "El Motor 3 optimiza afinidad por saltos a Golden; sus métricas de cercanía están por construcción",
+        "Diferencias entre portafolios heurísticos a presupuesto fijo, sin prueba estadística"
+      ],
+      "tema": "cobertura_poblacional",
+      "valores": {
+        "30": {
+          "m1": {
+            "agebs_1": 15,
+            "agebs_2": 5,
+            "agebs_3plus": 1,
+            "n_agebs": 21,
+            "new_pop": 202337.34980099398,
+            "new_pop_share": 0.025393461416483302
+          },
+          "m2": {
+            "agebs_1": 21,
+            "agebs_2": 3,
+            "agebs_3plus": 1,
+            "n_agebs": 25,
+            "new_pop": 282101.8405749259,
+            "new_pop_share": 0.035403953897804354
+          },
+          "m3": {
+            "agebs_1": 26,
+            "agebs_2": 2,
+            "agebs_3plus": 0,
+            "n_agebs": 28,
+            "new_pop": 310287.8135300797,
+            "new_pop_share": 0.03894131077940182
+          }
+        },
+        "techo_delta": {
+          "m1": {
+            "delta_B30_n_agebs": 0,
+            "delta_B30_new_pop": 48527.77881896915
+          },
+          "m2": {
+            "delta_B30_n_agebs": -1,
+            "delta_B30_new_pop": 6158.5695022158325
+          }
+        }
+      }
+    },
+    {
+      "enunciado": "A B=50, la población nueva en áreas de captura es Motor 1 (similitud): 300,803 hab. nuevos en 33 AGEBs (20/11/2 con 1/2/3+ estaciones); Motor 2 (bosque aleatorio): 428,401 hab. nuevos en 41 AGEBs (33/7/1 con 1/2/3+ estaciones); Motor 3 (afinidad de saltos): 481,554 hab. nuevos en 46 AGEBs (42/4/0 con 1/2/3+ estaciones).",
+      "estatus": "comparacion_descriptiva",
+      "fuentes": [
+        {
+          "analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+          "reporte": "08",
+          "ruta_json": "metricas[tier=oficial]"
+        },
+        {
+          "analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+          "reporte": "05",
+          "ruta_json": "portafolio.por_presupuesto"
+        },
+        {
+          "analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+          "reporte": "05",
+          "ruta_json": "portafolio.techo_removido"
+        },
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "portafolio.por_presupuesto"
+        },
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "portafolio.techo_removido"
+        },
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "portfolios.budget_sensitivity"
+        }
+      ],
+      "id": "C02",
+      "salvedades": [
+        "Población dentro de áreas de captura de 500 m con interpolación areal; no es demanda observada",
+        "Los motores 1 y 2 ya no usan techos por AGEB",
+        "El Motor 3 optimiza afinidad por saltos a Golden; sus métricas de cercanía están por construcción",
+        "Diferencias entre portafolios heurísticos a presupuesto fijo, sin prueba estadística"
+      ],
+      "tema": "cobertura_poblacional",
+      "valores": {
+        "15": {
+          "m1": {
+            "agebs_1": 8,
+            "agebs_2": 1,
+            "agebs_3plus": 1,
+            "n_agebs": 10,
+            "new_pop": 113528.20728463228,
+            "new_pop_share": 0.014247859597846064
+          },
+          "m2": {
+            "agebs_1": 10,
+            "agebs_2": 1,
+            "agebs_3plus": 1,
+            "n_agebs": 12,
+            "new_pop": 136490.41524247616,
+            "new_pop_share": 0.017129630770534962
+          },
+          "m3": {
+            "agebs_1": 13,
+            "agebs_2": 1,
+            "agebs_3plus": 0,
+            "n_agebs": 14,
+            "new_pop": 166731.06185366696,
+            "new_pop_share": 0.02092485045531413
+          }
+        },
+        "50": {
+          "m1": {
+            "agebs_1": 20,
+            "agebs_2": 11,
+            "agebs_3plus": 2,
+            "n_agebs": 33,
+            "new_pop": 300803.1221244016,
+            "new_pop_share": 0.0377509761946392
+          },
+          "m2": {
+            "agebs_1": 33,
+            "agebs_2": 7,
+            "agebs_3plus": 1,
+            "n_agebs": 41,
+            "new_pop": 428400.76542544214,
+            "new_pop_share": 0.05376455863597279
+          },
+          "m3": {
+            "agebs_1": 42,
+            "agebs_2": 4,
+            "agebs_3plus": 0,
+            "n_agebs": 46,
+            "new_pop": 481553.5614527245,
+            "new_pop_share": 0.060435267115769103
+          }
+        }
+      }
+    },
+    {
+      "enunciado": "Los motores seleccionan portafolios territorialmente distintos: a B=30 el Jaccard de sitios es 0.176 (M1–M2), 0.091 (M1–M3) y 0.250 (M2–M3); 18 sitios son elegidos por al menos 2 motores y 4 por los 3.",
+      "estatus": "comparacion_descriptiva",
+      "fuentes": [
+        {
+          "analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+          "reporte": "08",
+          "ruta_json": "overlap"
+        },
+        {
+          "analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+          "reporte": "08",
+          "ruta_json": "consensus_counts"
+        }
+      ],
+      "id": "C03",
+      "salvedades": [
+        "Jaccard descriptivo sobre conjuntos de sitios y de AGEBs; sin umbral de 'alto/bajo' declarado",
+        "Los objetivos de los motores difieren por diseño"
+      ],
+      "tema": "divergencia_territorial",
+      "valores": {
+        "por_presupuesto": {
+          "15": {
+            "consenso": {
+              "selected_by_2plus": 9,
+              "selected_by_3": 3
+            },
+            "jaccard_agebs": {
+              "m1-m2": 0.29411764705882354,
+              "m1-m3": 0.09090909090909091,
+              "m2-m3": 0.18181818181818182
+            },
+            "jaccard_sites": {
+              "m1-m2": 0.36363636363636365,
+              "m1-m3": 0.1111111111111111,
+              "m2-m3": 0.15384615384615385
+            },
+            "pares": [
+              {
+                "budget": 15,
+                "jaccard_agebs": 0.29411764705882354,
+                "jaccard_sites": 0.36363636363636365,
+                "motor_a": "m1",
+                "motor_b": "m2",
+                "n_a_agebs": 10,
+                "n_a_sites": 15,
+                "n_b_agebs": 12,
+                "n_b_sites": 15,
+                "n_inter_agebs": 5,
+                "n_inter_sites": 8
+              },
+              {
+                "budget": 15,
+                "jaccard_agebs": 0.09090909090909091,
+                "jaccard_sites": 0.1111111111111111,
+                "motor_a": "m1",
+                "motor_b": "m3",
+                "n_a_agebs": 10,
+                "n_a_sites": 15,
+                "n_b_agebs": 14,
+                "n_b_sites": 15,
+                "n_inter_agebs": 2,
+                "n_inter_sites": 3
+              },
+              {
+                "budget": 15,
+                "jaccard_agebs": 0.18181818181818182,
+                "jaccard_sites": 0.15384615384615385,
+                "motor_a": "m2",
+                "motor_b": "m3",
+                "n_a_agebs": 12,
+                "n_a_sites": 15,
+                "n_b_agebs": 14,
+                "n_b_sites": 15,
+                "n_inter_agebs": 4,
+                "n_inter_sites": 4
+              }
+            ]
+          },
+          "30": {
+            "consenso": {
+              "selected_by_2plus": 18,
+              "selected_by_3": 4
+            },
+            "jaccard_agebs": {
+              "m1-m2": 0.15,
+              "m1-m3": 0.08888888888888889,
+              "m2-m3": 0.2619047619047619
+            },
+            "jaccard_sites": {
+              "m1-m2": 0.17647058823529413,
+              "m1-m3": 0.09090909090909091,
+              "m2-m3": 0.25
+            },
+            "pares": [
+              {
+                "budget": 30,
+                "jaccard_agebs": 0.15,
+                "jaccard_sites": 0.17647058823529413,
+                "motor_a": "m1",
+                "motor_b": "m2",
+                "n_a_agebs": 21,
+                "n_a_sites": 30,
+                "n_b_agebs": 25,
+                "n_b_sites": 30,
+                "n_inter_agebs": 6,
+                "n_inter_sites": 9
+              },
+              {
+                "budget": 30,
+                "jaccard_agebs": 0.08888888888888889,
+                "jaccard_sites": 0.09090909090909091,
+                "motor_a": "m1",
+                "motor_b": "m3",
+                "n_a_agebs": 21,
+                "n_a_sites": 30,
+                "n_b_agebs": 28,
+                "n_b_sites": 30,
+                "n_inter_agebs": 4,
+                "n_inter_sites": 5
+              },
+              {
+                "budget": 30,
+                "jaccard_agebs": 0.2619047619047619,
+                "jaccard_sites": 0.25,
+                "motor_a": "m2",
+                "motor_b": "m3",
+                "n_a_agebs": 25,
+                "n_a_sites": 30,
+                "n_b_agebs": 28,
+                "n_b_sites": 30,
+                "n_inter_agebs": 11,
+                "n_inter_sites": 12
+              }
+            ]
+          },
+          "50": {
+            "consenso": {
+              "selected_by_2plus": 32,
+              "selected_by_3": 6
+            },
+            "jaccard_agebs": {
+              "m1-m2": 0.13846153846153847,
+              "m1-m3": 0.0821917808219178,
+              "m2-m3": 0.4262295081967213
+            },
+            "jaccard_sites": {
+              "m1-m2": 0.12359550561797752,
+              "m1-m3": 0.07526881720430108,
+              "m2-m3": 0.35135135135135137
+            },
+            "pares": [
+              {
+                "budget": 50,
+                "jaccard_agebs": 0.13846153846153847,
+                "jaccard_sites": 0.12359550561797752,
+                "motor_a": "m1",
+                "motor_b": "m2",
+                "n_a_agebs": 33,
+                "n_a_sites": 50,
+                "n_b_agebs": 41,
+                "n_b_sites": 50,
+                "n_inter_agebs": 9,
+                "n_inter_sites": 11
+              },
+              {
+                "budget": 50,
+                "jaccard_agebs": 0.0821917808219178,
+                "jaccard_sites": 0.07526881720430108,
+                "motor_a": "m1",
+                "motor_b": "m3",
+                "n_a_agebs": 33,
+                "n_a_sites": 50,
+                "n_b_agebs": 46,
+                "n_b_sites": 50,
+                "n_inter_agebs": 6,
+                "n_inter_sites": 7
+              },
+              {
+                "budget": 50,
+                "jaccard_agebs": 0.4262295081967213,
+                "jaccard_sites": 0.35135135135135137,
+                "motor_a": "m2",
+                "motor_b": "m3",
+                "n_a_agebs": 41,
+                "n_a_sites": 50,
+                "n_b_agebs": 46,
+                "n_b_sites": 50,
+                "n_inter_agebs": 26,
+                "n_inter_sites": 26
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "enunciado": "A B=30, la escolaridad media de las AGEBs seleccionadas es 13.02 (M1), 11.83 (M2) y 11.64 (M3) frente a 12.23 en todos los sitios candidatos; la fracción de sitios en AGEBs fuera del dominio del 04 es 0.30 (M1), 0.23 (M2) y 0.57 (M3).",
+      "estatus": "comparacion_descriptiva",
+      "fuentes": [
+        {
+          "analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+          "reporte": "08",
+          "ruta_json": "metricas[tier=oficial,budget=30]"
+        }
+      ],
+      "id": "C04",
+      "salvedades": [
+        "Covariables a nivel AGEB (lectura ecológica), sin causalidad",
+        "Fuera de dominio no implica mal sitio: el dominio del 04 es el soporte de AGEBs con servicio",
+        "La semejanza a entornos afluentes no es demanda"
+      ],
+      "tema": "tension_similitud_equidad",
+      "valores": {
+        "m1": {
+          "grado_escolar_all": 12.234021739130435,
+          "grado_escolar_sel": 13.024,
+          "out_of_domain_04_share": 0.3,
+          "pct_auto_all": 0.5210344956806683,
+          "pct_auto_sel": 0.5897546770137617
+        },
+        "m2": {
+          "grado_escolar_all": 12.234021739130435,
+          "grado_escolar_sel": 11.828666666666663,
+          "out_of_domain_04_share": 0.23333333333333334,
+          "pct_auto_all": 0.5210344956806683,
+          "pct_auto_sel": 0.4522851264474798
+        },
+        "m3": {
+          "grado_escolar_all": 12.234021739130435,
+          "grado_escolar_sel": 11.639000000000003,
+          "out_of_domain_04_share": 0.5666666666666667,
+          "pct_auto_all": 0.5210344956806683,
+          "pct_auto_sel": 0.4378027387897613
+        }
+      }
+    },
+    {
+      "enunciado": "Con la misma función objetivo y reglas de factibilidad, en la configuración primaria (w=0.5, B=30) el greedy toma 0.016 s por corrida frente a 51.4 s por semilla del GA —3,193x más rápido—; el rango del cociente emparejado entre configuraciones es 2,786x–4,422x.",
+      "estatus": "hecho_verificado",
+      "fuentes": [
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "ga_vs_greedy"
+        },
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "timing"
+        },
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "configuration.ga"
+        }
+      ],
+      "id": "C05",
+      "salvedades": [
+        "Tiempos de pared de una sola máquina y una sola medición por configuración",
+        "Speedup emparejado por configuración (misma f y mismas reglas); los totales no emparejados se reportan aparte y no definen un cociente",
+        "El GA corre con los parámetros publicados del 07 (población 80, 120 generaciones)"
+      ],
+      "tema": "tiempos_greedy_vs_ga",
+      "valores": {
+        "configuracion_primaria": {
+          "budget": 30,
+          "ga_best_f": 0.2835111661771723,
+          "ga_mean_f": 0.27651008732422655,
+          "ga_mean_wall_s_per_seed": 51.39970169938751,
+          "ga_minus_greedy": -0.00619121338299361,
+          "ga_std_f": 0.005308847549256213,
+          "greedy_f": 0.2897023795601659,
+          "greedy_wall_s": 0.01609632998588495,
+          "jaccard_ga_greedy": 0.1320754716981132,
+          "speedup_ga_por_semilla_sobre_greedy": 3193.255962350454,
+          "verdict": "greedy",
+          "weight": 0.5
+        },
+        "emparejadas_por_configuracion": [
+          {
+            "budget": 30,
+            "ga_best_f": 0.13609788359788363,
+            "ga_mean_f": 0.13563492063492066,
+            "ga_mean_wall_s_per_seed": 57.172532764341064,
+            "ga_minus_greedy": -0.0009259259259258856,
+            "ga_std_f": 0.0003780076763554349,
+            "greedy_f": 0.13702380952380952,
+            "greedy_wall_s": 0.02052359899971634,
+            "jaccard_ga_greedy": 0.875,
+            "speedup_ga_por_semilla_sobre_greedy": 2785.697224211565,
+            "verdict": "greedy",
+            "weight": 0.0
+          },
+          {
+            "budget": 30,
+            "ga_best_f": 0.1985341541291034,
+            "ga_mean_f": 0.19328410786448624,
+            "ga_mean_wall_s_per_seed": 45.69300226334599,
+            "ga_minus_greedy": -0.001572839766022932,
+            "ga_std_f": 0.003754349073158915,
+            "greedy_f": 0.20010699389512634,
+            "greedy_wall_s": 0.011971186992013827,
+            "jaccard_ga_greedy": 0.1111111111111111,
+            "speedup_ga_por_semilla_sobre_greedy": 3816.9149219562382,
+            "verdict": "empate (|brecha| <= std entre semillas)",
+            "weight": 0.25
+          },
+          {
+            "budget": 30,
+            "ga_best_f": 0.2835111661771723,
+            "ga_mean_f": 0.27651008732422655,
+            "ga_mean_wall_s_per_seed": 51.39970169938751,
+            "ga_minus_greedy": -0.00619121338299361,
+            "ga_std_f": 0.005308847549256213,
+            "greedy_f": 0.2897023795601659,
+            "greedy_wall_s": 0.01609632998588495,
+            "jaccard_ga_greedy": 0.1320754716981132,
+            "speedup_ga_por_semilla_sobre_greedy": 3193.255962350454,
+            "verdict": "greedy",
+            "weight": 0.5
+          },
+          {
+            "budget": 15,
+            "ga_best_f": 0.28886012095493135,
+            "ga_mean_f": 0.2856660854200856,
+            "ga_mean_wall_s_per_seed": 40.42469255299269,
+            "ga_minus_greedy": -0.009305787479611638,
+            "ga_std_f": 0.0040229582938880295,
+            "greedy_f": 0.298165908434543,
+            "greedy_wall_s": 0.009142521012108773,
+            "jaccard_ga_greedy": 0.1111111111111111,
+            "speedup_ga_por_semilla_sobre_greedy": 4421.613305504289,
+            "verdict": "greedy",
+            "weight": 0.5
+          },
+          {
+            "budget": 50,
+            "ga_best_f": 0.2651446717030462,
+            "ga_mean_f": 0.2600852497690725,
+            "ga_mean_wall_s_per_seed": 88.28139029399608,
+            "ga_minus_greedy": -0.015757054414320848,
+            "ga_std_f": 0.003617496470795722,
+            "greedy_f": 0.280901726117367,
+            "greedy_wall_s": 0.030118853988824412,
+            "jaccard_ga_greedy": 0.19047619047619047,
+            "speedup_ga_por_semilla_sobre_greedy": 2931.1005766272797,
+            "verdict": "greedy",
+            "weight": 0.5
+          },
+          {
+            "budget": 30,
+            "ga_best_f": 0.37064312813543837,
+            "ga_mean_f": 0.3529968323306472,
+            "ga_mean_wall_s_per_seed": 57.79584014033511,
+            "ga_minus_greedy": -0.009391256685626015,
+            "ga_std_f": 0.020785746158606518,
+            "greedy_f": 0.3800343848210644,
+            "greedy_wall_s": 0.017581763997441158,
+            "jaccard_ga_greedy": 0.09090909090909091,
+            "speedup_ga_por_semilla_sobre_greedy": 3287.260604154776,
+            "verdict": "empate (|brecha| <= std entre semillas)",
+            "weight": 0.75
+          },
+          {
+            "budget": 30,
+            "ga_best_f": 0.45655092343035636,
+            "ga_mean_f": 0.44759527826838585,
+            "ga_mean_wall_s_per_seed": 59.17831005566404,
+            "ga_minus_greedy": -0.01381546665160649,
+            "ga_std_f": 0.00847677625613734,
+            "greedy_f": 0.47036639008196285,
+            "greedy_wall_s": 0.01797932101180777,
+            "jaccard_ga_greedy": 0.15384615384615385,
+            "speedup_ga_por_semilla_sobre_greedy": 3291.465234799422,
+            "verdict": "greedy",
+            "weight": 1.0
+          }
+        ],
+        "ga_parametros": {
+          "cx_indpb": 0.5,
+          "cxpb": 0.7,
+          "elite": 2,
+          "generations": 120,
+          "mut_indpb": 0.05,
+          "mut_sigma": 0.2,
+          "mutpb": 0.3,
+          "population": 80,
+          "tournament": 3
+        },
+        "speedup_max": 4421.613305504289,
+        "speedup_mediana": 3287.260604154776,
+        "speedup_min": 2785.697224211565,
+        "totales_no_emparejados": {
+          "ga_total_wall_s": 1302.6358127089625,
+          "greedy_total_wall_s": 0.12341357598779723,
+          "nota": "Totales NO emparejados: el greedy corre una vez por configuración; el GA corre 3-5 semillas por configuración. Su cociente NO es un speedup."
+        }
+      }
+    },
+    {
+      "enunciado": "En las 7 configuraciones evaluadas el greedy alcanza un objetivo al menos tan alto como la mejor corrida del GA en 7 de ellas; la brecha GA−greedy va de -0.0158 a -0.0009 y el mejor GA queda en el percentil 1.00 frente a portafolios aleatorios factibles.",
+      "estatus": "hecho_verificado",
+      "fuentes": [
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "ga_vs_greedy"
+        }
+      ],
+      "id": "C06",
+      "salvedades": [
+        "La garantía (1-1/e) de cobertura submodular no aplica formalmente bajo contigüidad y espaciamiento; es un hallazgo empírico, no un teorema",
+        "El GA es una heurística sin garantía de optimalidad (3-5 semillas por configuración)",
+        "El resultado depende de los parámetros GA declarados en el 07"
+      ],
+      "tema": "objetivo_greedy_vs_ga",
+      "valores": {
+        "brecha_ga_menos_greedy_max": -0.0009259259259258856,
+        "brecha_ga_menos_greedy_min": -0.015757054414320848,
+        "ga_percentile_vs_random": [
+          1.0
+        ],
+        "n_configuraciones": 7,
+        "n_greedy_al_menos_ga_best": 7,
+        "verdicts": {
+          "empate (|brecha| <= std entre semillas)": 2,
+          "greedy": 5
+        }
+      }
+    },
+    {
+      "enunciado": "El FT-Transformer no justifica su complejidad: su RMSE medio (0.4206) no es menor que el del mejor control (ridge 0.4195) y la mejora condicionada (-0.0010) es una fracción de la variación entre semillas (0.0313; razón 0.033), así que sale del despliegue; el bosque aleatorio se despliega por parsimonia y estabilidad.",
+      "estatus": "hecho_verificado",
+      "fuentes": [
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "regression_means"
+        },
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "dictamen"
+        },
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "ockham"
+        }
+      ],
+      "id": "C07",
+      "salvedades": [
+        "R^2 espacial <= ~0.22 en todos los modelos: ninguno es predictivamente fuerte",
+        "RF vs Ridge es una diferencia pequeña (RF gana en 3 de 5 folds)",
+        "5 folds espaciales; variación entre semillas del Transformer documentada como caso de estudio",
+        "La importancia predictiva no es causalidad"
+      ],
+      "tema": "dictamen_motor2",
+      "valores": {
+        "dictamen": {
+          "best_control": "ridge",
+          "condition_a_rmse_below_controls": false,
+          "condition_b_fold_wins_vs_best_control": 3,
+          "condition_b_required": 4,
+          "condition_c_holds": false,
+          "condition_c_improvement": -0.0010360605809742185,
+          "condition_c_seed_std_mean": 0.03128825118625971,
+          "transformer_aporta": false
+        },
+        "models": {
+          "constante": {
+            "mae": 0.4373467358574327,
+            "r2": -0.3028261535056348,
+            "rmse": 0.5443655319340731,
+            "spearman": null
+          },
+          "ft_transformer": {
+            "mae": 0.33145624004870544,
+            "r2": 0.21479707273334409,
+            "rmse": 0.420556010873408,
+            "spearman": 0.5853955022372229
+          },
+          "random_forest": {
+            "mae": 0.33894512953176975,
+            "r2": 0.1720273651810052,
+            "rmse": 0.4287593888584732,
+            "spearman": 0.5409278856243781
+          },
+          "ridge": {
+            "mae": 0.33189497538985613,
+            "r2": 0.19384942359700927,
+            "rmse": 0.41951995029243383,
+            "spearman": 0.5313474074720054
+          }
+        },
+        "ockham": {
+          "dictamen_no_added_capacity": true,
+          "r2_spatial_mean": {
+            "constante": -0.3028261535056348,
+            "ft_transformer": 0.21479707273334409,
+            "random_forest": 0.1720273651810052,
+            "ridge": 0.19384942359700927
+          },
+          "rf_vs_ridge": {
+            "delta_rmse_mean": 0.00923943856603937,
+            "n_folds": 5,
+            "rf_fold_wins": 3
+          },
+          "transformer_removed_from_deployment": true
+        },
+        "ratio_mejora_vs_std_semillas": 0.033113406524593686
+      }
+    },
+    {
+      "enunciado": "El esquema primario deja 0 pares colindantes prueba–entrenamiento tras el buffer de 500 m en los 5 folds (antes: [95, 57, 59, 50, 59]); la distancia mínima prueba–entrenamiento retenida es 500.6 m y los 15 bloques son contiguos (componentes del grafo de adyacencia: 1).",
+      "estatus": "hecho_verificado",
+      "fuentes": [
+        {
+          "analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+          "reporte": "04",
+          "ruta_json": "spatial_cv.separation"
+        },
+        {
+          "analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+          "reporte": "04",
+          "ruta_json": "spatial_cv.blocks_contiguous_share"
+        },
+        {
+          "analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+          "reporte": "04",
+          "ruta_json": "cv_folds.parquet"
+        },
+        {
+          "analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+          "reporte": "04",
+          "ruta_json": "cv_buffer_exclusions.parquet"
+        }
+      ],
+      "id": "C08",
+      "salvedades": [
+        "La garantía es sobre colindancia poligonal (<=1 m) y buffer de 500 m en el universo de AGEBs evaluadas; no implica ausencia de autocorrelación espacial a mayores distancias."
+      ],
+      "tema": "arnes_espacial",
+      "valores": {
+        "certificacion": {
+          "adjacency_tolerance_m": 1.0,
+          "blocks_contiguous_share": 1.0,
+          "buffer_m": 500.0,
+          "certificado": true,
+          "esquema": "fold_spatial_block",
+          "evaluation_universe_size": 242,
+          "folds": [
+            {
+              "fold": 0,
+              "min_train_test_distance_m": 500.58314890463805,
+              "recomputado_after": 0,
+              "recomputado_before": 95,
+              "touching_train_test_pairs_after_buffer": 0,
+              "touching_train_test_pairs_before_buffer": 95
+            },
+            {
+              "fold": 1,
+              "min_train_test_distance_m": 508.32295135256345,
+              "recomputado_after": 0,
+              "recomputado_before": 57,
+              "touching_train_test_pairs_after_buffer": 0,
+              "touching_train_test_pairs_before_buffer": 57
+            },
+            {
+              "fold": 2,
+              "min_train_test_distance_m": 502.63221791646197,
+              "recomputado_after": 0,
+              "recomputado_before": 59,
+              "touching_train_test_pairs_after_buffer": 0,
+              "touching_train_test_pairs_before_buffer": 59
+            },
+            {
+              "fold": 3,
+              "min_train_test_distance_m": 505.0495351525718,
+              "recomputado_after": 0,
+              "recomputado_before": 50,
+              "touching_train_test_pairs_after_buffer": 0,
+              "touching_train_test_pairs_before_buffer": 50
+            },
+            {
+              "fold": 4,
+              "min_train_test_distance_m": 506.37087463386837,
+              "recomputado_after": 0,
+              "recomputado_before": 59,
+              "touching_train_test_pairs_after_buffer": 0,
+              "touching_train_test_pairs_before_buffer": 59
+            }
+          ],
+          "min_train_test_distance_m": 500.58314890463805,
+          "n_adjacency_components": 1,
+          "n_blocks": 15,
+          "n_folds": 5,
+          "recomputo": {
+            "coincide_con_publicado": true,
+            "metodo": "cv_folds + cv_buffer_exclusions publicados + polygon_adjacency del 04 (distancia poligonal <= 1 m en metric_crs)"
+          },
+          "referencia_optimista_groupkfold": {
+            "nota": "GroupKFold por AGEB sin buffer: pares colindantes antes = después (esquema de referencia optimista)",
+            "pares_por_fold": {
+              "0": 220,
+              "1": 232,
+              "2": 206,
+              "3": 214,
+              "4": 216
+            },
+            "suma_pares": 1088
+          },
+          "salvedad": "La garantía es sobre colindancia poligonal (<=1 m) y buffer de 500 m en el universo de AGEBs evaluadas; no implica ausencia de autocorrelación espacial a mayores distancias.",
+          "suma_pares_after_buffer": 0
+        }
+      }
+    },
+    {
+      "enunciado": "Con n/p entre 2.00 y 2.56, el encogimiento Ledoit-Wolf (0.38–0.70) estabiliza la compuerta: número de condición 2.26–6.44 frente a 33.5–54.9 con la covarianza empírica, y la cobertura de decisión sube de 0.637 a 0.901 sin cambiar el NDCG@10 respecto al coseno sin compuerta (0.673).",
+      "estatus": "hecho_verificado",
+      "fuentes": [
+        {
+          "analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+          "reporte": "05",
+          "ruta_json": "fold_diagnostics[variant=m1_coseno_compuerta,fold_scheme=fold_spatial_block]"
+        },
+        {
+          "analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+          "reporte": "05",
+          "ruta_json": "backtest.metric_means_by_variant_scheme"
+        }
+      ],
+      "id": "C09",
+      "salvedades": [
+        "El umbral chi-cuadrado es nominal bajo encogimiento: las distancias de entrenamiento no son exactamente chi",
+        "ndcg_cond > ndcg indica abstención en casos difíciles y se lee junto con decision_coverage",
+        "No hay mejora de NDCG@10 respecto al coseno sin compuerta"
+      ],
+      "tema": "compuerta_ledoit_wolf",
+      "valores": {
+        "condition_number_empirical": {
+          "max": 54.9389979744886,
+          "min": 33.45014566516849
+        },
+        "condition_number_lw": {
+          "max": 6.442887449824005,
+          "min": 2.261523002522662
+        },
+        "n_folds": 5,
+        "n_over_p": {
+          "max": 2.5555555555555554,
+          "min": 2.0
+        },
+        "shrinkage": {
+          "max": 0.699435615624196,
+          "min": 0.381854598541957
+        },
+        "variantes": {
+          "m1_coseno": {
+            "decision_coverage": 1.0,
+            "ndcg@10": 0.6732026404159509,
+            "ndcg_cond@10": 0.6732026404159509,
+            "precision@10": 0.38,
+            "recall@10": 0.3185560053981107
+          },
+          "m1_coseno_compuerta": {
+            "decision_coverage": 0.9010168251201686,
+            "ndcg@10": 0.6732026404159509,
+            "ndcg_cond@10": 0.7093603995423841,
+            "precision@10": 0.38,
+            "recall@10": 0.3185560053981107
+          },
+          "m1_coseno_compuerta_empirica": {
+            "decision_coverage": 0.636697851287517,
+            "ndcg@10": 0.679110130969767,
+            "ndcg_cond@10": 0.7621043828570813,
+            "precision@10": 0.34,
+            "recall@10": 0.34200404858299593
+          }
+        }
+      }
+    },
+    {
+      "enunciado": "El techo por análogos —densidad histórica de planeación, no demanda— no supera a una densidad constante mediana en MAE (05: 1.678 vs 1.256; 06: 1.438 vs 1.256); en Spearman, el análogo queda por debajo en 05 (0.274 vs 0.307) y marginalmente por encima en 06 (0.312 vs 0.307).",
+      "estatus": "resultado_negativo",
+      "fuentes": [
+        {
+          "analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+          "reporte": "05",
+          "ruta_json": "ceiling_backtest"
+        },
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "ceiling_backtest"
+        }
+      ],
+      "id": "C10",
+      "salvedades": [
+        "El backtest del techo es evidencia de la remoción, no una regla de asignación activa",
+        "En 06 el Spearman del análogo queda marginalmente por encima del baseline aunque el MAE es peor; el resultado no se simplifica a 'perdió en todo'"
+      ],
+      "tema": "remocion_techo_analogos",
+      "valores": {
+        "m1": {
+          "mae_analog": 1.677685950413223,
+          "mae_naive": 1.256198347107438,
+          "spearman_analog": 0.27443407810864096,
+          "spearman_naive": 0.3074941944470321
+        },
+        "m2": {
+          "mae_analog": 1.43801652892562,
+          "mae_naive": 1.256198347107438,
+          "spearman_analog": 0.3117366439540885,
+          "spearman_naive": 0.3074941944470321
+        }
+      }
+    },
+    {
+      "enunciado": "Node2Vec se retiró del pipeline por decisión metodológica: la afinidad por embeddings no ordenaba por cercanía al núcleo (resultado histórico de v3-motor3-3, no recalculado: Spearman con −saltos -0.095 por centroide y -0.095 por dorado más cercano con q=0.5) y añadía complejidad e interpretación sin cambiar la decisión de despliegue.",
+      "estatus": "resultado_negativo",
+      "fuentes": [
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "node2vec_retired"
+        },
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "affinity.scope_warning"
+        }
+      ],
+      "id": "C11",
+      "salvedades": [
+        "Los números citados son de la publicación histórica v3-motor3-3 (analysis_id 69a83e61…); no se recalculan",
+        "La nueva afinidad 1/(1+saltos) es determinista pero hace que la cercanía a Golden esté optimizada por construcción",
+        "La afinidad estructural no es demanda ni evidencia causal"
+      ],
+      "tema": "retiro_node2vec",
+      "valores": {
+        "evidencia_historica": {
+          "centroid_norm_ratio": 0.735,
+          "golden_pairwise_cosine": {
+            "p10": 0.14,
+            "p50": 0.56,
+            "p90": 0.88
+          },
+          "spearman_affinity_vs_minus_hops_golden": {
+            "q_0.5": {
+              "centroid": -0.095,
+              "nearest_golden": -0.095
+            },
+            "q_1.0": {
+              "centroid": -0.218,
+              "nearest_golden": -0.17
+            },
+            "q_2.0": {
+              "centroid": -0.101,
+              "nearest_golden": -0.008
+            }
+          }
+        },
+        "historical_analysis_id": "69a83e61b633b19f6b2914202c072d4b155a2cd59f397d4049e8cd90398e05e7",
+        "historical_schema": "v3-motor3-3",
+        "scope_warning": "la afinidad es función directa de los saltos a Golden: las métricas de cercanía a Golden del portafolio (saltos máximos y mediana) quedan optimizadas POR CONSTRUCCIÓN y NO constituyen evidencia independiente a favor del Motor 3"
+      }
+    },
+    {
+      "enunciado": "El 08 recomputó 10 portafolios publicados con las funciones del contrato 04: todos son factibles y todas las métricas coinciden (rtol 1e-09); los tres motores referencian el mismo analysis_id del 04 (ed7bf47bafab…).",
+      "estatus": "hecho_verificado",
+      "fuentes": [
+        {
+          "analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+          "reporte": "08",
+          "ruta_json": "consistency"
+        },
+        {
+          "analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+          "reporte": "08",
+          "ruta_json": "shared_validation_analysis_id"
+        }
+      ],
+      "id": "C12",
+      "salvedades": [
+        "La consistencia verifica reproducibilidad de métricas publicadas; no valida los supuestos del contrato"
+      ],
+      "tema": "consistencia_publicaciones",
+      "valores": {
+        "all_feasible": true,
+        "all_metrics_reproduced": true,
+        "n_portfolios_checked": 10,
+        "rtol": 1e-09,
+        "shared_validation_analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+        "validation_analysis_id_activo": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32"
+      }
+    }
+  ],
+  "configuration": {
+    "docs_target": "docs/TESIS_DATA_POINTS.md",
+    "metric_crs": "EPSG:32614",
+    "metric_rtol": 1e-09,
+    "primary_budget": 30,
+    "primary_scheme": "fold_spatial_block",
+    "primary_weight": 0.5
+  },
+  "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+  "document": {
+    "docs_copy_path": "docs/TESIS_DATA_POINTS.md",
+    "forbidden_lexicon_checked": true,
+    "output": "TESIS_DATA_POINTS.md",
+    "sha256": "2889271334af26e58a5447009e7860e2589f4ea472bfa8306b389fecca873c77"
+  },
+  "encuadres_corregidos": [
+    {
+      "afirmacion_original": "Ridge domina numéricamente al FT-Transformer",
+      "encuadre_correcto": "Ridge tiene el RMSE medio más bajo por esa diferencia mínima, pero el FT-Transformer muestra R² (0.215 vs 0.194) y Spearman (0.585 vs 0.531) ligeramente superiores: ninguno de los dos domina; el resultado es un empate práctico y la complejidad del Transformer no se justifica.",
+      "estatus_afirmacion_original": "no_sustentada",
+      "evidencia": {
+        "condition_c_seed_std_mean": 0.03128825118625971,
+        "delta_rmse": 0.001036060580974163,
+        "r2_ft_transformer": 0.21479707273334409,
+        "r2_ridge": 0.19384942359700927,
+        "rmse_ft_transformer": 0.420556010873408,
+        "rmse_ridge": 0.41951995029243383,
+        "spearman_ft_transformer": 0.5853955022372229,
+        "spearman_ridge": 0.5313474074720054
+      },
+      "fuentes": [
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "regression_means"
+        },
+        {
+          "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+          "reporte": "06",
+          "ruta_json": "dictamen"
+        }
+      ],
+      "id": "ridge_vs_ft_transformer"
+    },
+    {
+      "afirmacion_original": "El greedy es ~10^4 veces más rápido que el GA (0.12 s vs 1,303 s)",
+      "encuadre_correcto": "El encuadre defendible es el speedup emparejado por configuración (misma función objetivo y factibilidad): GA medio por semilla / greedy por corrida; los totales no emparejados no definen un cociente.",
+      "estatus_afirmacion_original": "no_sustentada",
+      "evidencia": {
+        "ga_total_wall_s": 1302.6358127089625,
+        "greedy_total_wall_s": 0.12341357598779723,
+        "porque_no_es_emparejado": "el greedy corre una vez por configuración; el GA corre 3-5 semillas por configuración",
+        "speedup_emparejado_primario": 3193.255962350454
+      },
+      "fuentes": [
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "timing"
+        },
+        {
+          "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+          "reporte": "07",
+          "ruta_json": "ga_vs_greedy"
+        }
+      ],
+      "id": "tiempos_totales_vs_emparejados"
+    }
+  ],
+  "input_artifacts": {
+    "validation/cv_buffer_exclusions.parquet": {
+      "bytes": 7308,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/cv_buffer_exclusions.parquet",
+      "sha256": "90e88a62575a7382369a07857099fb3ee429aca03813ddf16ee1b414ab13dd4e"
+    },
+    "validation/cv_folds.parquet": {
+      "bytes": 6900,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/cv_folds.parquet",
+      "sha256": "2d40f49dd2178075fde6e52708ad5e9b30f5bfdf841ccdf28c1f44e0d8aae7db"
+    },
+    "validation/universo_evaluacion.parquet": {
+      "bytes": 2892035,
+      "path": "data/validation/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32/universo_evaluacion.parquet",
+      "sha256": "037c53daaee28185608c25e66db907f2b863db569f63f970faed5cc82c9cdbf5"
+    }
+  },
+  "limitations_ledger": [
+    {
+      "nota": "Engine rankings themselves (cuadernos 05/06/07)",
+      "origen": "validation"
+    },
+    {
+      "nota": "Sensitivity of in_domain to the Mahalanobis quantile",
+      "origen": "validation"
+    },
+    {
+      "nota": "Sensitivity of metrics to the label quantile",
+      "origen": "validation"
+    },
+    {
+      "nota": "Alternative NDCG gains (binary vs linear vs log)",
+      "origen": "validation"
+    },
+    {
+      "nota": "Buffer distance sensitivity (500 m declared)",
+      "origen": "validation"
+    },
+    {
+      "nota": "Sensitivity of deployment ranking to domain/reference quantiles beyond one-at-a-time",
+      "origen": "motor1"
+    },
+    {
+      "nota": "Analog-ceiling backtest is removal evidence, not an active allocation rule",
+      "origen": "motor2"
+    },
+    {
+      "nota": "Capacity study says nothing about latent demand",
+      "origen": "motor2"
+    },
+    {
+      "nota": "RF is the deployment model by parsimony, not by proven dominance; no model is predictively strong",
+      "origen": "motor2"
+    },
+    {
+      "nota": "Deployment predictions are extrapolation outside the observed activity scale",
+      "origen": "motor2"
+    },
+    {
+      "nota": "Affinity is a deterministic function of hops to the golden core: golden-proximity portfolio metrics are optimized by construction and are not independent evidence",
+      "origen": "motor3"
+    },
+    {
+      "nota": "Structural affinity is proximity to the golden core, not observed demand",
+      "origen": "motor3"
+    },
+    {
+      "nota": "Areal interpolation and 500 m catchments are assumptions, not observed demand",
+      "origen": "motor3"
+    },
+    {
+      "nota": "No street network, cost, or field validation",
+      "origen": "motor3"
+    },
+    {
+      "nota": "The GA is a heuristic without optimality guarantee; its best run is published only as a sensitivity portfolio",
+      "origen": "motor3"
+    },
+    {
+      "nota": "Comparison is descriptive: no aggregate winner is declared",
+      "origen": "comparacion"
+    },
+    {
+      "nota": "Radar area is not a score; axes encode different objectives",
+      "origen": "comparacion"
+    },
+    {
+      "nota": "Motor 3 optimizes golden-hop affinity directly: its proximity-to-golden metrics are by construction, not independent evidence",
+      "origen": "comparacion"
+    },
+    {
+      "nota": "Motors 1 and 2 dropped analog ceilings; their portfolios changed relative to the previous publications",
+      "origen": "comparacion"
+    },
+    {
+      "nota": "Areal interpolation and 500 m catchments are assumptions, not observed demand",
+      "origen": "comparacion"
+    },
+    {
+      "nota": "No street network, cost, or field validation",
+      "origen": "comparacion"
+    },
+    {
+      "nota": "Motor 3 has no AGEB backtest: its score is structural affinity, not an activity model",
+      "origen": "comparacion"
+    }
+  ],
+  "lineage": [
+    {
+      "analysis_id": null,
+      "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+      "cuaderno": "etl",
+      "nota": "auditoría ETL sin analysis_id: es el archivo de auditoría comprometida, no un reporte de motor",
+      "notebook": "01_ETL_Reproducible.ipynb",
+      "puntero": "audits/01_etl.json",
+      "puntero_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+      "schema_version": null
+    },
+    {
+      "analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+      "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+      "cuaderno": "eda",
+      "nota": null,
+      "notebook": "02_EDA_y_Equidad.ipynb",
+      "puntero": "audits/02_eda.json",
+      "puntero_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+      "schema_version": "v3-eda-2"
+    },
+    {
+      "analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+      "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+      "cuaderno": "features",
+      "nota": null,
+      "notebook": "03_Feature_Engineering.ipynb",
+      "puntero": "audits/03_feature_engineering.json",
+      "puntero_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+      "schema_version": "v3-features-2"
+    },
+    {
+      "analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+      "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+      "cuaderno": "validation",
+      "nota": null,
+      "notebook": "04_Diseno_Validacion_Backtest.ipynb",
+      "puntero": "audits/04_backtest_design.json",
+      "puntero_sha256": "61beeaa81a0a013fea1d2f273d14217c8dbe44fc1a82178da457dce9c4d37250",
+      "schema_version": "v3-backtest-4"
+    },
+    {
+      "analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+      "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+      "cuaderno": "motor1",
+      "nota": null,
+      "notebook": "05_Motor1_Baseline_Estadistico.ipynb",
+      "puntero": "audits/05_motor1_baseline.json",
+      "puntero_sha256": "bfc72c5ebb4f824a649cda661d9d9a95654f1d1f8c6a1dd3a4b799b97c3bcbbc",
+      "schema_version": "v3-motor1-3"
+    },
+    {
+      "analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+      "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+      "cuaderno": "motor2",
+      "nota": null,
+      "notebook": "06_Motor2_Transformer_Honesto.ipynb",
+      "puntero": "audits/06_motor2_transformer.json",
+      "puntero_sha256": "50212264e2f0fa885a9c21ca2e3a55d3c59ea70323d5905b65f233a8110be6e4",
+      "schema_version": "v3-motor2-3"
+    },
+    {
+      "analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+      "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+      "cuaderno": "motor3",
+      "nota": null,
+      "notebook": "07_Motor3_Grafo_y_Genetico.ipynb",
+      "puntero": "audits/07_motor3_prescriptivo.json",
+      "puntero_sha256": "1dc9bb280efb746fc2711f211f24f722352111d25133197e7e52f6043246ae88",
+      "schema_version": "v3-motor3-4"
+    },
+    {
+      "analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+      "contract_id": "6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93",
+      "cuaderno": "comparacion",
+      "nota": null,
+      "notebook": "08_Evaluacion_Comparativa.ipynb",
+      "puntero": "audits/08_comparacion_portafolios.json",
+      "puntero_sha256": "adcb5ff88a0760f15d3679521ffa3b04c05c6a8ca17aa7b9589004f0e2e36d51",
+      "schema_version": "v3-comparacion-2"
+    }
+  ],
+  "notebook": "09_Auditoria_Final_Afirmaciones.ipynb",
+  "outputs": [
+    {
+      "bytes": 29842,
+      "path": "data/engines/09_claims/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/acd556d569dfef3511f037479780acc3b54ed5f850aea2670b279bbf32b96422/c9_claims.csv",
+      "sha256": "1e01c86fddb4c64e85d2253b4b827ca00c40bc8a9bb9f1a37a9f31491535d647"
+    },
+    {
+      "bytes": 3404,
+      "path": "data/engines/09_claims/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/acd556d569dfef3511f037479780acc3b54ed5f850aea2670b279bbf32b96422/c9_lineage.csv",
+      "sha256": "1f84bd0de994852ca06b91d5506256bfe5d6c705f758f19b96c3fac8e5a4ec73"
+    },
+    {
+      "bytes": 11722,
+      "path": "data/engines/09_claims/6e586b3d9a0bd8b844d9cf5bc714f0e583fc2a6936f8cd5ca89de9cdb26afd93/acd556d569dfef3511f037479780acc3b54ed5f850aea2670b279bbf32b96422/TESIS_DATA_POINTS.md",
+      "sha256": "2889271334af26e58a5447009e7860e2589f4ea472bfa8306b389fecca873c77"
+    }
+  ],
+  "pending_validation": [
+    "Claims are extracted from sealed publications; this registry does not add new evidence",
+    "All figures inherit the limitations of their source notebooks (see limitations_ledger)"
+  ],
+  "schema_version": "v3-claims-1",
+  "scope": {
+    "no_aggregate_winner": true,
+    "reads_verified_publications_only": true,
+    "recomputes_no_portfolios": true,
+    "trains_no_models": true
+  },
+  "upstream": {
+    "comparacion_analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+    "comparacion_audit_sha256": "adcb5ff88a0760f15d3679521ffa3b04c05c6a8ca17aa7b9589004f0e2e36d51",
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+    "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+    "features_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+    "features_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+    "motor1_analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+    "motor1_audit_sha256": "bfc72c5ebb4f824a649cda661d9d9a95654f1d1f8c6a1dd3a4b799b97c3bcbbc",
+    "motor2_analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+    "motor2_audit_sha256": "50212264e2f0fa885a9c21ca2e3a55d3c59ea70323d5905b65f233a8110be6e4",
+    "motor3_analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+    "motor3_audit_sha256": "1dc9bb280efb746fc2711f211f24f722352111d25133197e7e52f6043246ae88",
+    "never_reruns_engines": true,
+    "reads_verified_publications_only": true,
+    "shared_validation_analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+    "validation_analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+    "validation_audit_sha256": "61beeaa81a0a013fea1d2f273d14217c8dbe44fc1a82178da457dce9c4d37250"
+  },
+  "upstream_refs": {
+    "comparacion_analysis_id": "fdba0469ee4d2a42ce8bc5f75d53e95930207bfe3152faad5fbedd6ddc790f69",
+    "comparacion_audit_sha256": "adcb5ff88a0760f15d3679521ffa3b04c05c6a8ca17aa7b9589004f0e2e36d51",
+    "eda_analysis_id": "d77ab12f05e9025f438921b34e8688e1a75628262964277af62250cdbafa8e67",
+    "eda_audit_sha256": "a17c6003a544b47571a4ca62d7b8630e973a49fc5d5c5cbdcb15e73ae0ba195c",
+    "etl_audit_sha256": "198a41c57443e8fcabcf9233f592f6cdd2f5b8a4e7e0b913a30d002e8ece312f",
+    "features_analysis_id": "7565adda3bc4eb91514247d2a1213f0b1c934821e762ac9d3aae010031dbb05c",
+    "features_audit_sha256": "9d3149fe44145e2f5484deb03dc3ac74cfd2910a0c7ca953a3e68df0437f20ff",
+    "motor1_analysis_id": "879ae45d46b56fc5504c9817be154eee0e78ab0e13ddfdcef4435a58d32de29d",
+    "motor1_audit_sha256": "bfc72c5ebb4f824a649cda661d9d9a95654f1d1f8c6a1dd3a4b799b97c3bcbbc",
+    "motor2_analysis_id": "4027385dff30ab79689dfdeb3c468260176080e83b1abd21f5c605efcce30a8f",
+    "motor2_audit_sha256": "50212264e2f0fa885a9c21ca2e3a55d3c59ea70323d5905b65f233a8110be6e4",
+    "motor3_analysis_id": "3aa53121add31f2ea2381259d0b44fa7f603fa758b4a731dcc08fd143b074b87",
+    "motor3_audit_sha256": "1dc9bb280efb746fc2711f211f24f722352111d25133197e7e52f6043246ae88",
+    "never_reruns_engines": true,
+    "reads_verified_publications_only": true,
+    "shared_validation_analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+    "validation_analysis_id": "ed7bf47bafab10ca2b3144e9d38f1d06e5024ee9ba6af353b37603324ad2ab32",
+    "validation_audit_sha256": "61beeaa81a0a013fea1d2f273d14217c8dbe44fc1a82178da457dce9c4d37250"
+  }
+}

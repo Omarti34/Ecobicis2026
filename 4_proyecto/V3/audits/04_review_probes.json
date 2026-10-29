@@ -1,0 +1,101 @@
+{
+  "published_report_verified": true,
+  "published_mahalanobis_reproduced": true,
+  "duplicate_recall": 2.0,
+  "duplicate_ndcg": 1.6309297535714575,
+  "omitted_relevant_recall": 1.0,
+  "missing_ageb": {
+    "accepted": true,
+    "total_test_rows": 337
+  },
+  "ageb_tested_twice": {
+    "accepted": true,
+    "total_test_rows": 339
+  },
+  "split_spatial_block_accepted": true,
+  "heldout_oracle_ndcg_at_10": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "abstaining_ranking_rejected": "rank_fn output is not a permutation of fold 0",
+  "singular_reference": {
+    "rank": 7,
+    "df_used": 8,
+    "distance_for_million_unit_null_shift": 0.0
+  },
+  "bundle_has_metric_callables": false,
+  "bundle_has_groupkfold": false,
+  "evaluation_universe": {
+    "total": 338,
+    "without_internal_station": 96,
+    "rows_with_measured_internal_activity": 242
+  },
+  "spatial_fold_neighbors": [
+    {
+      "fold": 0,
+      "n_test": 38,
+      "effective_k_at_50": 38,
+      "minimum_train_test_centroid_distance_m": 330.6050322497604,
+      "test_centroids_with_train_neighbor_under_500m": 6
+    },
+    {
+      "fold": 1,
+      "n_test": 79,
+      "effective_k_at_50": 50,
+      "minimum_train_test_centroid_distance_m": 284.14617918948653,
+      "test_centroids_with_train_neighbor_under_500m": 9
+    },
+    {
+      "fold": 2,
+      "n_test": 39,
+      "effective_k_at_50": 39,
+      "minimum_train_test_centroid_distance_m": 343.57984264640737,
+      "test_centroids_with_train_neighbor_under_500m": 7
+    },
+    {
+      "fold": 3,
+      "n_test": 128,
+      "effective_k_at_50": 50,
+      "minimum_train_test_centroid_distance_m": 284.14617918948653,
+      "test_centroids_with_train_neighbor_under_500m": 13
+    },
+    {
+      "fold": 4,
+      "n_test": 54,
+      "effective_k_at_50": 50,
+      "minimum_train_test_centroid_distance_m": 394.82694066862905,
+      "test_centroids_with_train_neighbor_under_500m": 6
+    }
+  ],
+  "golden_vs_ageb_label": [
+    {
+      "fold": 0,
+      "p85_ageb_sum_disagrees_with_published_station_golden": 20
+    },
+    {
+      "fold": 1,
+      "p85_ageb_sum_disagrees_with_published_station_golden": 23
+    },
+    {
+      "fold": 2,
+      "p85_ageb_sum_disagrees_with_published_station_golden": 22
+    },
+    {
+      "fold": 3,
+      "p85_ageb_sum_disagrees_with_published_station_golden": 14
+    },
+    {
+      "fold": 4,
+      "p85_ageb_sum_disagrees_with_published_station_golden": 25
+    }
+  ],
+  "notebook": {
+    "cells": 12,
+    "errors": 0,
+    "analysis_id_matches": true
+  },
+  "canonical_artifacts_unchanged": true
+}
